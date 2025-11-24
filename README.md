@@ -1,6 +1,6 @@
 # aprendizado_legal
 
-A new Flutter project.
+Esse projeto tem o propósito de construir um aplicativo que possibilite, sobretudo, crianças a desenvolverem e adquirirem conhecimento através de um jogo de quiz de perguntas. 
 
 ## Getting Started
 
