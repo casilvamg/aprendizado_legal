@@ -71,8 +71,7 @@ class ResultadoPage extends StatelessWidget {
   }
 
   String formatarValor(int acertos) {
-
-    if (acertos == 16) {
+    if (acertos == listaDePontuacao.length) {
       return "1 MILHÃO";
     }
 
@@ -81,13 +80,11 @@ class ResultadoPage extends StatelessWidget {
       orElse: () => {},
     );
 
-    print(resultado);
-
     if (resultado != null) {
       if (acertos == 1) {
         return "${resultado["seErrar"]}";
       }
-      return "${resultado["seErrar"]} MIL";
+      return "${resultado["seErrar"]/1000} MIL";
     }
     else {
       return 'ERRO';

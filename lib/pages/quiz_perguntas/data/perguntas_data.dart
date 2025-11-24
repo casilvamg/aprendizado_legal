@@ -4894,7 +4894,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "correta": "Alta definição",
     "alternativas": ["Hiper digital", "Hiper desenho", "Alta definição", "Home display"],
     "nivel": 1,
-    "nomeDoJogador": "THEO"
+    "nomeDoJogador": "MATHEUS"
   },
   {
     "pergunta": "Qual é o nome do botão que liga e desliga a TV?",
@@ -4902,7 +4902,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "correta": "Power",
     "alternativas": ["Start", "Play", "Power", "Go"],
     "nivel": 1,
-    "nomeDoJogador": "THEO"
+    "nomeDoJogador": "MATHEUS"
   },
   {
     "pergunta": "Como chamamos os episódios de uma série lançados um após o outro?",
@@ -4910,7 +4910,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "correta": "Temporada",
     "alternativas": ["Capítulo", "Temporada", "Linha do tempo", "Coleção"],
     "nivel": 1,
-    "nomeDoJogador": "THEO"
+    "nomeDoJogador": "MATHEUS"
   },
   {
     "pergunta": "Qual dispositivo moderno também permite assistir TV pela internet?",

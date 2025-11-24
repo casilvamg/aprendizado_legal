@@ -44,12 +44,12 @@ class _PerguntaPageState extends State<PerguntaPage> {
   @override
   void initState() {
     super.initState();
-    _initializeQuiz();
+    inicializarQuiz();
   }
 
-  Future<void> _initializeQuiz() async {
+  Future<void> inicializarQuiz() async {
     await _initTts();
-    await _carregarPerguntas();
+    await carregarPerguntas();
     
     setState(() {
       _isLoading = false;
@@ -57,7 +57,7 @@ class _PerguntaPageState extends State<PerguntaPage> {
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (perguntas.isNotEmpty) {
-        _speak(perguntas[perguntaAtual]['pergunta']);
+        transformarTextoEmVoz(perguntas[perguntaAtual]['pergunta']);
       }
     });
   }
@@ -69,11 +69,11 @@ class _PerguntaPageState extends State<PerguntaPage> {
     await flutterTts.setPitch(1.0);
   }
 
-  Future<void> _speak(String text) async {
+  Future<void> transformarTextoEmVoz(String text) async {
     await flutterTts.speak(text);
   }
 
-  Future<void> _carregarPerguntas() async {
+  Future<void> carregarPerguntas() async {
     final prefs = await SharedPreferences.getInstance();
     final random = Random();
 
@@ -100,11 +100,11 @@ class _PerguntaPageState extends State<PerguntaPage> {
       value.shuffle(random);
       perguntasPorNivel[key] = value;
     });
-    
+
     perguntas = perguntasPorNivel[1] ?? [];
   }
 
-  Future<void> _salvarProgressoDaPergunta() async {
+  Future<void> salvarProgressoDaPergunta() async {
     final prefs = await SharedPreferences.getInstance();
     final String perguntaKey = perguntas[perguntaAtual]['pergunta'];
     final int currentCount = prefs.getInt(perguntaKey) ?? 0;
@@ -112,12 +112,12 @@ class _PerguntaPageState extends State<PerguntaPage> {
   }
 
   void escolherResposta(String alternativa) {
-    final bool isCorrect = alternativa == perguntas[perguntaAtual]["correta"];
-    
-    if (isCorrect) {
-      _salvarProgressoDaPergunta();
+    final bool ehCorreta = alternativa == perguntas[perguntaAtual]["correta"];
+
+    if (ehCorreta) {
+      salvarProgressoDaPergunta();
       if ([5, 10, 15].contains(acertos + 1)) {
-        _speak("${widget.nomeJogador}, porque você não me disse que você era muito bom. Fala logo eu não sabia");
+        transformarTextoEmVoz("${widget.nomeJogador}, porque você não me disse que você era muito bom.");
       }
     }
 
@@ -156,11 +156,11 @@ class _PerguntaPageState extends State<PerguntaPage> {
     });
 
     if(perguntaAtual < perguntas.length) {
-       _speak(perguntas[perguntaAtual]['pergunta']);
+       transformarTextoEmVoz(perguntas[perguntaAtual]['pergunta']);
     }
   }
 
-  void _navegarParaAjuda() async {
+  void navegarParaAjuda() async {
     final resultado = await Navigator.push(
       context,
       MaterialPageRoute(
@@ -177,7 +177,7 @@ class _PerguntaPageState extends State<PerguntaPage> {
         setState(() {
           pulosDisponiveis[puloIndex] = false;
         });
-        proximaPergunta(true); 
+        proximaPergunta(true);
       } else if (resultado.startsWith('CARTA')) {
         setState(() {
           cartaAjudaDisponivel = false;
@@ -199,7 +199,7 @@ class _PerguntaPageState extends State<PerguntaPage> {
     super.dispose();
   }
 
-  Widget _buildScoreColumn(String label, String value, Color color) {
+  Widget buildScoreColumn(String label, String value, Color color) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -235,7 +235,7 @@ class _PerguntaPageState extends State<PerguntaPage> {
             children: [
               const Text("Parabéns! Você respondeu todas as perguntas!", textAlign: TextAlign.center, style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
               const SizedBox(height: 20),
-              _buildActionButton(),
+              buildActionButton(),
             ],
           ),
         ),
@@ -287,7 +287,7 @@ class _PerguntaPageState extends State<PerguntaPage> {
                       ),
                       IconButton(
                         icon: const Icon(Icons.volume_up, color: Colors.white),
-                        onPressed: () => _speak(alt),
+                        onPressed: () => transformarTextoEmVoz(alt),
                       ),
                     ],
                   ),
@@ -301,7 +301,7 @@ class _PerguntaPageState extends State<PerguntaPage> {
                 style: const TextStyle(fontSize: 22),
               ),
             const SizedBox(height: 40),
-            if (respondeu) ...[_buildActionButton()],
+            if (respondeu) ...[buildActionButton()],
           ],
         ),
       ),
@@ -309,12 +309,12 @@ class _PerguntaPageState extends State<PerguntaPage> {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           FloatingActionButton(
-            onPressed: () => _speak(pergunta['pergunta']),
+            onPressed: () => transformarTextoEmVoz(pergunta['pergunta']),
             child: const Icon(Icons.volume_up),
           ),
           const SizedBox(width: 16),
           FloatingActionButton.extended(
-            onPressed: respondeu ? null : _navegarParaAjuda,
+            onPressed: respondeu ? null : navegarParaAjuda,
             icon: const Icon(Icons.help_outline),
             label: const Text('Ajuda'),
             backgroundColor: respondeu ? Colors.grey.shade300 : Theme.of(context).colorScheme.secondary,
@@ -327,10 +327,10 @@ class _PerguntaPageState extends State<PerguntaPage> {
         color: Theme.of(context).primaryColor,
         child: Row(
           children: [
-            if (pontuacao > 0) Expanded(child: _buildScoreColumn('ERRAR', formatarValor(valorErrar), Colors.red.shade300)),
-            if (pontuacao > 0) Expanded(child: _buildScoreColumn('PARAR', formatarValor(pontuacao), Colors.white)),
+            if (pontuacao > 0) Expanded(child: buildScoreColumn('ERRAR', formatarValor(valorErrar), Colors.red.shade300)),
+            if (pontuacao > 0) Expanded(child: buildScoreColumn('PARAR', formatarValor(pontuacao), Colors.white)),
             if (pontuacao == 0) const Spacer(),
-            Expanded(child: _buildScoreColumn('ACERTAR', formatarValor(valorAcertar), Colors.green.shade300)),
+            Expanded(child: buildScoreColumn('ACERTAR', formatarValor(valorAcertar), Colors.green.shade300)),
           ],
         ),
       ),
@@ -338,9 +338,7 @@ class _PerguntaPageState extends State<PerguntaPage> {
   }
 
   // CORRIGIDO: Lógica de fim de jogo e botões de ação
-  Widget _buildActionButton() {
-    print('teste');
-    print(perguntas);
+  Widget buildActionButton() {
     final bool isCorrect = respostaSelecionada != null && respostaSelecionada == perguntas[perguntaAtual]["correta"];
     final bool isFinalLevel = (perguntas[perguntaAtual]["nivel"] ?? 1) >= 4;
 

@@ -1,4 +1,3 @@
-import 'package:aprendizado_legal/pages/onboarding/construcao/em_desenvolvimento_page.dart';
 import 'package:flutter/material.dart';
 
 import 'iniciar_jogo_page.dart';
