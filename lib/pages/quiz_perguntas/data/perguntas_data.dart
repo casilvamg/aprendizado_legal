@@ -18,6 +18,38 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     'nomeDoJogador': 'THEO'
   },
   {
+    "pergunta": "Qual desses animais já apareceu no Chaves sendo cuidado pela Chiquinha?",
+    "imagem": "",
+    "alternativas": ["GATO", "CACHORRO", "PEIXE", "GALO"],
+    "correta": "CACHORRO",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses animais já apareceu como bichinho de estimação no seriado Chaves?",
+    "imagem": "",
+    "alternativas": ["CACHORRO", "LEÃO", "TUBARÃO", "URSO"],
+    "correta": "CACHORRO",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses animais é conhecido por roer objetos?",
+    "imagem": "",
+    "alternativas": ["RATO", "CAVALO", "VACA", "GATO"],
+    "correta": "RATO",
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses animais é um felino selvagem?",
+    "imagem": "",
+    "alternativas": ["TIGRE", "GALINHA", "CACHORRO", "TARTARUGA"],
+    "correta": "TIGRE",
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
     'pergunta': 'Qual animal late?',
     "imagem": "",
     'alternativas': ['CACHORRO', 'GATO', 'VACA', 'BOI'],
@@ -114,6 +146,14 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     'nomeDoJogador': 'THEO'
   },
   {
+    "pergunta": "Qual desses animais voa?",
+    "imagem": "",
+    "alternativas": ["POMBO", "CAVALO", "JACARÉ", "SAPO"],
+    "correta": "POMBO",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
     'pergunta': 'Qual desses não é uma Ave?',
     "imagem": "",
     'alternativas': ['GALINHA', 'PATO', 'GAVIÃO', 'JACARÉ'],
@@ -176,6 +216,214 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "alternativas": ["A", "FA", "BA", "ABACAXI"],
     'nivel': 1,
     'nomeDoJogador': 'THEO'
+  },
+  {
+    "pergunta": "Qual das opções abaixo representa uma letra?",
+    "imagem": "",
+    "correta": "B",
+    "alternativas": ["B", "BO", "BA", "BOLA"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual destas opções é apenas uma letra?",
+    "imagem": "",
+    "correta": "C",
+    "alternativas": ["CA", "C", "CO", "CASA"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual opção mostra somente uma letra do alfabeto?",
+    "imagem": "",
+    "correta": "D",
+    "alternativas": ["D", "DE", "DO", "DADO"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual das alternativas é uma única letra?",
+    "imagem": "",
+    "correta": "E",
+    "alternativas": ["ELEFANTE", "ELA", "E", "ERA"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual das opções abaixo é apenas uma letra e não uma sílaba?",
+    "imagem": "",
+    "correta": "L",
+    "alternativas": ["LA", "LE", "L", "LO"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual das alternativas representa somente uma letra do alfabeto?",
+    "imagem": "",
+    "correta": "M",
+    "alternativas": ["MA", "AM", "ME", "M"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual opção mostra uma letra e não uma palavra?",
+    "imagem": "",
+    "correta": "N",
+    "alternativas": ["N", "NO", "NA", "NÃO"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual destas alternativas é apenas uma letra isolada?",
+    "imagem": "",
+    "correta": "O",
+    "alternativas": ["OLA", "O", "OU", "OS"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra começa com a mesma letra que *TAMBORETE*?",
+    "imagem": "",
+    "correta": "TEXTO",
+    "alternativas": ["PATO", "MALA", "TEXTO", "BOLA"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual dessas palavras tem **3 sílabas**?",
+    "imagem": "",
+    "correta": "PIPETA",
+    "alternativas": ["SOL", "MESA", "PIPETA", "PÃO"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra tem a **letra R** no meio?",
+    "imagem": "",
+    "correta": "CARO",
+    "alternativas": ["BOLA", "CARO", "MATA", "MEIA"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual dessas palavras termina com a mesma sílaba de **SAPATO**?",
+    "imagem": "",
+    "correta": "TOMATO",
+    "alternativas": ["GATO", "TOMATO", "SAPO", "POTE"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra é formada por **apenas uma sílaba**?",
+    "imagem": "",
+    "correta": "FLOR",
+    "alternativas": ["FLOR", "BONECA", "MELÃO", "BOLO"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Quem é o personagem principal do seriado Todo Mundo Odeia o Chris?",
+    "imagem": "",
+    "correta": "Chris",
+    "alternativas": ["Greg", "Julius", "Rochelle", "Chris"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Quem é o dono da mercearia onde Chris trabalha?",
+    "imagem": "",
+    "correta": "Doc",
+    "alternativas": ["Caruso", "Doc", "Julius", "Jerome"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual personagem sempre rouba o lanche ou dinheiro do Chris?",
+    "imagem": "",
+    "correta": "Caruso",
+    "alternativas": ["Greg", "Julius", "Caruso", "Jerome"],
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quem costuma dar conselhos estranhos e engraçados para o Chris na rua?",
+    "imagem": "",
+    "correta": "Jerome",
+    "alternativas": ["Doc", "Greg", "Jerome", "Risky"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é o nome da irmã do Chris?",
+    "imagem": "",
+    "correta": "Tonya",
+    "alternativas": ["Tonya", "Keisha", "Rochelle", "Pam"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual é o nome do melhor amigo do Chris?",
+    "imagem": "",
+    "correta": "Greg",
+    "alternativas": ["Tonya", "Greg", "Julius", "Jerome"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual dessas tem **duas vogais juntas**?",
+    "imagem": "",
+    "correta": "CADEIRA",
+    "alternativas": ["CADEIRA", "PATO", "CASA", "VELA"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra tem **4 letras**?",
+    "imagem": "",
+    "correta": "FITA",
+    "alternativas": ["CARRO", "FITA", "BICICLETA", "GELO"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual dessas palavras tem a sílaba **PA**?",
+    "imagem": "",
+    "correta": "PAPEL",
+    "alternativas": ["REDE", "PAPEL", "MORRO", "TETO"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra possui **mais sílabas**?",
+    "imagem": "",
+    "correta": "BORBOLETA",
+    "alternativas": ["SOL", "GATO", "BORBOLETA", "POTE"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual dessas palavras **não** tem a letra A?",
+    "imagem": "",
+    "correta": "MEL",
+    "alternativas": ["MALA", "MEL", "PATO", "CASA"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual das opções apresenta somente uma letra e não uma combinação?",
+    "imagem": "",
+    "correta": "P",
+    "alternativas": ["PA", "AP", "P", "PO"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual das opções abaixo é só uma letra?",
+    "imagem": "",
+    "correta": "F",
+    "alternativas": ["FOCA", "FAROL", "FA", "F"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
   },
   {
     "pergunta": "Qual das opções abaixo representa uma palavra?",
@@ -866,6 +1114,30 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
+    "pergunta": "Complete a frase: O gato subiu no muro para __ melhor.",
+    "imagem": "",
+    "correta": "ENXERGAR",
+    "alternativas": ["ENXERGAR", "VOAR", "SUMIR", "LATIR"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Complete a frase: O vento soprou forte e a porta começou a __.",
+    "imagem": "",
+    "correta": "BALANÇAR",
+    "alternativas": ["BALANÇAR", "COZINHAR", "BRILHAR", "MIAR"],
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Complete a frase: A professora pediu para todos __ a lição.",
+    "imagem": "",
+    "correta": "FAZEREM",
+    "alternativas": ["FAZEREM", "CORREREM", "BRIGAREM", "SUMIREM"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
     "pergunta": "Complete a frase: Dona aranha subiu pela __ ?",
     "imagem": "",
     "correta": "PAREDE",
@@ -1124,8 +1396,16 @@ final List<Map<String, dynamic>> listaDePerguntas = [
   {
     "pergunta": "Qual dos nomes abaixo é menor?",
     "imagem": "",
-    "correta": "MATHEUS",
-    "alternativas": ["RAUL", "BOB", "ANA", "MATHEUS"],
+    "correta": "ANA",
+    "alternativas": ["RAUL", "ANA", "GIOVANA", "MATHEUS"],
+    'nivel': 2,
+    'nomeDoJogador': 'THEO'
+  },
+  {
+    "pergunta": "Qual dos nomes abaixo é maior?",
+    "imagem": "",
+    "correta": "GIOVANA",
+    "alternativas": ["RAUL", "ANA", "GIOVANA", "RENNAN"],
     'nivel': 2,
     'nomeDoJogador': 'THEO'
   },
@@ -1800,6 +2080,14 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "8",
     "alternativas": ["6", "8", "10", "5"],
+    "nivel": 2,
+    'nomeDoJogador': 'THEO'
+  },
+  {
+    "pergunta": "Qual número vem depois do 50?",
+    "imagem": "",
+    "correta": "51",
+    "alternativas": ["49", "52", "100", "51"],
     "nivel": 3,
     'nomeDoJogador': 'THEO'
   },
@@ -1876,6 +2164,14 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     'nomeDoJogador': 'THEO'
   },
   {
+    "pergunta": "Quantos dedos temos em duas mãos e um pé?",
+    "imagem": "",
+    "correta": "15",
+    "alternativas": ["14", "15", "16", "17"],
+    "nivel": 1,
+    'nomeDoJogador': 'THEO'
+  },
+  {
     "pergunta": "Qual forma é redonda?",
     "imagem": "",
     "correta": "CIRCULO",
@@ -1900,6 +2196,86 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     'nomeDoJogador': 'THEO'
   },
   {
+    "pergunta": "Qual desses é um meio de transporte?",
+    "imagem": "",
+    "correta": "BICICLETA",
+    "alternativas": ["BICICLETA", "MESA", "GATO", "CAMISA"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses é um meio de transporte?",
+    "imagem": "",
+    "correta": "AVIÃO",
+    "alternativas": ["AVIÃO", "BANANA", "SAPATO", "CAMA"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses é um meio de transporte?",
+    "imagem": "",
+    "correta": "TREM",
+    "alternativas": ["TREM", "PÃO", "CÃO", "LIVRO"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses é um meio de transporte?",
+    "imagem": "",
+    "correta": "BARCO",
+    "alternativas": ["BARCO", "SOL", "GATO", "JANELA"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses é um meio de transporte?",
+    "imagem": "",
+    "correta": "MOTOCICLETA",
+    "alternativas": ["MOTOCICLETA", "MAÇÃ", "SAPATO", "CAMA"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses é um meio de transporte?",
+    "imagem": "",
+    "correta": "ÔNIBUS",
+    "alternativas": ["ÔNIBUS", "BANANA", "SAPATO", "CANETA"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses é um meio de transporte?",
+    "imagem": "",
+    "correta": "NAVIO",
+    "alternativas": ["NAVIO", "PAPEL", "GATO", "MESA"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses é um meio de transporte?",
+    "imagem": "",
+    "correta": "TÁXI",
+    "alternativas": ["TÁXI", "SOL", "CÃO", "LIVRO"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses é um meio de transporte?",
+    "imagem": "",
+    "correta": "HELICÓPTERO",
+    "alternativas": ["HELICÓPTERO", "BANANA", "CAMA", "SAPATO"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses é um meio de transporte?",
+    "imagem": "",
+    "correta": "METRÔ",
+    "alternativas": ["METRÔ", "GATO", "LIVRO", "MAÇÃ"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
     "pergunta": "Qual desses NÃO é um meio de transporte?",
     "imagem": "",
     "correta": "BANANA",
@@ -1916,9 +2292,89 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     'nomeDoJogador': 'THEO'
   },
   {
-    "pergunta": "Quanto é 4 - 1?",
+    "pergunta": "Qual desses NÃO é um meio de transporte?",
     "imagem": "",
-    "correta": "3",
+    "correta": "MAÇÃ",
+    "alternativas": ["CARRO", "AVIÃO", "BICICLETA", "MAÇÃ"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses NÃO é um meio de transporte?",
+    "imagem": "",
+    "correta": "SAPATO",
+    "alternativas": ["TREM", "BARCO", "SAPATO", "ÔNIBUS"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses NÃO é um meio de transporte?",
+    "imagem": "",
+    "correta": "CAMA",
+    "alternativas": ["HELICÓPTERO", "METRÔ", "TÁXI", "CAMA"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses NÃO é um meio de transporte?",
+    "imagem": "",
+    "correta": "CANETA",
+    "alternativas": ["BARCO", "BICICLETA", "CANETA", "AVIÃO"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses NÃO é um meio de transporte?",
+    "imagem": "",
+    "correta": "BOLSA",
+    "alternativas": ["ÔNIBUS", "TREM", "BOLSA", "CARRO"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses NÃO é um meio de transporte?",
+    "imagem": "",
+    "correta": "LIVRO",
+    "alternativas": ["METRÔ", "HELICÓPTERO", "LIVRO", "BICICLETA"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses NÃO é um meio de transporte?",
+    "imagem": "",
+    "correta": "CHAVE",
+    "alternativas": ["CARRO", "TÁXI", "HELICÓPTERO", "CHAVE"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses NÃO é um meio de transporte?",
+    "imagem": "",
+    "correta": "MALETAS",
+    "alternativas": ["BICICLETA", "BARCO", "MALETAS", "AVIÃO"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses NÃO é um meio de transporte?",
+    "imagem": "",
+    "correta": "CANECAS",
+    "alternativas": ["ÔNIBUS", "CANECAS", "CARRO", "METRÔ"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses NÃO é um meio de transporte?",
+    "imagem": "",
+    "correta": "FRUTA",
+    "alternativas": ["BARCO", "TREM", "FRUTA", "BICICLETA"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Quanto é 4 - 3?",
+    "imagem": "",
+    "correta": "1",
     "alternativas": ["2", "3", "5", "1"],
     "nivel": 1,
     'nomeDoJogador': 'THEO'
@@ -1938,6 +2394,86 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "alternativas": ["CASA", "BOLA", "SETE", "CARRO"],
     "nivel": 1,
     'nomeDoJogador': 'THEO'
+  },
+  {
+    "pergunta": "Qual destes é um número?",
+    "imagem": "",
+    "correta": "UM",
+    "alternativas": ["UM", "GATO", "SOL", "CAMA"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual destes é um número?",
+    "imagem": "",
+    "correta": "DOIS",
+    "alternativas": ["DOIS", "BOLA", "LIVRO", "MAÇÃ"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual destes é um número?",
+    "imagem": "",
+    "correta": "TRÊS",
+    "alternativas": ["TRÊS", "SOL", "GATO", "CANETA"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual destes é um número?",
+    "imagem": "",
+    "correta": "QUATRO",
+    "alternativas": ["QUATRO", "CARRO", "CASA", "BOLA"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual destes é um número?",
+    "imagem": "",
+    "correta": "CINCO",
+    "alternativas": ["CINCO", "GATO", "SOL", "LIVRO"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual destes é um número?",
+    "imagem": "",
+    "correta": "SEIS",
+    "alternativas": ["SEIS", "CAMA", "PAPEL", "MAÇÃ"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual destes é um número?",
+    "imagem": "",
+    "correta": "OITO",
+    "alternativas": ["OITO", "GATO", "SOL", "CARRO"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual destes é um número?",
+    "imagem": "",
+    "correta": "NOVE",
+    "alternativas": ["NOVE", "BOLA", "LIVRO", "CANETA"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual destes é um número?",
+    "imagem": "",
+    "correta": "DEZ",
+    "alternativas": ["DEZ", "CAMA", "SOL", "MAÇÃ"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual destes é um número?",
+    "imagem": "",
+    "correta": "SETENTA",
+    "alternativas": ["SETENTA", "CARRO", "GATO", "BOLA"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
   },
   {
     "pergunta": "Qual palavra rima com sapato?",
@@ -2529,6 +3065,54 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
+    "pergunta": "De onde vem a água que bebemos?",
+    "imagem": "",
+    "correta": "DA NATUREZA",
+    "alternativas": ["DA NATUREZA", "DA TV", "DO CARRO", "DO SOFÁ"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "O que as plantas precisam para crescer?",
+    "imagem": "",
+    "correta": "LUZ DO SOL",
+    "alternativas": ["LUZ DO SOL", "BALAS", "BRINQUEDOS", "SALGADINHOS"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quem devemos proteger para ajudar o meio ambiente?",
+    "imagem": "",
+    "correta": "OS ANIMAIS",
+    "alternativas": ["OS ANIMAIS", "OS LÁPIS", "AS PAREDES", "OS SAPATOS"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "O que economizamos quando apagamos a luz ao sair do quarto?",
+    "imagem": "",
+    "correta": "ENERGIA",
+    "alternativas": ["ENERGIA", "BRINQUEDOS", "ÁGUA DA PISCINA", "AREIA"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "O que devemos fazer com uma planta que está murchando?",
+    "imagem": "",
+    "correta": "REGAR",
+    "alternativas": ["REGAR", "PINTAR", "ESCONDER", "PULAR EM CIMA"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "O que devemos fazer com o lixo para ajudar o planeta?",
+    "imagem": "",
+    "correta": "JOGAR NA LIXEIRA",
+    "alternativas": ["QUEIMAR NO QUINTAL", "JOGAR NA RUA", "ESCONDER", "JOGAR NA LIXEIRA"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
     "pergunta": "O que as árvores liberam que é essencial para respirarmos?",
     "imagem": "",
     "correta": "OXIGÊNIO",
@@ -2561,6 +3145,46 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
+    "pergunta": "Quem dirige o ônibus que leva as pessoas para vários lugares?",
+    "imagem": "",
+    "correta": "MOTORISTA DE ÔNIBUS",
+    "alternativas": ["CHEF DE COZINHA", "MOTORISTA DE ÔNIBUS", "ENFERMEIRO", "DETETIVE"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses profissionais constrói casas e prédios?",
+    "imagem": "",
+    "correta": "PEDREIRO",
+    "alternativas": ["POLICIAL", "PEDREIRO", "PILOTO", "DANÇARINO"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quem entrega cartas e encomendas nas casas?",
+    "imagem": "",
+    "correta": "CARTEIRO",
+    "alternativas": ["CARTEIRO", "MÚSICO", "MÉDICO", "PESCADOR"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses profissionais trabalha cuidando de animais doentes?",
+    "imagem": "",
+    "correta": "VETERINÁRIO",
+    "alternativas": ["VENDEDOR", "VETERINÁRIO", "ENGENHEIRO", "LUTADOR"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses profissionais ajuda a manter a cidade limpa?",
+    "imagem": "",
+    "correta": "GARIS",
+    "alternativas": ["GARIS", "ADVOGADO", "ATOR", "CANTOR"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
     "pergunta": "Os rios, mares e lagos fazem parte de qual recurso natural?",
     "imagem": "",
     "correta": "ÁGUA",
@@ -2575,6 +3199,14 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "alternativas": ["PEDRAS", "AREIA", "ÁGUA", "BRINQUEDOS"],
     "nivel": 1,
     "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "O que devemos economizar para ajudar o planeta?",
+    "imagem": "",
+    "correta": "ÁGUA",
+    "alternativas": ["PEDRAS", "AREIA", "ÁGUA", "BRINQUEDOS"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
   },
   {
     "pergunta": "As plantas absorvem água e nutrientes através de qual parte?",
@@ -2865,12 +3497,28 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
+    "pergunta": "Se hoje é terça-feira, que dia será daqui a 3 dias?",
+    "imagem": "",
+    "correta": "SEXTA-FEIRA",
+    "alternativas": ["QUINTA-FEIRA", "SEXTA-FEIRA", "SÁBADO", "DOMINGO"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
     "pergunta": "Matheus leu 12 páginas na segunda-feira e o dobro disso na terça-feira. Quantas páginas ele leu na terça?",
     "imagem": "",
     "correta": "24",
     "alternativas": ["20", "22", "24", "26"],
     "nivel": 3,
     "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Se ontem foi domingo, que dia é hoje?",
+    "imagem": "",
+    "correta": "SEGUNDA-FEIRA",
+    "alternativas": ["TERÇA-FEIRA", "SÁBADO", "SEGUNDA-FEIRA", "QUARTA-FEIRA"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
   },
   {
     "pergunta": "Matheus guardou 3/5 de suas economias em um cofre. Se ele tinha 50 reais, quanto guardou?",
@@ -3017,6 +3665,126 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
+    "pergunta": "Qual palavra possui um ditongo?",
+    "imagem": "",
+    "correta": "CAVALO",
+    "alternativas": ["CAVALO", "GATO", "SOL", "MESA"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra possui um ditongo?",
+    "imagem": "",
+    "correta": "PAU",
+    "alternativas": ["PAU", "PÉ", "SOL", "BOLA"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra possui um ditongo?",
+    "imagem": "",
+    "correta": "BOI",
+    "alternativas": ["BOI", "CARRO", "LIVRO", "CÃO"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra possui um tritongo?",
+    "imagem": "",
+    "correta": "ENXAGUOU",
+    "alternativas": ["ENXAGUOU", "PATO", "BOLA", "PEITO"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destas palavras apresenta tritongo?",
+    "imagem": "",
+    "correta": "URUGUAI",
+    "alternativas": ["URUGUAI", "MESA", "FITA", "SAPO"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Onde há um tritongo?",
+    "imagem": "",
+    "correta": "IGUAIS",
+    "alternativas": ["IGUAIS", "CASA", "LIVRO", "RUA"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra contém tritongo?",
+    "imagem": "",
+    "correta": "PARAGUAI",
+    "alternativas": ["PARAGUAI", "GATO", "BONECA", "PENTE"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Em qual palavra aparece um tritongo?",
+    "imagem": "",
+    "correta": "QUAIS",
+    "alternativas": ["QUAIS", "PATO", "NOME", "PORTA"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra possui um ditongo?",
+    "imagem": "",
+    "correta": "FAIXA",
+    "alternativas": ["FAIXA", "SOL", "GATO", "MESA"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra possui um ditongo?",
+    "imagem": "",
+    "correta": "MEIO",
+    "alternativas": ["MEIO", "CÃO", "BOLA", "LIVRO"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra possui um ditongo?",
+    "imagem": "",
+    "correta": "COURO",
+    "alternativas": ["COURO", "PÉ", "SOL", "GATO"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra possui um ditongo?",
+    "imagem": "",
+    "correta": "NOITE",
+    "alternativas": ["NOITE", "CARRO", "BOLA", "CAMA"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra possui um ditongo?",
+    "imagem": "",
+    "correta": "CAIXA",
+    "alternativas": ["CAIXA", "SOL", "GATO", "MAÇÃ"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra possui um ditongo?",
+    "imagem": "",
+    "correta": "PAIXÃO",
+    "alternativas": ["PAIXÃO", "PAPEL", "GATO", "SOL"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra possui um ditongo?",
+    "imagem": "",
+    "correta": "LEITE",
+    "alternativas": ["LEITE", "BOLA", "CARRO", "SOL"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
     "pergunta": "Qual palavra deve ser acentuada corretamente?",
     "imagem": "",
     "correta": "PORÉM",
@@ -3045,6 +3813,102 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "EU ESTUDEI ONTEM.",
     "alternativas": ["EU ESTUDAVA ONTEM.", "EU ESTUDEREI AMANHÃ.", "EU ESTUDEI ONTEM.", "EU ESTUDO AGORA."],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual frase está no pretérito perfeito?",
+    "imagem": "",
+    "correta": "EU CORRI MAIS CEDO.",
+    "alternativas": ["EU CORRIA TODO DIA.", "EU CORREREI DEPOIS.", "EU CORRI MAIS CEDO.", "EU CORRO AGORA."],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual frase está no pretérito perfeito?",
+    "imagem": "",
+    "correta": "ELA LEU O LIVRO.",
+    "alternativas": ["ELA LERÁ O LIVRO.", "ELA LIA O LIVRO.", "ELA LEU O LIVRO.", "ELA LÊ O LIVRO."],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual frase está no pretérito perfeito?",
+    "imagem": "",
+    "correta": "NÓS VIAJAMOS NO ANO PASSADO.",
+    "alternativas": ["NÓS VIAJAREMOS AMANHÃ.", "NÓS VIAJÁVAMOS MUITO.", "NÓS VIAJAMOS NO ANO PASSADO.", "NÓS VIAJAMOS TODO MÊS."],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual frase está no pretérito perfeito?",
+    "imagem": "",
+    "correta": "ELE FEZ A TAREFA.",
+    "alternativas": ["ELE FAZ A TAREFA.", "ELE FARÁ A TAREFA.", "ELE FEZ A TAREFA.", "ELE FAZIA A TAREFA."],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual frase está no pretérito perfeito?",
+    "imagem": "",
+    "correta": "VOCÊ CHEGOU CEDO.",
+    "alternativas": ["VOCÊ CHEGAVA CEDO.", "VOCÊ CHEGARÁ CEDO.", "VOCÊ CHEGOU CEDO.", "VOCÊ CHEGA CEDO."],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual frase está no presente?",
+    "imagem": "",
+    "correta": "EU BRINCO NO PARQUE.",
+    "alternativas": ["EU BRINQUEI NO PARQUE.", "EU BRINCO NO PARQUE.", "EU BRINCAREI NO PARQUE.", "EU BRINCAVA NO PARQUE."],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual frase está no passado?",
+    "imagem": "",
+    "correta": "EU CORRI ONTEM.",
+    "alternativas": ["EU CORRO TODO DIA.", "EU CORREREI AMANHÃ.", "EU CORRIA ÀS VEZES.", "EU CORRI ONTEM."],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual frase está no futuro?",
+    "imagem": "",
+    "correta": "EU VIAJAREI AMANHÃ.",
+    "alternativas": ["EU VIAJEI ONTEM.", "EU VIAJO AGORA.", "EU VIAJAVA MUITO.", "EU VIAJAREI AMANHÃ."],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual frase está no presente?",
+    "imagem": "",
+    "correta": "ELA ESTUDA TODOS OS DIAS.",
+    "alternativas": ["ELA ESTUDOU MUITO.", "ELA ESTUDARÁ MAIS TARDE.", "ELA ESTUDA TODOS OS DIAS.", "ELA ESTUDAVA SEMPRE."],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual frase está no passado?",
+    "imagem": "",
+    "correta": "ELE LEU O LIVRO.",
+    "alternativas": ["ELE LERÁ O LIVRO.", "ELE LIA O LIVRO.", "ELE LÊ O LIVRO.", "ELE LEU O LIVRO."],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual frase está no futuro?",
+    "imagem": "",
+    "correta": "NÓS JOGAREMOS AMANHÃ.",
+    "alternativas": ["NÓS JOGAMOS AGORA.", "NÓS JOGÁVAMOS MUITO.", "NÓS JOGAREMOS AMANHÃ.", "NÓS JOGAMOS ONTEM."],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual frase está no presente?",
+    "imagem": "",
+    "correta": "VOCÊ COME PÃO TODO DIA.",
+    "alternativas": ["VOCÊ COMEU PÃO ONTEM.", "VOCÊ COMERÁ PÃO AMANHÃ.", "VOCÊ COMIA MUITO PÃO.", "VOCÊ COME PÃO TODO DIA."],
     "nivel": 1,
     "nomeDoJogador": "MATHEUS"
   },
@@ -3097,6 +3961,262 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
+    "pergunta": "Qual palavra está escrita corretamente?",
+    "imagem": "",
+    "correta": "ESCOLA",
+    "alternativas": ["ISCOLA", "ESCOLA", "ESCOla", "ESKOLA"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual é a escrita correta?",
+    "imagem": "",
+    "correta": "PRESSÃO",
+    "alternativas": ["PRESÃO", "PREÇÃO", "PRESSÃO", "PREÇÇÃO"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra está certa?",
+    "imagem": "",
+    "correta": "MEXER",
+    "alternativas": ["MEXER", "MECHER", "MEXÊR", "MEXSER"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra está escrita corretamente?",
+    "imagem": "",
+    "correta": "CONSCIÊNCIA",
+    "alternativas": ["CONCIÊNCIA", "CONSCIÊNCIA", "CONSÊNSIA", "CONSCIENÇA"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Assinale a forma correta da palavra:",
+    "imagem": "",
+    "correta": "CENÁRIO",
+    "alternativas": ["CENÁRIO", "SENÁRIO", "CENARRIO", "CENÁRÍO"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual opção está correta?",
+    "imagem": "",
+    "correta": "PROFISSÃO",
+    "alternativas": ["PROFIÇÃO", "PROFISSÃO", "PROFFISSÃO", "PROFIÇÂO"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Escolha a palavra certa:",
+    "imagem": "",
+    "correta": "DESENHO",
+    "alternativas": ["DEZENHO", "DESENHO", "DESENIO", "DESÊNHO"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é a escrita correta?",
+    "imagem": "",
+    "correta": "AGRESSIVO",
+    "alternativas": ["AGRECIVO", "AGRESSIVO", "AGRESIVO", "AGRRESSIVO"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra está escrita corretamente?",
+    "imagem": "",
+    "correta": "EXISTIR",
+    "alternativas": ["ESISTIR", "EXISTIR", "EXIZTIR", "EXICTIR"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Assinale a forma correta:",
+    "imagem": "",
+    "correta": "CURIOSIDADE",
+    "alternativas": ["CURIOSSIDADE", "CURIOSIDADE", "CURIOSIDÁDE", "CURIOSIDDE"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual opção é correta?",
+    "imagem": "",
+    "correta": "CHUVEIRO",
+    "alternativas": ["XUVEIRO", "CHUVEIRO", "CHUVEIROS", "CHUVEYRO"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Escolha a palavra escrita da forma certa:",
+    "imagem": "",
+    "correta": "FAIXA",
+    "alternativas": ["FAXA", "FAICHA", "FAIXA", "FASHA"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra está escrita corretamente?",
+    "imagem": "",
+    "correta": "AQUECER",
+    "alternativas": ["AQUESSER", "AQUECER", "AQUESER", "AQUEÇER"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra é um substantivo?",
+    "imagem": "",
+    "correta": "CADERNO",
+    "alternativas": ["CORRER", "BONITO", "CADERNO", "RAPIDAMENTE"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra é um verbo?",
+    "imagem": "",
+    "correta": "CORRER",
+    "alternativas": ["TRISTE", "CORRER", "AMARELO", "LINDO"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Em qual frase o verbo está no passado?",
+    "imagem": "",
+    "correta": "ELE CORREU RÁPIDO.",
+    "alternativas": ["ELE CORRE RÁPIDO.", "ELE VAI CORRER.", "ELE CORREU RÁPIDO.", "ELE CORRE AGORA."],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra é um adjetivo?",
+    "imagem": "",
+    "correta": "ALTO",
+    "alternativas": ["ALTO", "PULAR", "CORRER", "JANELA"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual frase está escrita corretamente?",
+    "imagem": "",
+    "correta": "A MENINA CHEGOU CEDO.",
+    "alternativas": ["A MENINA CHEGOU CEDOO.", "A MENINA CHEGOU CEDO.", "A MENINA CHEGOU CEDU.", "A MENINA CHEGOU CEDÓ."],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra completa a frase? 'Ele ___ para a escola.'",
+    "imagem": "",
+    "correta": "FOI",
+    "alternativas": ["VOU", "FOI", "IREI", "FUISTE"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual alternativa é um pronome?",
+    "imagem": "",
+    "correta": "ELE",
+    "alternativas": ["CORRER", "BONITA", "ELE", "CASA"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual frase possui sujeito?",
+    "imagem": "",
+    "correta": "O MENINO CHOROU.",
+    "alternativas": ["CHOROU MUITO.", "O MENINO CHOROU.", "CORRENDO NA RUA.", "BRINCANDO NO PARQUE."],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra indica lugar?",
+    "imagem": "",
+    "correta": "ESCOLA",
+    "alternativas": ["CORRER", "TRISTE", "ESCOLA", "BELO"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra é uma cor?",
+    "imagem": "",
+    "correta": "VERDE",
+    "alternativas": ["VERDE", "CADERNO", "CORRER", "LIVRO"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra é um objeto?",
+    "imagem": "",
+    "correta": "MESA",
+    "alternativas": ["MESA", "CORRER", "TRISTE", "ALTO"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra indica um lugar?",
+    "imagem": "",
+    "correta": "ESCOLA",
+    "alternativas": ["ESCOLA", "PULAR", "LINDO", "AMARELO"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra é um substantivo?",
+    "imagem": "",
+    "correta": "CASA",
+    "alternativas": ["CASA", "CORRER", "TRISTE", "ALTO"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual frase está correta?",
+    "imagem": "",
+    "correta": "EU BRINQUEI HOJE.",
+    "alternativas": ["EU BRINQUEI HOJE.", "EU BRINCA HOJE.", "EU BRINCOU HOJE.", "EU BRINCAI HOJE."],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra é um pronome?",
+    "imagem": "",
+    "correta": "EU",
+    "alternativas": ["EU", "BOLA", "CORRER", "VERDE"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual frase está no plural?",
+    "imagem": "",
+    "correta": "OS CÃES CORRERAM.",
+    "alternativas": ["O CÃO CORREU.", "OS CÃES CORRERAM.", "O CÃO VAI CORRER.", "O CÃO CORRE."],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Assinale a forma correta:",
+    "imagem": "",
+    "correta": "ENXAGUAR",
+    "alternativas": ["ENCHAGUAR", "ENXAGUAR", "ENCHAGUÁR", "EXAGUAR"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual opção está certa?",
+    "imagem": "",
+    "correta": "EXCEÇÃO",
+    "alternativas": ["EXEÇÃO", "EXCESSÃO", "EXCEÇÃO", "ECSEÇÃO"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual opção está correta?",
+    "imagem": "",
+    "correta": "AMIZADE",
+    "alternativas": ["AMIZADE", "AMIZADE", "AMIZadi", "AMIZADi"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
     "pergunta": "Na frase 'O garoto estudou bastante', a palavra 'bastante' é:",
     "imagem": "",
     "correta": "ADVÉRBIO",
@@ -3109,6 +4229,86 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "PONTO FINAL",
     "alternativas": ["VÍRGULA", "TRAVESSÃO", "PONTO FINAL", "PONTO E VÍRGULA"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses sinais indica uma pausa curta na leitura?",
+    "imagem": "",
+    "correta": "VÍRGULA",
+    "alternativas": ["PONTO FINAL", "VÍRGULA", "DOIS PONTOS", "PONTO DE INTERROGAÇÃO"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual sinal usamos para indicar o fim de uma frase?",
+    "imagem": "",
+    "correta": "PONTO FINAL",
+    "alternativas": ["VÍRGULA", "ACENTO AGUDO", "PONTO FINAL", "ASPAS"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual sinal é usado para indicar uma pergunta?",
+    "imagem": "",
+    "correta": "PONTO DE INTERROGAÇÃO",
+    "alternativas": ["PONTO FINAL", "PONTO DE INTERROGAÇÃO", "VÍRGULA", "HÍFEN"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses sinais indica surpresa ou espanto?",
+    "imagem": "",
+    "correta": "PONTO DE EXCLAMAÇÃO",
+    "alternativas": ["PONTO FINAL", "VÍRGULA", "DOIS PONTOS", "PONTO DE EXCLAMAÇÃO"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual sinal serve para explicar algo ou apresentar uma lista?",
+    "imagem": "",
+    "correta": "DOIS PONTOS",
+    "alternativas": ["PONTO DE INTERROGAÇÃO", "VÍRGULA", "DOIS PONTOS", "TRAVESSÃO"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses sinais é usado para marcar falas em diálogos?",
+    "imagem": "",
+    "correta": "TRAVESSÃO",
+    "alternativas": ["VÍRGULA", "TRAVESSÃO", "PONTO FINAL", "PONTO E VÍRGULA"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual sinal indica uma pausa intermediária, maior que a vírgula?",
+    "imagem": "",
+    "correta": "PONTO E VÍRGULA",
+    "alternativas": ["VÍRGULA", "PONTO FINAL", "TRAVESSÃO", "PONTO E VÍRGULA"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual sinal é usado para separar explicações dentro da frase?",
+    "imagem": "",
+    "correta": "PARÊNTESES",
+    "alternativas": ["ASPAS", "PONTO FINAL", "PARÊNTESES", "VÍRGULA"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual sinal usamos para mostrar que alguém está falando?",
+    "imagem": "",
+    "correta": "ASPAS",
+    "alternativas": ["ASPAS", "VÍRGULA", "DOIS PONTOS", "PONTO FINAL"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses sinais não indica pausa na leitura?",
+    "imagem": "",
+    "correta": "HÍFEN",
+    "alternativas": ["PONTO FINAL", "VÍRGULA", "HÍFEN", "DOIS PONTOS"],
     "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
@@ -3142,6 +4342,136 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
+    "pergunta": "Qual opção contém apenas substantivos?",
+    "imagem": "",
+    "correta": "CÃO, PRAIA, LIVRO",
+    "alternativas": [
+      "CORRER, CÃO, FELIZ",
+      "CÃO, PRAIA, LIVRO",
+      "AZUL, ESCOLA, ALTO",
+      "RAPIDAMENTE, BOLA, BONITO"
+    ],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual conjunto possui somente substantivos?",
+    "imagem": "",
+    "correta": "CASA, MONTANHA, JANELA",
+    "alternativas": [
+      "LINDO, CASA, ESCREVER",
+      "CASA, MONTANHA, JANELA",
+      "CORRIDA, RÁPIDO, CALMO",
+      "PULAR, JANELA, TRISTE"
+    ],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Em qual alternativa todos os termos são substantivos?",
+    "imagem": "",
+    "correta": "CARRO, RUA, ESCOLA",
+    "alternativas": [
+      "CARRO, RUA, ESCOLA",
+      "CORRER, RUA, ALTO",
+      "BONITO, TRISTE, FELIZ",
+      "PULAR, NADAR, CANTAR"
+    ],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual opção apresenta apenas substantivos?",
+    "imagem": "",
+    "correta": "PÁSSARO, CIDADE, LIVRARIA",
+    "alternativas": [
+      "PÁSSARO, CIDADE, LIVRARIA",
+      "ALTO, RÁPIDO, FORTE",
+      "CANTAR, CIDADE, ESCREVER",
+      "CORDA, BRINCAR, AZUL"
+    ],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual opção apresenta apenas verbos?",
+    "imagem": "",
+    "correta": "CORRER, PULAR, CANTAR",
+    "alternativas": [
+      "CORRER, PULAR, CANTAR",
+      "CORRIDA, PULAR, RÁPIDO",
+      "BONITO, FELIZ, CORRER",
+      "MESA, PULAR, LIVRO"
+    ],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual alternativa contém somente adjetivos?",
+    "imagem": "",
+    "correta": "ALTO, BONITO, RÁPIDO",
+    "alternativas": [
+      "ALTO, BONITO, RÁPIDO",
+      "CASA, BONITO, CORRER",
+      "RÁPIDO, CORRER, MESA",
+      "TRISTE, FELIZ, ANDAR"
+    ],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual conjunto apresenta apenas substantivos?",
+    "imagem": "",
+    "correta": "PONTE, LIVRO, JARDIM",
+    "alternativas": [
+      "PONTE, LIVRO, JARDIM",
+      "LIVRO, LER, AZUL",
+      "ALTO, JARDIM, PULAR",
+      "CORDA, CORRER, FELIZ"
+    ],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Em qual opção todas as palavras são adjetivos?",
+    "imagem": "",
+    "correta": "TRISTE, DOCE, AMARGO",
+    "alternativas": [
+      "TRISTE, DOCE, AMARGO",
+      "TRISTE, AMOR, ALTO",
+      "DOCE, CORRER, BONITO",
+      "CARRO, DOCE, AMARGO"
+    ],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual opção contém somente verbos?",
+    "imagem": "",
+    "correta": "LER, ESCREVER, ANDAR",
+    "alternativas": [
+      "LER, ESCREVER, ANDAR",
+      "LER, CASA, BONITO",
+      "ALTO, RÁPIDO, ANDAR",
+      "CORRIDA, ESCREVER, MESA"
+    ],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual grupo é formado só por substantivos?",
+    "imagem": "",
+    "correta": "SAPATO, FLORES, MERCADO",
+    "alternativas": [
+      "CORRER, SAPATO, LINDO",
+      "SAPATO, FLORES, MERCADO",
+      "VERDE, QUENTE, GELADO",
+      "CANTAR, VIAJAR, SORRIR"
+    ],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
     "pergunta": "Ao ler um texto, o que significa ‘ideia principal’?",
     "alternativas": [
       "O título do texto",
@@ -3149,7 +4479,9 @@ final List<Map<String, dynamic>> listaDePerguntas = [
       "A frase mais longa",
       "A última frase do texto"
     ],
-    "correta": "A informação mais importante que o texto quer transmitir"
+    "correta": "A informação mais importante que o texto quer transmitir",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
   },
   {
     "pergunta": "Qual opção apresenta um substantivo abstrato?",
@@ -3159,147 +4491,206 @@ final List<Map<String, dynamic>> listaDePerguntas = [
       "Caderno",
       "Bola"
     ],
-    "correta": "Alegria"
+    "correta": "Alegria",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual opção apresenta um substantivo abstrato?",
+    "imagem": "",
+    "alternativas": ["Coragem", "Mesa", "Janela", "Bola"],
+    "correta": "Coragem",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual das palavras é um adjetivo?",
+    "imagem": "",
+    "alternativas": ["Feliz", "Caderno", "Carro", "Gato"],
+    "correta": "Feliz",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual opção apresenta um verbo?",
+    "imagem": "",
+    "alternativas": ["Correr", "Mesa", "Bonito", "Azul"],
+    "correta": "Correr",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destas palavras é um pronome?",
+    "imagem": "",
+    "alternativas": ["Ele", "Casa", "Jardim", "Pular"],
+    "correta": "Ele",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra é um substantivo concreto?",
+    "imagem": "",
+    "alternativas": ["Cachorro", "Saudade", "Alegria", "Medo"],
+    "correta": "Cachorro",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual opção apresenta um adjetivo?",
+    "imagem": "",
+    "alternativas": ["Rápido", "Criança", "Flor", "Férias"],
+    "correta": "Rápido",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra indica uma ação?",
+    "imagem": "",
+    "alternativas": ["Escrever", "Mesa", "Pássaro", "Laranja"],
+    "correta": "Escrever",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual opção apresenta um substantivo próprio?",
+    "imagem": "",
+    "alternativas": ["Brasil", "Cachorro", "Árvore", "Doce"],
+    "correta": "Brasil",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destes é um substantivo coletivo?",
+    "imagem": "",
+    "alternativas": ["Cardume", "Bola", "Sapato", "Lápis"],
+    "correta": "Cardume",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual opção apresenta um substantivo abstrato?",
+    "imagem": "",
+    "alternativas": ["Tristeza", "Relógio", "Pote", "Carro"],
+    "correta": "Tristeza",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
   },
   {
     "pergunta": "Em qual frase a palavra ‘como’ é usada como comparação?",
+    "imagem": "",
     "alternativas": [
       "Como arroz todos os dias.",
       "Ele corre como um foguete.",
       "Não sei como resolver isso.",
       "Como você está?"
     ],
-    "correta": "Ele corre como um foguete."
+    "correta": "Ele corre como um foguete.",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
   },
   {
     "pergunta": "Qual das frases está escrita no tempo futuro?",
+    "imagem": "",
     "alternativas": [
       "Eu brinco com meus amigos.",
       "Eu brinquei ontem na escola.",
       "Eu brincarei amanhã no parque.",
       "Eu estava brincando na rua."
     ],
-    "correta": "Eu brincarei amanhã no parque."
+    "correta": "Eu brincarei amanhã no parque.",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
   },
   {
     "pergunta": "Assinale a frase que está com verbo no plural:",
+    "imagem": "",
     "alternativas": [
       "O menino corre rápido.",
       "Os meninos correram rápido.",
       "O menino correu.",
       "O menino correrá."
     ],
-    "correta": "Os meninos correram rápido."
+    "correta": "Os meninos correram rápido.",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
   },
   {
     "pergunta": "Qual é a forma correta de escrever a frase?",
+    "imagem": "",
     "alternativas": [
       "Nós vai estudar hoje.",
       "A gente vamos estudar hoje.",
       "Nós vamos estudar hoje.",
       "Nós estudamos hoje iremos."
     ],
-    "correta": "Nós vamos estudar hoje."
+    "correta": "Nós vamos estudar hoje.",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
   },
   {
     "pergunta": "Em um texto narrativo, qual é a função do narrador em primeira pessoa?",
+    "imagem": "",
     "alternativas": [
       "Contar a história como observador distante",
       "Participar da história e narrar os acontecimentos com suas próprias impressões",
       "Explicar fatos científicos",
       "Descrever apenas o cenário"
     ],
-    "correta": "Participar da história e narrar os acontecimentos com suas próprias impressões"
+    "correta": "Participar da história e narrar os acontecimentos com suas próprias impressões",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
   },
   {
     "pergunta": "Qual das alternativas apresenta um sujeito oculto?",
+    "imagem": "",
     "alternativas": [
       "Nós viajamos ontem.",
       "Viajei ontem com meus pais.",
       "Os meninos viajaram.",
       "Eles viajaram ontem."
     ],
-    "correta": "Viajei ontem com meus pais."
-  },
-  {
-    "pergunta": "Qual opção apresenta uma oração coordenada adversativa?",
-    "alternativas": [
-      "Queria sair, mas estava chovendo.",
-      "Eu fui ao parque e encontrei meus amigos.",
-      "Ele estudou bastante, portanto passou.",
-      "Saí cedo para chegar a tempo."
-    ],
-    "correta": "Queria sair, mas estava chovendo."
+    "correta": "Viajei ontem com meus pais.",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
   },
   {
     "pergunta": "Em qual frase a palavra 'que' atua como pronome relativo?",
+    "imagem": "",
     "alternativas": [
       "O livro que comprei é interessante.",
       "Que horas são?",
       "Que ideia maluca!",
       "Não sei que escolha fazer."
     ],
-    "correta": "O livro que comprei é interessante."
+    "correta": "O livro que comprei é interessante.",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
   },
   {
     "pergunta": "Qual das alternativas contém uma metáfora?",
+    "imagem": "",
     "alternativas": [
       "O garoto é rápido como um foguete.",
       "Aquela menina é uma flor.",
       "Chovia muito ontem.",
       "O vento uivava forte."
     ],
-    "correta": "Aquela menina é uma flor."
-  },
-  {
-    "pergunta": "A frase 'O vento derrubou as árvores' possui qual tipo de sujeito?",
-    "alternativas": [
-      "Sujeito indeterminado",
-      "Sujeito inexistente",
-      "Sujeito simples",
-      "Sujeito composto"
-    ],
-    "correta": "Sujeito simples"
-  },
-  {
-    "pergunta": "Qual frase apresenta voz passiva?",
-    "alternativas": [
-      "O aluno fez a lição.",
-      "A lição foi feita pelo aluno.",
-      "O aluno fará a lição.",
-      "O aluno faz a lição."
-    ],
-    "correta": "A lição foi feita pelo aluno."
+    "correta": "Aquela menina é uma flor.",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
   },
   {
     "pergunta": "Qual frase apresenta sentido figurado?",
+    "imagem": "",
     "alternativas": [
       "A porta está aberta.",
       "Ele está com a cabeça quente hoje.",
       "O cachorro está latindo.",
       "A mesa é de madeira."
     ],
-    "correta": "Ele está com a cabeça quente hoje."
-  },
-  {
-    "pergunta": "Qual alternativa mostra um predicado verbal?",
-    "alternativas": [
-      "O dia está lindo.",
-      "O menino correu rapidamente.",
-      "A menina é inteligente.",
-      "As flores parecem bonitas."
-    ],
-    "correta": "O menino correu rapidamente."
-  },
-  {
-    "pergunta": "Qual das alternativas apresenta uma oração subordinada adverbial causal?",
-    "alternativas": [
-      "Saí mais cedo porque estava atrasado.",
-      "Farei isso quando chegar em casa.",
-      "Embora estivesse frio, fui ao parque.",
-      "Se chover, não iremos."
-    ],
-    "correta": "Saí mais cedo porque estava atrasado."
+    "correta": "Ele está com a cabeça quente hoje.",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
   },
   {
     'pergunta': 'O campo harmônico é:',
@@ -3313,6 +4704,339 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     'correta': 'Um conjunto de acordes que combinam entre si',
     "nivel": 2,
     'nomeDoJogador': 'MATHEUS'
+  },
+  {
+    "pergunta": "Qual opção apresenta um pronome pessoal?",
+    "imagem": "",
+    "alternativas": ["Eu", "Aquela", "Meu", "Algum"],
+    "correta": "Eu",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destas palavras é um pronome demonstrativo?",
+    "imagem": "",
+    "alternativas": ["Esse", "Nós", "Teu", "Alguns"],
+    "correta": "Esse",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual opção mostra um pronome possessivo?",
+    "imagem": "",
+    "alternativas": ["Meu", "Isso", "Eu", "Aquele"],
+    "correta": "Meu",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual das opções é um pronome indefinido?",
+    "imagem": "",
+    "alternativas": ["Algum", "Nós", "Este", "Seu"],
+    "correta": "Algum",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual opção apresenta um pronome interrogativo?",
+    "imagem": "",
+    "alternativas": ["Quem", "Nosso", "Aquele", "Eu"],
+    "correta": "Quem",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destas palavras é um pronome relativo?",
+    "imagem": "",
+    "alternativas": ["Que", "Ela", "Teu", "Alguns"],
+    "correta": "Que",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual das opções apresenta um pronome possessivo?",
+    "imagem": "",
+    "alternativas": ["Seu", "Isso", "Este", "Eles"],
+    "correta": "Seu",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra é um pronome pessoal do caso reto?",
+    "imagem": "",
+    "alternativas": ["Nós", "Nosso", "Este", "Algum"],
+    "correta": "Nós",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é um pronome demonstrativo?",
+    "imagem": "",
+    "alternativas": ["Aquilo", "Vocês", "Minha", "Alguma"],
+    "correta": "Aquilo",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual das opções é um pronome indefinido?",
+    "imagem": "",
+    "alternativas": ["Nenhum", "Eu", "Este", "Teu"],
+    "correta": "Nenhum",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual gênero textual tem como objetivo informar sobre fatos reais?",
+    "imagem": "",
+    "alternativas": ["Notícia", "Poema", "Fábula", "Carta pessoal"],
+    "correta": "Notícia",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses gêneros é conhecido por ter rimas e ritmo?",
+    "imagem": "",
+    "alternativas": ["Poema", "Receita", "Notícia", "Bilhete"],
+    "correta": "Poema",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual gênero textual ensina como fazer algo, passo a passo?",
+    "imagem": "",
+    "alternativas": ["Receita", "Poema", "Fábula", "Reportagem"],
+    "correta": "Receita",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual gênero textual geralmente traz personagens e uma lição de moral?",
+    "imagem": "",
+    "alternativas": ["Fábula", "Notícia", "Carta", "Anúncio"],
+    "correta": "Fábula",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses é um texto curto usado para lembrar recados?",
+    "imagem": "",
+    "alternativas": ["Bilhete", "Poema", "Conto", "Artigo"],
+    "correta": "Bilhete",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual gênero textual é usado para persuadir alguém a comprar algo?",
+    "imagem": "",
+    "alternativas": ["Propaganda", "Fábula", "Bilhete", "Diário"],
+    "correta": "Propaganda",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destes textos é escrito para relatar algo que realmente aconteceu?",
+    "imagem": "",
+    "alternativas": ["Reportagem", "Poema", "História em quadrinhos", "Conto de fadas"],
+    "correta": "Reportagem",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual gênero textual registra pensamentos e sentimentos pessoais?",
+    "imagem": "",
+    "alternativas": ["Diário", "Notícia", "Anúncio", "Fábula"],
+    "correta": "Diário",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual gênero costuma usar balões de fala e desenhos?",
+    "imagem": "",
+    "alternativas": ["História em quadrinhos", "Poema", "Bilhete", "Carta"],
+    "correta": "História em quadrinhos",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual gênero textual é usado para se comunicar com alguém à distância, de forma escrita?",
+    "imagem": "",
+    "alternativas": ["Carta", "Receita", "Poema", "Notícia"],
+    "correta": "Carta",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "O que é um gênero textual?",
+    "imagem": "",
+    "alternativas": [
+      "Um tipo de texto que segue características próprias e tem uma função comunicativa",
+      "Um texto escrito sem nenhuma regra",
+      "Um texto que sempre precisa ter rimas",
+      "Um texto criado apenas para entretenimento"
+    ],
+    "correta": "Um tipo de texto que segue características próprias e tem uma função comunicativa",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual das opções apresenta um substantivo próprio?",
+    "imagem": "",
+    "alternativas": ["Brasil", "cidade", "caderno", "menino"],
+    "correta": "Brasil",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual das palavras é um substantivo comum?",
+    "imagem": "",
+    "alternativas": ["cachorro", "Pedro", "Rio Amazonas", "Brasil"],
+    "correta": "cachorro",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual opção apresenta um substantivo concreto?",
+    "imagem": "",
+    "alternativas": ["mesa", "coragem", "alegria", "bondade"],
+    "correta": "mesa",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual das palavras é um substantivo abstrato?",
+    "imagem": "",
+    "alternativas": ["tristeza", "carro", "gato", "flor"],
+    "correta": "tristeza",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual das opções apresenta um substantivo simples?",
+    "imagem": "",
+    "alternativas": ["flor", "guarda-chuva", "beija-flor", "passatempo"],
+    "correta": "flor",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra é um substantivo composto?",
+    "imagem": "",
+    "alternativas": ["guarda-roupa", "bola", "janela", "menino"],
+    "correta": "guarda-roupa",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual opção apresenta outro exemplo de substantivo próprio?",
+    "imagem": "",
+    "alternativas": ["Maria", "cidade", "escola", "livro"],
+    "correta": "Maria",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra é um substantivo comum?",
+    "imagem": "",
+    "alternativas": ["professor", "João", "Amazonas", "Ceará"],
+    "correta": "professor",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual das alternativas é um substantivo concreto?",
+    "imagem": "",
+    "alternativas": ["casa", "esperança", "ciúme", "fúria"],
+    "correta": "casa",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual das opções é um substantivo abstrato?",
+    "imagem": "",
+    "alternativas": ["coragem", "cadeira", "bicicleta", "janela"],
+    "correta": "coragem",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Em qual opção todas as palavras são substantivos próprios?",
+    "imagem": "",
+    "alternativas": ["Brasil, Ana, Rio São Francisco", "gato, casa, Maria", "Pedro, menino, Brasil", "Escola, livro, João"],
+    "correta": "Brasil, Ana, Rio São Francisco",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual das alternativas apresenta apenas substantivos comuns?",
+    "imagem": "",
+    "alternativas": ["cidade, menino, flor", "Brasil, cachorro, livro", "mesa, João, escola", "Rio Amazonas, carro, porta"],
+    "correta": "cidade, menino, flor",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual grupo apresenta somente substantivos concretos?",
+    "imagem": "",
+    "alternativas": ["cadeira, árvore, biscoito", "alegria, gato, casa", "mesa, medo, sofá", "fúria, carro, flor"],
+    "correta": "cadeira, árvore, biscoito",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual conjunto possui apenas substantivos abstratos?",
+    "imagem": "",
+    "alternativas": ["paciência, tristeza, coragem", "alegria, livro, bondade", "carro, fé, bicicleta", "esperança, mesa, força"],
+    "correta": "paciência, tristeza, coragem",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual das opções mostra somente substantivos simples?",
+    "imagem": "",
+    "alternativas": ["sol, pedra, flor", "guarda-chuva, flor, girassol", "beija-flor, mesa, quebra-cabeça", "passatempo, rua, porta-retrato"],
+    "correta": "sol, pedra, flor",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual grupo apresenta apenas substantivos compostos?",
+    "imagem": "",
+    "alternativas": ["guarda-roupa, beija-flor, paraquedas", "mesa, livro, caderno", "sol, girassol, vento", "quadro, porta-retrato, flor"],
+    "correta": "guarda-roupa, beija-flor, paraquedas",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual alternativa apresenta um substantivo próprio e um comum?",
+    "imagem": "",
+    "alternativas": ["Pedro – livro", "Brasil – Amazonas", "gato – cachorro", "Maria – Ana"],
+    "correta": "Pedro – livro",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Em qual opção há um substantivo concreto e um abstrato?",
+    "imagem": "",
+    "alternativas": ["mesa – alegria", "coragem – fúria", "carro – bicicleta", "esperança – tristeza"],
+    "correta": "mesa – alegria",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual conjunto apresenta substantivo comum, próprio e abstrato?",
+    "imagem": "",
+    "alternativas": ["menino, João, coragem", "casa, Brasil, bicicleta", "Pedro, livro, flor", "alegria, mesa, Ana"],
+    "correta": "menino, João, coragem",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual das alternativas mostra dois substantivos concretos e um abstrato?",
+    "imagem": "",
+    "alternativas": ["caderno, mesa, amizade", "alegria, flor, carro", "fé, livro, tristeza", "paciência, porta, força"],
+    "correta": "caderno, mesa, amizade",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
   },
   {
     'pergunta': 'Qual acorde faz parte do campo harmônico de Dó Maior?',
@@ -3329,6 +5053,310 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     'correta': 'G',
     "nivel": 2,
     'nomeDoJogador': 'MATHEUS'
+  },
+  {
+    "pergunta": "Qual destes acordes é MAIOR?",
+    "imagem": "",
+    "alternativas": ["C", "Em", "Am", "Dm"],
+    "correta": "C",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destes acordes é menor?",
+    "imagem": "",
+    "alternativas": ["G", "D", "E", "Am"],
+    "correta": "Am",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual acorde representa um acorde MAIOR?",
+    "imagem": "",
+    "alternativas": ["Fm", "Gm", "A", "Em"],
+    "correta": "A",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destes acordes NÃO é menor?",
+    "imagem": "",
+    "alternativas": ["Dm", "Em", "F", "Am"],
+    "correta": "F",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destes acordes é MENOR?",
+    "imagem": "",
+    "alternativas": ["C", "Gm", "A", "F"],
+    "correta": "Gm",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses acordes é formado por Tônica, Terça Maior e Quinta Justa?",
+    "imagem": "",
+    "alternativas": ["Am", "Dm", "E", "Em"],
+    "correta": "E",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual acorde é MAIOR mesmo sem ter a letra 'M' no nome?",
+    "imagem": "",
+    "alternativas": ["A", "Cm", "Em", "Bm"],
+    "correta": "A",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses acordes é MENOR?",
+    "imagem": "",
+    "alternativas": ["F", "G", "Am", "A"],
+    "correta": "Am",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual acorde tem uma TERÇA MENOR na sua formação?",
+    "imagem": "",
+    "alternativas": ["D", "C", "Em", "G"],
+    "correta": "Em",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual acorde possui a formação Tônica, Terça Maior e Quinta Justa, sendo portanto MAIOR?",
+    "imagem": "",
+    "alternativas": ["Bm", "Cm", "G", "Em"],
+    "correta": "G",
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses acordes é MENOR e contém uma terça menor em sua estrutura?",
+    "imagem": "",
+    "alternativas": ["A", "F", "Dm", "E"],
+    "correta": "Dm",
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses acordes é MAIOR e aparece naturalmente no campo harmônico de C (Dó maior)?",
+    "imagem": "",
+    "alternativas": ["Em", "F", "Bm", "Dm"],
+    "correta": "F",
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual acorde é MENOR e é formado pelas notas A, C e E?",
+    "imagem": "",
+    "alternativas": ["A", "Am", "C", "E"],
+    "correta": "Am",
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destes é um grupo musical (uma banda)?",
+    "imagem": "",
+    "alternativas": ["The Beatles", "Batman", "Toy Story", "Shrek"],
+    "correta": "The Beatles",
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses é um conjunto de pessoas que tocam música juntas?",
+    "imagem": "",
+    "alternativas": ["Banda", "Escola", "Loja", "Ônibus"],
+    "correta": "Banda",
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual dessas bandas é famosa no Brasil?",
+    "imagem": "",
+    "alternativas": ["Legião Urbana", "Homem-Aranha", "Barbie", "Minecraft"],
+    "correta": "Legião Urbana",
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses grupos musicais canta músicas de rock?",
+    "imagem": "",
+    "alternativas": ["Capital Inicial", "Peppa Pig", "Ben 10", "Frozen"],
+    "correta": "Capital Inicial",
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses grupos musicais canta músicas de rock?",
+    "imagem": "",
+    "alternativas": ["Beatles", "Peppa Pig", "Ben 10", "Frozen"],
+    "correta": "Beatles",
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses nomes é de uma banda?",
+    "imagem": "",
+    "alternativas": ["Skank", "Notebook", "Carro", "Chocolate"],
+    "correta": "Skank",
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destes é um instrumento usado em uma banda?",
+    "imagem": "",
+    "alternativas": ["Guitarra", "Bola", "Copo", "Cadeira"],
+    "correta": "Guitarra",
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual instrumento faz o som da batida na banda?",
+    "imagem": "",
+    "alternativas": ["Bateria", "Lápis", "Relógio", "Livro"],
+    "correta": "Bateria",
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual instrumento faz o som da batida na banda?",
+    "imagem": "",
+    "alternativas": ["Bateria", "Lápis", "Relógio", "Livro"],
+    "correta": "Bateria",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses instrumentos é de cordas?",
+    "imagem": "",
+    "alternativas": ["Violão", "Apito", "Panela", "Martelo"],
+    "correta": "Violão",
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses instrumentos costuma acompanhar o cantor?",
+    "imagem": "",
+    "alternativas": ["Guitarra", "Escova", "Chave", "Borracha"],
+    "correta": "Guitarra",
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual instrumento é responsável por manter o ritmo principal da banda, marcando o tempo das músicas?",
+    "imagem": "",
+    "alternativas": ["Bateria", "Violão", "Teclado", "Guitarra"],
+    "correta": "Bateria",
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual instrumento normalmente cria a base harmônica, sustentando os acordes da música?",
+    "imagem": "",
+    "alternativas": ["Teclado", "Bumbo", "Prato", "Caixa"],
+    "correta": "Teclado",
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual instrumento costuma tocar riffs e solos, trazendo destaque melódico à música?",
+    "imagem": "",
+    "alternativas": ["Guitarra", "Baixo", "Surdo", "Pandeiro"],
+    "correta": "Guitarra",
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual instrumento é responsável por reforçar as notas graves e ajudar a unir a bateria com os demais instrumentos?",
+    "imagem": "",
+    "alternativas": ["Baixo", "Violino", "Teclado", "Ukulele"],
+    "correta": "Baixo",
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual instrumento geralmente guia a melodia principal da música quando não há vocalista?",
+    "imagem": "",
+    "alternativas": ["Saxofone", "Baixo", "Caixa", "Bateria"],
+    "correta": "Saxofone",
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual instrumento ajuda a preencher a música com camadas sonoras, criando ambientes e texturas?",
+    "imagem": "",
+    "alternativas": ["Teclado", "Caixa", "Pandeiro", "Bumbo"],
+    "correta": "Teclado",
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual instrumento acompanha o tempo da bateria e reforça a estrutura rítmica com notas graves?",
+    "imagem": "",
+    "alternativas": ["Baixo", "Guitarra", "Violão", "Pandeiro"],
+    "correta": "Baixo",
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual instrumento geralmente faz a marcação dos acordes de forma contínua em estilos como rock e pop?",
+    "imagem": "",
+    "alternativas": ["Violão", "Caixa", "Pratos", "Bumbo"],
+    "correta": "Violão",
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual instrumento define grande parte da dinâmica e intensidade da música, podendo deixá-la mais forte ou mais suave?",
+    "imagem": "",
+    "alternativas": ["Bateria", "Teclado", "Baixo", "Guitarra"],
+    "correta": "Bateria",
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual instrumento normalmente cria linhas melódicas marcantes e pode assumir o destaque em solos?",
+    "imagem": "",
+    "alternativas": ["Guitarra", "Bumbo", "Pratos", "Teclado"],
+    "correta": "Guitarra",
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses instrumentos costuma acompanhar o cantor?",
+    "imagem": "",
+    "alternativas": ["Guitarra", "Escova", "Chave", "Borracha"],
+    "correta": "Guitarra",
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses nomes é de uma banda?",
+    "imagem": "",
+    "alternativas": ["Titãs", "Notebook", "Carro", "Chocolate"],
+    "correta": "Skank",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses acordes é MAIOR, reconhecido pela presença da terça MAIOR?",
+    "imagem": "",
+    "alternativas": ["Gm", "Em", "Fm", "D"],
+    "correta": "D",
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destes acordes possui som mais 'triste', típico de acordes menores?",
+    "imagem": "",
+    "alternativas": ["E", "F", "Gm", "A"],
+    "correta": "Gm",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
   },
   {
     "pergunta": "Qual planeta é conhecido como o 'Planeta Azul'?",
@@ -3447,6 +5475,38 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "BRASÍLIA",
     "alternativas": ["RIO DE JANEIRO", "SALVADOR", "BRASÍLIA", "SÃO PAULO"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual foi a primeira capital do Brasil?",
+    "imagem": "",
+    "correta": "SALVADOR",
+    "alternativas": ["RIO DE JANEIRO", "SALVADOR", "BRASÍLIA", "BELÉM"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual cidade foi capital do Brasil antes de Brasília?",
+    "imagem": "",
+    "correta": "RIO DE JANEIRO",
+    "alternativas": ["SALVADOR", "RECIFE", "RIO DE JANEIRO", "FORTALEZA"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é a capital do estado da Bahia?",
+    "imagem": "",
+    "correta": "SALVADOR",
+    "alternativas": ["SALVADOR", "ARACAJU", "RECIFE", "MACEIÓ"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destas cidades é capital de um estado brasileiro?",
+    "imagem": "",
+    "correta": "CURITIBA",
+    "alternativas": ["CAMPINAS", "JOINVILLE", "CURITIBA", "UBERLÂNDIA"],
     "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
@@ -3675,6 +5735,38 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
+    "pergunta": "Quantos lados tem um pentágono?",
+    "imagem": "",
+    "correta": "5",
+    "alternativas": ["4", "5", "6", "7"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quantos lados tem um heptágono?",
+    "imagem": "",
+    "correta": "7",
+    "alternativas": ["6", "7", "8", "9"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quantos lados tem um eneágono?",
+    "imagem": "",
+    "correta": "9",
+    "alternativas": ["8", "9", "10", "11"],
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quantos lados tem um dodecágono?",
+    "imagem": "",
+    "correta": "12",
+    "alternativas": ["10", "11", "12", "13"],
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
     "pergunta": "Qual é a soma dos ângulos internos de um triângulo?",
     "imagem": "",
     "correta": "180°",
@@ -3767,7 +5859,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "63",
     "alternativas": ["49", "54", "63", "72"],
-    "nivel": 4,
+    "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -3879,6 +5971,86 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "NEIL ARMSTRONG",
     "alternativas": ["BUZZ ALDRIN", "NEIL ARMSTRONG", "YURI GAGARIN", "JOHN GLENN"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quem descobriu o Brasil em 1500?",
+    "imagem": "",
+    "correta": "PEDRO ÁLVARES CABRAL",
+    "alternativas": ["CRISTÓVÃO COLOMBO", "PEDRO ÁLVARES CABRAL", "VASCO DA GAMA", "CABRAL DE MELO"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quem foi o primeiro presidente do Brasil?",
+    "imagem": "",
+    "correta": "DEODORO DA FONSECA",
+    "alternativas": ["GETÚLIO VARGAS", "DEODORO DA FONSECA", "DOM PEDRO II", "FLORIANO PEIXOTO"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quem pintou a famosa obra 'Mona Lisa'?",
+    "imagem": "",
+    "correta": "LEONARDO DA VINCI",
+    "alternativas": ["PABLO PICASSO", "LEONARDO DA VINCI", "MICHELANGELO", "RENOIR"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quem inventou a lâmpada elétrica?",
+    "imagem": "",
+    "correta": "THOMAS EDISON",
+    "alternativas": ["GRAHAM BELL", "THOMAS EDISON", "TESLA", "WATT"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quem foi o primeiro homem a viajar para o espaço?",
+    "imagem": "",
+    "correta": "YURI GAGARIN",
+    "alternativas": ["NEIL ARMSTRONG", "YURI GAGARIN", "BUZZ ALDRIN", "ALAN SHEPARD"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quem foi o grande cientista que desenvolveu a teoria da gravidade?",
+    "imagem": "",
+    "correta": "ISAAC NEWTON",
+    "alternativas": ["GALILEU GALILEI", "ISAAC NEWTON", "EINSTEIN", "NICOLA TESLA"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quem é conhecido como o 'Pai da Aviação' no Brasil?",
+    "imagem": "",
+    "correta": "SANTOS DUMONT",
+    "alternativas": ["IRMÃOS WRIGHT", "SANTOS DUMONT", "GALEÃO", "EDISON"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quem escreveu 'Dom Casmurro'?",
+    "imagem": "",
+    "correta": "MACHADO DE ASSIS",
+    "alternativas": ["CLARICE LISPECTOR", "MACHADO DE ASSIS", "GRACILIANO RAMOS", "JOSÉ DE ALENCAR"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quem formulou a teoria da relatividade?",
+    "imagem": "",
+    "correta": "ALBERT EINSTEIN",
+    "alternativas": ["ALBERT EINSTEIN", "NEWTON", "CURIE", "TESLA"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quem foi o navegador que deu a primeira volta completa ao redor da Terra?",
+    "imagem": "",
+    "correta": "FERNÃO DE MAGALHÃES",
+    "alternativas": ["VASCO DA GAMA", "CRISTÓVÃO COLOMBO", "FERNÃO DE MAGALHÃES", "CABRAL"],
     "nivel": 3,
     "nomeDoJogador": "MATHEUS"
   },
@@ -4035,6 +6207,78 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
+    "pergunta": "Qual é o oposto de rápido?",
+    "imagem": "",
+    "correta": "DEVAGAR",
+    "alternativas": ["LENTO", "DEVAGAR", "RÁPIDO", "FORTE"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual é o oposto de feliz?",
+    "imagem": "",
+    "correta": "TRISTE",
+    "alternativas": ["TRISTE", "ALEGRIA", "FELIZ", "SORTE"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual é o oposto de grande?",
+    "imagem": "",
+    "correta": "PEQUENO",
+    "alternativas": ["PEQUENO", "MINI", "GRANDE", "ALTO"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual é o oposto de dia?",
+    "imagem": "",
+    "correta": "NOITE",
+    "alternativas": ["NOITE", "SOL", "DIA", "CLARO"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual é o oposto de claro?",
+    "imagem": "",
+    "correta": "ESCURO",
+    "alternativas": ["ESCURO", "CLARO", "BRILHANTE", "FORTE"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual é o oposto de forte?",
+    "imagem": "",
+    "correta": "FRACO",
+    "alternativas": ["FRACO", "PODEROSO", "FORTE", "ALTO"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual é o oposto de perto?",
+    "imagem": "",
+    "correta": "LONGE",
+    "alternativas": ["LONGE", "PRÓXIMO", "PERTO", "ABAIXO"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual é o oposto de cheio?",
+    "imagem": "",
+    "correta": "VAZIO",
+    "alternativas": ["VAZIO", "CHEIO", "GRANDE", "PEQUENO"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual é o oposto de novo?",
+    "imagem": "",
+    "correta": "VELHO",
+    "alternativas": ["VELHO", "NOVO", "ANTIGO", "RECENTE"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
     "pergunta": "Qual destes alimentos é uma fruta?",
     "imagem": "",
     "correta": "MAÇÃ",
@@ -4176,6 +6420,70 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "correta": "ÍNDIA",
     "alternativas": ["CHINA", "BRASIL", "ÍNDIA", "RÚSSIA"],
     "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses é um continente?",
+    "imagem": "",
+    "correta": "Europa",
+    "alternativas": ["México", "Europa", "Bahamas", "Japão"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destas figuras geométricas tem 3 lados?",
+    "imagem": "",
+    "correta": "Triângulo",
+    "alternativas": ["Quadrado", "Círculo", "Triângulo", "Retângulo"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses países é considerado transcontinental, ou seja, pertence a dois continentes?",
+    "imagem": "",
+    "correta": "Rússia",
+    "alternativas": ["Japão", "Rússia", "Egito", "Chile"],
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses cientistas é famoso por formular as Leis do Movimento e do Cálculo?",
+    "imagem": "",
+    "correta": "Isaac Newton",
+    "alternativas": ["Galileu Galilei", "Isaac Newton", "Nikola Tesla", "Louis Pasteur"],
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses fenômenos é responsável pelo céu parecer azul?",
+    "imagem": "",
+    "correta": "Dispersão da luz",
+    "alternativas": ["Gravidade", "Refração das nuvens", "Dispersão da luz", "Efeito estufa"],
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destes elementos químicos é um metal alcalino?",
+    "imagem": "",
+    "correta": "Sódio",
+    "alternativas": ["Carbono", "Sódio", "Ferro", "Oxigênio"],
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses acontecimentos marcou o fim da Idade Média?",
+    "imagem": "",
+    "correta": "Queda de Constantinopla",
+    "alternativas": ["Revolução Francesa", "Queda de Constantinopla", "Guerra dos Cem Anos", "Descoberta da eletricidade"],
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destes países fica na América do Sul?",
+    "imagem": "",
+    "correta": "Argentina",
+    "alternativas": ["Espanha", "Índia", "Argentina", "Canadá"],
+    "nivel": 1,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -4993,6 +7301,126 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
+    "pergunta": "Qual palavra rima com LUA?",
+    "imagem": "",
+    "correta": "TUA",
+    "alternativas": ["TUA", "SOL", "MESA", "NOITE"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra rima com GATO?",
+    "imagem": "",
+    "correta": "MATO",
+    "alternativas": ["MATO", "CACHORRO", "PATO", "CASA"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra rima com PEIXE?",
+    "imagem": "",
+    "correta": "LEIXE",
+    "alternativas": ["LEIXE", "PELO", "COPO", "NAVE"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra rima com SOL?",
+    "imagem": "",
+    "correta": "ROL",
+    "alternativas": ["ROL", "COLA", "FOLHA", "TELA"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra rima com RATO?",
+    "imagem": "",
+    "correta": "FATO",
+    "alternativas": ["FATO", "GALO", "PÃO", "VENTO"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra rima com FOGO?",
+    "imagem": "",
+    "correta": "ROGO",
+    "alternativas": ["ROGO", "CÉU", "PÉ", "ÁGUA"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra rima com PÃO?",
+    "imagem": "",
+    "correta": "MÃO",
+    "alternativas": ["MÃO", "CARRO", "JANELA", "SOL"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra rima com FLORES?",
+    "imagem": "",
+    "correta": "DORES",
+    "alternativas": ["DORES", "CÉUS", "LIVROS", "PINTOS"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra rima com MAR?",
+    "imagem": "",
+    "correta": "LAR",
+    "alternativas": ["LAR", "SOL", "VENTO", "ÁRVORE"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra rima com CÃO?",
+    "imagem": "",
+    "correta": "MÃO",
+    "alternativas": ["MÃO", "GATO", "SOL", "LIVRO"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra rima com BOLO?",
+    "imagem": "",
+    "correta": "ROLO",
+    "alternativas": ["ROLO", "PÃO", "GATO", "SOL"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra rima com FRUTA?",
+    "imagem": "",
+    "correta": "CUTA",
+    "alternativas": ["CUTA", "SOL", "PAPEL", "MESA"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra rima com SOLUÇÃO?",
+    "imagem": "",
+    "correta": "AÇÃO",
+    "alternativas": ["AÇÃO", "CAMA", "PÉ", "CARRO"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra rima com CHAVE?",
+    "imagem": "",
+    "correta": "NAVE",
+    "alternativas": ["NAVE", "SOL", "GATO", "PAPEL"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra rima com PEIXE?",
+    "imagem": "",
+    "correta": "LEIXE",
+    "alternativas": ["LEIXE", "CARRO", "SOL", "JANELA"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
     "pergunta": "Qual dessas palavras começa com a letra M?",
     "imagem": "",
     "correta": "MESA",
@@ -5013,6 +7441,86 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "BORBOLETA",
     "alternativas": ["SOL", "GATO", "BORBOLETA", "COCO"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra é mais longa?",
+    "imagem": "",
+    "correta": "ELEFANTE",
+    "alternativas": ["GATO", "SOL", "ELEFANTE", "PÉ"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra é mais longa?",
+    "imagem": "",
+    "correta": "ABACAXI",
+    "alternativas": ["PÉ", "ABACAXI", "CÃO", "SOL"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra é mais longa?",
+    "imagem": "",
+    "correta": "JARDINEIRA",
+    "alternativas": ["GATO", "JARDINEIRA", "SOL", "NÉ"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra é mais longa?",
+    "imagem": "",
+    "correta": "PARALELEPÍPEDO",
+    "alternativas": ["CASA", "SOL", "PARALELEPÍPEDO", "GATO"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra é mais longa?",
+    "imagem": "",
+    "correta": "HIPOPÓTAMO",
+    "alternativas": ["SOL", "HIPOPÓTAMO", "PÉ", "CÃO"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra é mais longa?",
+    "imagem": "",
+    "correta": "BORBOLETA",
+    "alternativas": ["COCO", "GATO", "BORBOLETA", "SOL"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra é mais longa?",
+    "imagem": "",
+    "correta": "ABACATEIRO",
+    "alternativas": ["SOL", "CÃO", "ABACATEIRO", "PÉ"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra é mais longa?",
+    "imagem": "",
+    "correta": "ESCOLARIDADE",
+    "alternativas": ["SOL", "GATO", "ESCOLARIDADE", "PÁ"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra é mais longa?",
+    "imagem": "",
+    "correta": "CARTILHOS",
+    "alternativas": ["SOL", "CÃO", "CARTILHOS", "GATO"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra é mais longa?",
+    "imagem": "",
+    "correta": "MELANCIA",
+    "alternativas": ["SOL", "GATO", "MELANCIA", "PÉ"],
     "nivel": 3,
     "nomeDoJogador": "THEO"
   },
@@ -5097,6 +7605,46 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
+    "pergunta": "Qual palavra tem a letra escondida 'R' no meio?",
+    "imagem": "",
+    "correta": "CARRO",
+    "alternativas": ["CÃO", "GATO", "CARRO", "SOL"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra tem a letra escondida 'T' no meio?",
+    "imagem": "",
+    "correta": "CATA",
+    "alternativas": ["CATA", "CASA", "GATO", "SOL"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra tem a letra escondida 'L' no meio?",
+    "imagem": "",
+    "correta": "BOLA",
+    "alternativas": ["BOLA", "CHICO", "BICO", "BOTA"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra tem a letra escondida 'M' no meio?",
+    "imagem": "",
+    "correta": "CAMPO",
+    "alternativas": ["CAPO", "CAMPO", "COPO", "CÃO"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra tem a letra escondida 'S' no meio?",
+    "imagem": "",
+    "correta": "CASA",
+    "alternativas": ["CÃO", "CASA", "GATO", "SOL"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
     "pergunta": "Qual palavra tem a letra escondida 'L' no meio?",
     "imagem": "",
     "correta": "FELIZ",
@@ -5125,6 +7673,46 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "MEIA",
     "alternativas": ["MEIA", "PATO", "MATA", "PIPA"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra tem duas vogais juntas?",
+    "imagem": "",
+    "correta": "SAIDA",
+    "alternativas": ["SAIDA", "CASA", "TETO", "MESA"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Em qual palavra aparecem vogais juntas?",
+    "imagem": "",
+    "correta": "FOLHAO",
+    "alternativas": ["FOLHAO", "PORTA", "LIVRO", "CARRO"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual dessas palavras possui duas vogais seguidas?",
+    "imagem": "",
+    "correta": "CAIXA",
+    "alternativas": ["CAIXA", "PEDRA", "BOLA", "CASA"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Onde há duas vogais juntas?",
+    "imagem": "",
+    "correta": "PRAIA",
+    "alternativas": ["PRAIA", "GATO", "CANTO", "PILHA"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra contém vogais seguidas?",
+    "imagem": "",
+    "correta": "REI",
+    "alternativas": ["REI", "RUA", "SOL", "PAZ"],
     "nivel": 4,
     "nomeDoJogador": "THEO"
   },
@@ -5533,11 +8121,4 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nivel": 2,
     'nomeDoJogador': 'THEO'
   }
-
-
-
-
-
-
-
 ];

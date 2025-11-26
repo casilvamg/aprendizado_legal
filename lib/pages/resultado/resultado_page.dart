@@ -84,7 +84,7 @@ class ResultadoPage extends StatelessWidget {
       if (acertos == 1) {
         return "${resultado["seErrar"]}";
       }
-      return "${resultado["seErrar"]/1000} MIL";
+      return "${(resultado["seErrar"] / 1000).toInt()} MIL";
     }
     else {
       return 'ERRO';
