@@ -3545,6 +3545,78 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
+    "pergunta": "Como a água se transforma em vapor e sobe para a atmosfera?",
+    "imagem": "",
+    "correta": "EVAPORAÇÃO",
+    "alternativas": ["CONDENSAÇÃO", "EVAPORAÇÃO", "PRECIPITAÇÃO", "INFILTRAÇÃO"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quando o vapor de água se transforma em nuvens, isso é chamado de:",
+    "imagem": "",
+    "correta": "CONDENSAÇÃO",
+    "alternativas": ["EVAPORAÇÃO", "CONDENSAÇÃO", "PRECIPITAÇÃO", "TRANSFORMAÇÃO"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quando a água cai da nuvem em forma de chuva, neve ou granizo, isso se chama:",
+    "imagem": "",
+    "correta": "PRECIPITAÇÃO",
+    "alternativas": ["EVAPORAÇÃO", "CONDENSAÇÃO", "PRECIPITAÇÃO", "INFILTRAÇÃO"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quando a água da chuva penetra no solo, isso é chamado de:",
+    "imagem": "",
+    "correta": "INFILTRAÇÃO",
+    "alternativas": ["PRECIPITAÇÃO", "INFILTRAÇÃO", "EVAPORAÇÃO", "CONDENSAÇÃO"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "O ciclo da água é importante porque:",
+    "imagem": "",
+    "correta": "GARANTE A ÁGUA DO PLANETA",
+    "alternativas": ["DERRUBA AS MONTANHAS", "FAZ CHOVER FOGO", "GARANTE A ÁGUA DO PLANETA", "TRANSFORMA PEDRAS"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "O processo pelo qual plantas liberam vapor de água para o ar é chamado de:",
+    "imagem": "",
+    "correta": "TRANSPIRAÇÃO",
+    "alternativas": ["EVAPORAÇÃO", "TRANSPIRAÇÃO", "CONDENSAÇÃO", "PRECIPITAÇÃO"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "O ciclo da água ocorre na natureza de forma:",
+    "imagem": "",
+    "correta": "CONTÍNUA",
+    "alternativas": ["ALEATÓRIA", "CONTÍNUA", "RAREFEITA", "ESPORÁDICA"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "O vapor de água que sobe de rios, lagos e oceanos se chama:",
+    "imagem": "",
+    "correta": "EVAPORAÇÃO",
+    "alternativas": ["PRECIPITAÇÃO", "EVAPORAÇÃO", "INFILTRAÇÃO", "CONDENSAÇÃO"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "As nuvens que se formam no céu são feitas de:",
+    "imagem": "",
+    "correta": "VAPOR DE ÁGUA",
+    "alternativas": ["AREIA", "VAPOR DE ÁGUA", "GÁS CARBONO", "FUMAÇA"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
     "pergunta": "O desmatamento prejudica diretamente qual processo essencial realizado pelas plantas?",
     "imagem": "",
     "correta": "PRODUÇÃO DE OXIGÊNIO",
@@ -3987,9 +4059,89 @@ final List<Map<String, dynamic>> listaDePerguntas = [
   {
     "pergunta": "Qual palavra possui um ditongo?",
     "imagem": "",
-    "correta": "CAVALO",
-    "alternativas": ["CAVALO", "GATO", "SOL", "MESA"],
+    "correta": "BOI",
+    "alternativas": ["BOI", "GATO", "SOL", "MESA"],
     "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra **não** possui um ditongo?",
+    "imagem": "",
+    "correta": "GATO",
+    "alternativas": ["BOI", "PAI", "MÃO", "GATO"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra **não** possui um ditongo?",
+    "imagem": "",
+    "correta": "SOL",
+    "alternativas": ["MAIS", "PÉU", "BOI", "SOL"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra **não** possui um ditongo?",
+    "imagem": "",
+    "correta": "LATA",
+    "alternativas": ["CÉU", "PAI", "BOI", "LATA"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra **não** possui um ditongo?",
+    "imagem": "",
+    "correta": "MESA",
+    "alternativas": ["MAIS", "BOI", "MÃO", "MESA"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra **não** possui um ditongo?",
+    "imagem": "",
+    "correta": "PÉ",
+    "alternativas": ["BOI", "PAI", "MÃO", "PÉ"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra **não** possui um tritongo?",
+    "imagem": "",
+    "correta": "CAVALO",
+    "alternativas": ["ENXAGUEI", "URUGUAI", "QUAIS", "CAVALO"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra **não** possui um tritongo?",
+    "imagem": "",
+    "correta": "SOL",
+    "alternativas": ["PARAÍSO", "URUGUAI", "ENXAGUEI", "SOL"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra **não** possui um tritongo?",
+    "imagem": "",
+    "correta": "LATA",
+    "alternativas": ["PAIÚRA", "ENXAGUEI", "URUGUAI", "LATA"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra **não** possui um tritongo?",
+    "imagem": "",
+    "correta": "MESA",
+    "alternativas": ["PARAÍSO", "ENXAGUEI", "QUAIS", "MESA"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual palavra **não** possui um tritongo?",
+    "imagem": "",
+    "correta": "PÉ",
+    "alternativas": ["URUGUAI", "ENXAGUEI", "PAIÚRA", "PÉ"],
+    "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -6159,6 +6311,86 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
+    "pergunta": "Quem escreveu 'O Menino Maluquinho'?",
+    "imagem": "",
+    "correta": "ZIRALDO",
+    "alternativas": ["MONTEIRO LOBATO", "ZIRALDO", "MACHADO DE ASSIS", "RUTH ROCHA"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quem criou histórias com personagens como Saci e Cuca?",
+    "imagem": "",
+    "correta": "MONTEIRO LOBATO",
+    "alternativas": ["MONTEIRO LOBATO", "RUTH ROCHA", "ZIRALDO", "CORA CORALINA"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é o jogo famoso onde os jogadores constroem mundos com blocos?",
+    "imagem": "",
+    "alternativas": ["MINECRAFT", "FORTNITE", "ROBLOX", "POKÉMON"],
+    "correta": "MINECRAFT",
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Em qual jogo você encontra o personagem Mario?",
+    "imagem": "",
+    "alternativas": ["SUPER MARIO", "MINECRAFT", "FORTNITE", "LEAGUE OF LEGENDS"],
+    "correta": "SUPER MARIO",
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Quem escreveu 'Matilda'?",
+    "imagem": "",
+    "correta": "ROALD DAHL",
+    "alternativas": ["ROALD DAHL", "MONTEIRO LOBATO", "ZIRALDO", "RUTH ROCHA"],
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quem escreveu 'Chapeuzinho Vermelho'?",
+    "imagem": "",
+    "correta": "CHARLES PERRAULT",
+    "alternativas": ["CHARLES PERRAULT", "MONTEIRO LOBATO", "RUTH ROCHA", "ZIRALDO"],
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quem escreveu 'O Pequeno Príncipe'?",
+    "imagem": "",
+    "correta": "ANTOINE DE SAINT-EXUPÉRY",
+    "alternativas": ["ANTOINE DE SAINT-EXUPÉRY", "MONTEIRO LOBATO", "RUTH ROCHA", "ZIRALDO"],
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quem é autora de 'O Livro da Tia Nastácia'?",
+    "imagem": "",
+    "correta": "MONTEIRO LOBATO",
+    "alternativas": ["MONTEIRO LOBATO", "RUTH ROCHA", "ZIRALDO", "ANA MARIA MACHADO"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quem é conhecido por criar histórias com Emília e Visconde de Sabugosa?",
+    "imagem": "",
+    "correta": "MONTEIRO LOBATO",
+    "alternativas": ["MONTEIRO LOBATO", "RUTH ROCHA", "ZIRALDO", "LIVRO AZUL"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quem criou o personagem Menino Maluquinho?",
+    "imagem": "",
+    "correta": "ZIRALDO",
+    "alternativas": ["ZIRALDO", "MONTEIRO LOBATO", "RUTH ROCHA", "LIVRO AZUL"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
     "pergunta": "O que as plantas precisam para fazer fotossíntese?",
     "imagem": "",
     "correta": "LUZ DO SOL",
@@ -7381,6 +7613,14 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "alternativas": ["DUPLO", "FORTE", "FRIO", "ESCUTO"],
     "nivel": 1,
     "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é o oposto de quente?",
+    "imagem": "",
+    "correta": "FRIO",
+    "alternativas": ["FOGO", "FRACO", "FRIO", "ESCURO"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
   },
   {
     "pergunta": "Qual é o oposto de rápido?",
@@ -9397,6 +9637,22 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
+    "pergunta": "Qual é o jogo de batalha real onde os jogadores constroem e lutam em ilhas?",
+    "imagem": "",
+    "alternativas": ["FORTNITE", "MINECRAFT", "ROBLOX", "POKÉMON"],
+    "correta": "FORTNITE",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual personagem de videogame carrega uma espada chamada Master Sword?",
+    "imagem": "",
+    "alternativas": ["LINK", "MARIO", "SONIC", "PIKACHU"],
+    "correta": "LINK",
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
     "pergunta": "Qual personagem é irmão do Mario e veste verde?",
     "imagem": "",
     "correta": "Luigi",
@@ -9413,12 +9669,324 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
+    "pergunta": "Qual sentimento a criança sente quando está feliz?",
+    "imagem": "",
+    "alternativas": ["ALEGRIA", "TRISTEZA", "MEDO", "RAIVA"],
+    "correta": "ALEGRIA",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual sentimento a criança sente quando algo a assusta?",
+    "imagem": "",
+    "alternativas": ["MEDO", "ALEGRIA", "ORGULHO", "CALMA"],
+    "correta": "MEDO",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual sentimento a criança sente quando algo a deixa triste?",
+    "imagem": "",
+    "alternativas": ["TRISTEZA", "ALEGRIA", "SURPRESA", "CALMA"],
+    "correta": "TRISTEZA",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual sentimento a criança sente quando está com raiva?",
+    "imagem": "",
+    "alternativas": ["RAIVA", "ALEGRIA", "MEDO", "ORGULHO"],
+    "correta": "RAIVA",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual sentimento a criança sente quando algo a surpreende?",
+    "imagem": "",
+    "alternativas": ["SURPRESA", "MEDO", "RAIVA", "CALMA"],
+    "correta": "SURPRESA",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual sentimento a criança sente quando está tranquila?",
+    "imagem": "",
+    "alternativas": ["CALMA", "RAIVA", "MEDO", "TRISTEZA"],
+    "correta": "CALMA",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual sentimento a criança sente quando está orgulhosa de algo?",
+    "imagem": "",
+    "alternativas": ["ORGULHO", "TRISTEZA", "RAIVA", "MEDO"],
+    "correta": "ORGULHO",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual sentimento a criança sente quando quer algo muito?",
+    "imagem": "",
+    "alternativas": ["DESEJO", "MEDO", "ALEGRIA", "SURPRESA"],
+    "correta": "DESEJO",
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual sentimento a criança sente quando se sente amada?",
+    "imagem": "",
+    "alternativas": ["AFETO", "RAIVA", "MEDO", "TRISTEZA"],
+    "correta": "AFETO",
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual sentimento a criança sente quando está ansiosa?",
+    "imagem": "",
+    "alternativas": ["ANSIEDADE", "CALMA", "SURPRESA", "ALEGRIA"],
+    "correta": "ANSIEDADE",
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
     "pergunta": "Em Roblox, como são chamados os mapas cheios de obstáculos?",
     "imagem": "",
     "correta": "Obbys",
     "alternativas": ["Obbys", "Stages", "Worlds", "Servers"],
     "nivel": 2,
     "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Como a criança se sente quando ganha um presente que queria muito?",
+    "imagem": "",
+    "alternativas": ["FELIZ", "TRISTE", "MEDO", "RAIVA"],
+    "correta": "FELIZ",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Como a criança se sente quando se machuca?",
+    "imagem": "",
+    "alternativas": ["TRISTE", "SURPRESA", "CALMA", "ORGULHO"],
+    "correta": "TRISTE",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Como a criança se sente ao conhecer um amigo novo?",
+    "imagem": "",
+    "alternativas": ["ALEGRIA", "MEDO", "RAIVA", "DESEJO"],
+    "correta": "ALEGRIA",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Como a criança se sente ao ouvir um barulho assustador à noite?",
+    "imagem": "",
+    "alternativas": ["MEDO", "ALEGRIA", "SURPRESA", "ORGULHO"],
+    "correta": "MEDO",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Como a criança se sente quando ajuda alguém e recebe agradecimento?",
+    "imagem": "",
+    "alternativas": ["ORGULHO", "RAIVA", "TRISTEZA", "MEDO"],
+    "correta": "ORGULHO",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Como a criança se sente ao ver algo inesperado e divertido?",
+    "imagem": "",
+    "alternativas": ["SURPRESA", "CALMA", "TRISTEZA", "RAIVA"],
+    "correta": "SURPRESA",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Como a criança se sente quando está brincando sozinha e tranquila?",
+    "imagem": "",
+    "alternativas": ["CALMA", "ANSIEDADE", "RAIVA", "SURPRESA"],
+    "correta": "CALMA",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Como a criança se sente quando quer muito algo que não pode ter?",
+    "imagem": "",
+    "alternativas": ["FRUSTRAÇÃO", "ALEGRIA", "ORGULHO", "MEDO"],
+    "correta": "FRUSTRAÇÃO",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Como a criança se sente quando recebe elogios de professores ou familiares?",
+    "imagem": "",
+    "alternativas": ["ORGULHO", "MEDO", "TRISTEZA", "RAIVA"],
+    "correta": "ORGULHO",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Como a criança se sente quando está nervosa antes de apresentar algo na escola?",
+    "imagem": "",
+    "alternativas": ["ANSIOSA", "CALMA", "SURPRESA", "ALEGRIA"],
+    "correta": "ANSIOSA",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Onde os alunos assistem às aulas na escola?",
+    "imagem": "",
+    "alternativas": ["SALA DE AULA", "QUINTAL", "COZINHA", "BANHEIRO"],
+    "correta": "SALA DE AULA",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Quem ensina os alunos na escola?",
+    "imagem": "",
+    "alternativas": ["PROFESSOR", "ALUNO", "MERENDEIRA", "COORDENADOR"],
+    "correta": "PROFESSOR",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Onde os alunos fazem suas refeições na escola?",
+    "imagem": "",
+    "alternativas": ["REFEITÓRIO", "BIBLIOTECA", "SALA DE AULA", "PÁTIO"],
+    "correta": "REFEITÓRIO",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Onde os alunos podem brincar durante o recreio?",
+    "imagem": "",
+    "alternativas": ["PÁTIO", "SALA DE AULA", "BIBLIOTECA", "LABORATÓRIO"],
+    "correta": "PÁTIO",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Onde os alunos pegam livros para estudar?",
+    "imagem": "",
+    "alternativas": ["BIBLIOTECA", "SALA DE AULA", "PÁTIO", "REFEITÓRIO"],
+    "correta": "BIBLIOTECA",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Quem ajuda a servir a merenda na escola?",
+    "imagem": "",
+    "alternativas": ["MERENDEIRA", "PROFESSOR", "ALUNO", "COORDENADOR"],
+    "correta": "MERENDEIRA",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Quem organiza a escola e cuida da administração?",
+    "imagem": "",
+    "alternativas": ["DIRETOR", "ALUNO", "PROFESSOR", "MERENDEIRA"],
+    "correta": "DIRETOR",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Onde os alunos aprendem sobre ciências com experimentos?",
+    "imagem": "",
+    "alternativas": ["LABORATÓRIO", "SALA DE AULA", "BIBLIOTECA", "REFEITÓRIO"],
+    "correta": "LABORATÓRIO",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Onde os alunos se reúnem para eventos ou apresentações?",
+    "imagem": "",
+    "alternativas": ["AUDITÓRIO", "PÁTIO", "SALA DE AULA", "LABORATÓRIO"],
+    "correta": "AUDITÓRIO",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual é a importância de cumprir regras na escola?",
+    "imagem": "",
+    "alternativas": ["Garantir o respeito, a disciplina e a segurança", "Ganhar mais tempo de recreio", "Evitar fazer tarefas", "Ser popular entre os colegas"],
+    "correta": "Garantir o respeito, a disciplina e a segurança",
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "O que significa ter responsabilidade com o dever de casa?",
+    "imagem": "",
+    "alternativas": ["Fazer as tarefas no prazo e com atenção", "Copiar do colega", "Deixar para a última hora", "Não fazer nada"],
+    "correta": "Fazer as tarefas no prazo e com atenção",
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual é a função do bibliotecário na escola?",
+    "imagem": "",
+    "alternativas": ["Organizar os livros, ajudar alunos a encontrar informações", "Lavar a quadra", "Dar aulas de educação física", "Servir a merenda"],
+    "correta": "Organizar os livros, ajudar alunos a encontrar informações",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Se a criança encontra um objeto perdido na escola, o que deve fazer?",
+    "imagem": "",
+    "alternativas": ["Levar para a secretaria ou avisar o responsável", "Ficar com ele", "Esconder", "Entregar a um amigo"],
+    "correta": "Levar para a secretaria ou avisar o responsável",
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual destes alimentos é uma bebida?",
+    "imagem": "",
+    "alternativas": ["LEITE", "MACARRÃO", "FRANGO", "MAÇÃ"],
+    "correta": "LEITE",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual destes alimentos é um cereal?",
+    "imagem": "",
+    "alternativas": ["ARROZ", "MAÇÃ", "FRANGO", "LEITE"],
+    "correta": "ARROZ",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual alimento é feito a partir do leite?",
+    "imagem": "",
+    "alternativas": ["QUEIJO", "PÃO", "MAÇÃ", "FRANGO"],
+    "correta": "QUEIJO",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Matheus Henrique comeu 3 sanduiches de presunto. Pouco tempo depois ele comeu mais 7. Quantos sanduiches Matheus Henrique comeu ao todo?",
+    "imagem": "",
+    "alternativas": ["10", "11", "12", "13"],
+    "correta": "10",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual alimento vem de uma árvore?",
+    "imagem": "",
+    "alternativas": ["MAÇÃ", "BATATA", "ARROZ", "FRANGO"],
+    "correta": "MAÇÃ",
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Quem ajuda a manter a escola limpa?",
+    "imagem": "",
+    "alternativas": ["ZELADOR", "PROFESSOR", "ALUNO", "DIRETOR"],
+    "correta": "ZELADOR",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
   },
   {
     "pergunta": "Em qual tipo de programa participantes respondem perguntas para ganhar prêmios?",

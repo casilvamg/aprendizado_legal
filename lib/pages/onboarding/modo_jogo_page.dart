@@ -1,62 +1,142 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../quiz_perguntas/pergunta_page.dart';
-import 'iniciar_jogo_page.dart';
 
-class ModoJogoPage extends StatelessWidget {
+class ModoJogoPage extends StatefulWidget {
   final String nomeJogador;
 
   const ModoJogoPage({super.key, required this.nomeJogador});
 
   @override
+  State<ModoJogoPage> createState() => _ModoJogoPageState();
+}
+
+class _ModoJogoPageState extends State<ModoJogoPage> {
+  bool _desafioDisponivel = false;
+  bool _isLoading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    _verificarDisponibilidadeDesafio();
+  }
+
+  Future<void> _verificarDisponibilidadeDesafio() async {
+    final prefs = await SharedPreferences.getInstance();
+    // Chave única para cada jogador
+    final key = 'ultimaDataDesafio_${widget.nomeJogador}';
+    final ultimaDataJogada = prefs.getString(key);
+    final hoje = DateFormat('yyyy-MM-dd').format(DateTime.now());
+
+    // Se nunca jogou ou a última vez foi antes de hoje, o desafio está disponível
+    if (ultimaDataJogada == null || ultimaDataJogada != hoje) {
+      setState(() {
+        _desafioDisponivel = true;
+      });
+    }
+
+    setState(() {
+      _isLoading = false;
+    });
+  }
+
+  Future<void> _iniciarDesafio() async {
+    // Marca a data de hoje como a data do último desafio jogado para este jogador
+    final prefs = await SharedPreferences.getInstance();
+    final key = 'ultimaDataDesafio_${widget.nomeJogador}';
+    final hoje = DateFormat('yyyy-MM-dd').format(DateTime.now());
+    await prefs.setString(key, hoje);
+
+    // Navega para a página do quiz
+    if (mounted) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => PerguntaPage(
+            nomeJogador: widget.nomeJogador,
+            modoJogo: 'DESAFIO',
+          ),
+        ),
+      );
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Modo de Jogo')),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text(
-              'COMO VOCÊ QUER JOGAR?',
-              style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+      body: _isLoading
+          ? const Center(child: CircularProgressIndicator())
+          : Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text(
+                    'COMO VOCÊ QUER JOGAR?',
+                    style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 40),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      _buildPlayerAvatar(context, 'NORMAL'),
+                      _buildPlayerAvatar(context, 'DESAFIO'),
+                    ],
+                  ),
+                  if (!_desafioDisponivel)
+                    const Padding(
+                      padding: EdgeInsets.only(top: 20.0),
+                      child: Text(
+                        'Modo Desafio já jogado hoje. Volte amanhã!',
+                        style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                ],
+              ),
             ),
-            const SizedBox(height: 40),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                _buildPlayerAvatar(context, nomeJogador, 'NORMAL'),
-                _buildPlayerAvatar(context, nomeJogador, 'DESAFIO'),
-              ],
-            ),
-          ],
-        ),
-      ),
     );
   }
 
-  Widget _buildPlayerAvatar(BuildContext context, String nomeJogador, String modoJogo) {
-    return Column(
-      children: [
-        GestureDetector(
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                // CORRIGIDO: Navega para a tela de seleção de modo
-                builder: (context) => PerguntaPage(nomeJogador: nomeJogador, modoJogo: modoJogo),
-              ),
-            );
-          },
-          child: CircleAvatar(
-            radius: 60,
-            backgroundImage: AssetImage('assets/imagens/${modoJogo.toLowerCase()}.jpg'),
+  Widget _buildPlayerAvatar(BuildContext context, String modoJogo) {
+    final bool isDesafio = modoJogo == 'DESAFIO';
+    // O modo desafio só está habilitado se _desafioDisponivel for true
+    final bool isEnabled = isDesafio ? _desafioDisponivel : true;
+
+    return Opacity(
+      opacity: isEnabled ? 1.0 : 0.5,
+      child: Column(
+        children: [
+          GestureDetector(
+            onTap: isEnabled
+                ? () {
+                    if (isDesafio) {
+                      _iniciarDesafio();
+                    } else {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PerguntaPage(
+                            nomeJogador: widget.nomeJogador,
+                            modoJogo: 'NORMAL',
+                          ),
+                        ),
+                      );
+                    }
+                  }
+                : null,
+            child: CircleAvatar(
+              radius: 60,
+              backgroundImage: AssetImage('assets/imagens/${modoJogo.toLowerCase()}.jpg'),
+            ),
           ),
-        ),
-        const SizedBox(height: 12),
-        Text(
-          modoJogo,
-          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
-        ),
-      ],
+          const SizedBox(height: 12),
+          Text(
+            modoJogo,
+            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+          ),
+        ],
+      ),
     );
   }
 }
