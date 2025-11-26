@@ -7,13 +7,15 @@ class ResultadoPage extends StatelessWidget {
   final int pontuacao;
   final int totalPerguntas;
   final int acertos;
+  final String modoJogo;
 
   // CORRIGIDO: O construtor agora exige a pontuação
   const ResultadoPage({
     super.key,
     required this.pontuacao,
     required this.totalPerguntas,
-    required this.acertos
+    required this.acertos,
+    required this.modoJogo
   });
 
   @override
@@ -50,7 +52,7 @@ class ResultadoPage extends StatelessWidget {
               style: const TextStyle(fontSize: 20),
             ),
             Text(
-              'Você faturou $valorFormatado REAIS 💰💰💰',
+              'Você faturou $valorFormatado 💰💰💰',
               style: const TextStyle(fontSize: 20),
             ),
             const SizedBox(height: 100),
@@ -71,23 +73,53 @@ class ResultadoPage extends StatelessWidget {
   }
 
   String formatarValor(int acertos) {
-    if (acertos == listaDePontuacao.length) {
-      return "1 MILHÃO";
-    }
 
-    final resultado = listaDePontuacao.firstWhere(
-          (item) => item["acertos"] == acertos,
-      orElse: () => {},
-    );
-
-    if (resultado != null) {
-      if (acertos == 1) {
-        return "${resultado["seErrar"]}";
+    if (modoJogo == 'DESAFIO') {
+      if (acertos == listaDePontuacao.length) {
+        return "1 REAL";
       }
-      return "${(resultado["seErrar"] / 1000).toInt()} MIL";
+
+      final resultado = listaDePontuacao.firstWhere(
+            (item) => item["acertos"] == acertos,
+        orElse: () => {},
+      );
+
+      if (resultado != null) {
+
+        if (acertos == 1) {
+          return "0,001 CENTAVOS DE REAIS";
+        }
+
+        int valor = resultado["seErrar"];
+        double resp = valor / 1000000;
+
+        return "${resp} CENTAVOS DE REAIS";
+      }
+      else {
+        return 'ERRO';
+      }
     }
-    else {
-      return 'ERRO';
+
+    if (modoJogo == 'NORMAL') {
+      if (acertos == listaDePontuacao.length) {
+        return "1 MILHÃO DE REAIS";
+      }
+
+      final resultado = listaDePontuacao.firstWhere(
+            (item) => item["acertos"] == acertos,
+        orElse: () => {},
+      );
+
+      if (resultado != null) {
+        if (acertos == 1) {
+          return "${resultado["seErrar"]} REAIS";
+        }
+        return "${(resultado["seErrar"] / 1000).toInt()} MIL REAIS";
+      }
+      else {
+        return 'ERRO';
+      }
     }
+    return 'ERRO';
   }
 }

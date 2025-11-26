@@ -1,29 +1,30 @@
-import 'package:aprendizado_legal/pages/onboarding/modo_jogo_page.dart';
 import 'package:flutter/material.dart';
+import '../quiz_perguntas/pergunta_page.dart';
+import 'iniciar_jogo_page.dart';
 
-class BoasVindasPage extends StatelessWidget {
-  const BoasVindasPage({super.key});
+class ModoJogoPage extends StatelessWidget {
+  final String nomeJogador;
+
+  const ModoJogoPage({super.key, required this.nomeJogador});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('BEM-VINDO AO SHOW DA DIVERSÃO!')),
+      appBar: AppBar(title: const Text('Modo de Jogo')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              'ESCOLHA SEU JOGADOR',
+              'COMO VOCÊ QUER JOGAR?',
               style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 40),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                // --- Jogador Matheus ---
-                _buildPlayerAvatar(context, 'MATHEUS'),
-                // --- Jogador Theo ---
-                _buildPlayerAvatar(context, 'THEO'),
+                _buildPlayerAvatar(context, nomeJogador, 'NORMAL'),
+                _buildPlayerAvatar(context, nomeJogador, 'DESAFIO'),
               ],
             ),
           ],
@@ -32,7 +33,7 @@ class BoasVindasPage extends StatelessWidget {
     );
   }
 
-  Widget _buildPlayerAvatar(BuildContext context, String nomeJogador) {
+  Widget _buildPlayerAvatar(BuildContext context, String nomeJogador, String modoJogo) {
     return Column(
       children: [
         GestureDetector(
@@ -41,18 +42,18 @@ class BoasVindasPage extends StatelessWidget {
               context,
               MaterialPageRoute(
                 // CORRIGIDO: Navega para a tela de seleção de modo
-                builder: (context) => ModoJogoPage(nomeJogador: nomeJogador),
+                builder: (context) => PerguntaPage(nomeJogador: nomeJogador, modoJogo: modoJogo),
               ),
             );
           },
           child: CircleAvatar(
             radius: 60,
-            backgroundImage: AssetImage('assets/imagens/${nomeJogador.toLowerCase()}.jpeg'),
+            backgroundImage: AssetImage('assets/imagens/${modoJogo.toLowerCase()}.jpg'),
           ),
         ),
         const SizedBox(height: 12),
         Text(
-          nomeJogador,
+          modoJogo,
           style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
         ),
       ],

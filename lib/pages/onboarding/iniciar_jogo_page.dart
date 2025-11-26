@@ -4,7 +4,13 @@ import 'package:flutter_tts/flutter_tts.dart';
 
 class IniciarJogoPage extends StatefulWidget {
   final String nomeJogador;
-  const IniciarJogoPage({super.key, required this.nomeJogador});
+  final String modoJogo; // ADICIONADO: Para receber o modo de jogo
+
+  const IniciarJogoPage({
+    super.key,
+    required this.nomeJogador,
+    required this.modoJogo,
+  });
 
   @override
   State<IniciarJogoPage> createState() => _IniciarJogoPageState();
@@ -22,7 +28,6 @@ class _IniciarJogoPageState extends State<IniciarJogoPage> {
   Future<void> _initTts() async {
     await flutterTts.setLanguage("pt-BR");
     await flutterTts.setSpeechRate(0.5);
-    // Fala a mensagem depois que a tela for construída
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _speak('Boa sorte, ${widget.nomeJogador}!');
     });
@@ -56,8 +61,11 @@ class _IniciarJogoPageState extends State<IniciarJogoPage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    // CORRIGIDO: Passa o nome do jogador para a tela de perguntas
-                    builder: (context) => PerguntaPage(nomeJogador: widget.nomeJogador),
+                    // CORRIGIDO: Passa o nome E o modo de jogo para a próxima tela
+                    builder: (context) => PerguntaPage(
+                      nomeJogador: widget.nomeJogador,
+                      modoJogo: widget.modoJogo,
+                    ),
                   ),
                 );
               },

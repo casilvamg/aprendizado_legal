@@ -13,7 +13,8 @@ import '../onboarding/boas_vindas_page.dart';
 
 class PerguntaPage extends StatefulWidget {
   final String nomeJogador;
-  const PerguntaPage({super.key, required this.nomeJogador});
+  final String modoJogo; // ADICIONADO: Para receber o modo de jogo
+  const PerguntaPage({super.key, required this.nomeJogador, required this.modoJogo});
 
   @override
   State<PerguntaPage> createState() => _PerguntaPageState();
@@ -87,6 +88,9 @@ class _PerguntaPageState extends State<PerguntaPage> {
 
     perguntasFiltradas.sort((a, b) => a['qtd_uso'].compareTo(b['qtd_uso']));
 
+    print('perguntas filtradas ');
+    print(perguntasFiltradas.length);
+
     final Map<int, List<Map<String, dynamic>>> groupedByLevel = {};
     for (var pergunta in perguntasFiltradas) {
       final nivel = pergunta['nivel'] ?? 1;
@@ -100,6 +104,11 @@ class _PerguntaPageState extends State<PerguntaPage> {
       value.shuffle(random);
       perguntasPorNivel[key] = value;
     });
+
+    print(perguntasPorNivel[1]?.length);
+    print(perguntasPorNivel[2]?.length);
+    print(perguntasPorNivel[3]?.length);
+    print(perguntasPorNivel[4]?.length);
 
     perguntas = perguntasPorNivel[1] ?? [];
   }
@@ -211,9 +220,27 @@ class _PerguntaPageState extends State<PerguntaPage> {
   }
 
   String formatarValor(int valor) {
-    if (valor < 1000) return valor.toString();
-    if (valor < 1000000) return "${valor ~/ 1000} MIL";
-    if (valor == 1000000) return "1 MILHÃO";
+
+    if (widget.modoJogo == 'DESAFIO') {
+      double resultado = valor / 1000000;
+
+      if (resultado == 0.0) {
+        return "0,001 CENT";
+      }
+
+      if (resultado == 1.0) {
+        return "1 REAL";
+      }
+
+      return resultado.toString() + ' CENT';
+    }
+
+    if (widget.modoJogo == 'NORMAL') {
+      if (valor == 0) return "1 MIL";
+      if (valor < 1000) return valor.toString();
+      if (valor < 1000000) return "${valor ~/ 1000} MIL";
+      if (valor == 1000000) return "1 MILHÃO";
+    }
     return 'ERRO';
   }
 
@@ -221,14 +248,14 @@ class _PerguntaPageState extends State<PerguntaPage> {
   Widget build(BuildContext context) {
     if (_isLoading) {
       return Scaffold(
-        appBar: AppBar(title: Text("Quiz de ${widget.nomeJogador}")),
+        appBar: AppBar(title: Text("Quiz de ${widget.nomeJogador} ${widget.modoJogo}")),
         body: const Center(child: CircularProgressIndicator()),
       );
     }
 
     if (perguntas.isEmpty || perguntaAtual >= perguntas.length) {
        return Scaffold(
-        appBar: AppBar(title: Text("Quiz de ${widget.nomeJogador}")),
+        appBar: AppBar(title: Text("Quiz de ${widget.nomeJogador} ${widget.modoJogo}")),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -245,7 +272,7 @@ class _PerguntaPageState extends State<PerguntaPage> {
     final pergunta = perguntas[perguntaAtual];
 
     return Scaffold(
-      appBar: AppBar(title: Text("Quiz de ${widget.nomeJogador}")),
+      appBar: AppBar(title: Text("Quiz de ${widget.nomeJogador} (${widget.modoJogo})")),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -314,11 +341,11 @@ class _PerguntaPageState extends State<PerguntaPage> {
           ),
           const SizedBox(width: 16),
           FloatingActionButton.extended(
-            onPressed: respondeu ? null : navegarParaAjuda,
+            onPressed: (respondeu || widget.modoJogo == 'DESAFIO') ? null : navegarParaAjuda,
             icon: const Icon(Icons.help_outline),
             label: const Text('Ajuda'),
-            backgroundColor: respondeu ? Colors.grey.shade300 : Theme.of(context).colorScheme.secondary,
-            foregroundColor: respondeu ? Colors.grey.shade700 : Colors.white,
+            backgroundColor: (respondeu || widget.modoJogo == 'DESAFIO') ? Colors.grey.shade300 : Theme.of(context).colorScheme.secondary,
+            foregroundColor: (respondeu || widget.modoJogo == 'DESAFIO') ? Colors.grey.shade700 : Colors.white,
           ),
         ],
       ),
@@ -372,6 +399,7 @@ class _PerguntaPageState extends State<PerguntaPage> {
                     pontuacao: pontuacao,
                     totalPerguntas: listaDePontuacao.length,
                     acertos: finalAcertos,
+                    modoJogo: widget.modoJogo,
                   ),
                 ),
               );
