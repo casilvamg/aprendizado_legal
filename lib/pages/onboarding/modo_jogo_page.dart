@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../quiz_perguntas/pergunta_page.dart';
+import 'escolher_disciplina_page.dart';
 
 class ModoJogoPage extends StatefulWidget {
   final String nomeJogador;
@@ -82,6 +83,8 @@ class _ModoJogoPageState extends State<ModoJogoPage> {
                     children: [
                       _buildPlayerAvatar(context, 'NORMAL'),
                       _buildPlayerAvatar(context, 'DESAFIO'),
+                      if (widget.nomeJogador == 'MATHEUS')
+                        _buildPlayerAvatar(context, 'REVISAO'),
                     ],
                   ),
                   if (!_desafioDisponivel)
@@ -100,6 +103,7 @@ class _ModoJogoPageState extends State<ModoJogoPage> {
 
   Widget _buildPlayerAvatar(BuildContext context, String modoJogo) {
     final bool isDesafio = modoJogo == 'DESAFIO';
+    final bool isRevisao = modoJogo == 'REVISAO';
     // O modo desafio só está habilitado se _desafioDisponivel for true
     final bool isEnabled = isDesafio ? _desafioDisponivel : true;
 
@@ -112,13 +116,24 @@ class _ModoJogoPageState extends State<ModoJogoPage> {
                 ? () {
                     if (isDesafio) {
                       _iniciarDesafio();
+                    }
+                    else if (isRevisao) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => EscolherDisciplinaPage(
+                            nomeJogador: "MATHEUS",
+                            modoJogo: modoJogo,
+                          ),
+                        ),
+                      );
                     } else {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
                           builder: (context) => PerguntaPage(
-                            nomeJogador: widget.nomeJogador,
-                            modoJogo: 'NORMAL',
+                            nomeJogador: 'NORMAL',
+                            modoJogo: modoJogo,
                           ),
                         ),
                       );

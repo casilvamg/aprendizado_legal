@@ -10,11 +10,13 @@ import 'package:flutter_tts/flutter_tts.dart';
 import 'package:shared_preferences/shared_preferences.dart'; 
 
 import '../onboarding/boas_vindas_page.dart';
+import 'data/perguntas_revisao_data.dart';
 
 class PerguntaPage extends StatefulWidget {
   final String nomeJogador;
-  final String modoJogo; // ADICIONADO: Para receber o modo de jogo
-  const PerguntaPage({super.key, required this.nomeJogador, required this.modoJogo});
+  final String modoJogo;
+  final String? nomeDisciplina;
+  const PerguntaPage({super.key, required this.nomeJogador, required this.modoJogo, this.nomeDisciplina});
 
   @override
   State<PerguntaPage> createState() => _PerguntaPageState();
@@ -25,6 +27,7 @@ class _PerguntaPageState extends State<PerguntaPage> {
 
   List<Map<String, dynamic>> perguntas = [];
   Map<int, List<Map<String, dynamic>>> perguntasPorNivel = {};
+  final List<Map<String, dynamic>> _gabarito = [];
 
   int perguntaAtual = 0;
   int pontuacao = 0;
@@ -75,8 +78,16 @@ class _PerguntaPageState extends State<PerguntaPage> {
   }
 
   Future<void> carregarPerguntas() async {
+    if (widget.modoJogo == 'REVISAO') {
+      carregarPerguntasRevisao();
+    }
+    else {
+      await carregarDemaisPerguntas();
+    }
+  }
+
+  Future<void> carregarDemaisPerguntas() async {
     final prefs = await SharedPreferences.getInstance();
-    final random = Random();
 
     final List<Map<String, dynamic>> perguntasFiltradas = listaDePerguntas
         .where((p) => p['nomeDoJogador'] == widget.nomeJogador)
@@ -86,12 +97,9 @@ class _PerguntaPageState extends State<PerguntaPage> {
       pergunta['qtd_uso'] = prefs.getInt(pergunta['pergunta']) ?? 0;
     }
 
-    perguntasFiltradas.sort((a, b) => a['qtd_uso'].compareTo(b['qtd_uso']));
-
-    print('perguntas filtradas ');
-    print(perguntasFiltradas.length);
-
+    final List<Map<String, dynamic>> listaCompleta = [];
     final Map<int, List<Map<String, dynamic>>> groupedByLevel = {};
+
     for (var pergunta in perguntasFiltradas) {
       final nivel = pergunta['nivel'] ?? 1;
       if (groupedByLevel[nivel] == null) {
@@ -100,17 +108,16 @@ class _PerguntaPageState extends State<PerguntaPage> {
       groupedByLevel[nivel]!.add(pergunta);
     }
 
-    groupedByLevel.forEach((key, value) {
-      value.shuffle(random);
-      perguntasPorNivel[key] = value;
+    final sortedLevels = groupedByLevel.keys.toList()..sort();
+    for (var nivel in sortedLevels) {
+      final List<Map<String, dynamic>> perguntasDoNivel = groupedByLevel[nivel]!;
+      perguntasDoNivel.sort((a, b) => (a['qtd_uso'] as int).compareTo(b['qtd_uso'] as int));
+      listaCompleta.addAll(perguntasDoNivel);
+    }
+
+    setState(() {
+      perguntas = listaCompleta;
     });
-
-    print(perguntasPorNivel[1]?.length);
-    print(perguntasPorNivel[2]?.length);
-    print(perguntasPorNivel[3]?.length);
-    print(perguntasPorNivel[4]?.length);
-
-    perguntas = perguntasPorNivel[1] ?? [];
   }
 
   Future<void> salvarProgressoDaPergunta() async {
@@ -122,6 +129,14 @@ class _PerguntaPageState extends State<PerguntaPage> {
 
   void escolherResposta(String alternativa) {
     final bool ehCorreta = alternativa == perguntas[perguntaAtual]["correta"];
+    
+    if (widget.modoJogo == 'REVISAO') {
+      _gabarito.add({
+        'pergunta': perguntas[perguntaAtual]['pergunta'],
+        'suaResposta': alternativa,
+        'respostaCorreta': perguntas[perguntaAtual]['correta'],
+      });
+    }
 
     if (ehCorreta) {
       salvarProgressoDaPergunta();
@@ -137,32 +152,41 @@ class _PerguntaPageState extends State<PerguntaPage> {
   }
 
   void proximaPergunta([bool ehPular = false]) {
-    int nivelAnterior = nivel;
+    if (widget.modoJogo != 'REVISAO') {
+      int nivelAnterior = nivel;
 
-    if (!ehPular && respostaSelecionada == perguntas[perguntaAtual]["correta"]) {
+      if (!ehPular && respostaSelecionada == perguntas[perguntaAtual]["correta"]) {
         acertos++;
-    }
-
-    Map<String, dynamic> elemento = listaDePontuacao.firstWhere(
-          (item) => item['acertos'] == acertos, orElse: () => {},
-    );
-    pontuacao = elemento['pontuacao'] ?? pontuacao;
-    valorAcertar = elemento['seAcertar'] ?? valorAcertar;
-    valorErrar = elemento['seErrar'] ?? valorErrar;
-    nivel = elemento['nivel'] ?? nivel;
-
-    setState(() {
-      if (nivel != nivelAnterior) {
-        perguntas = perguntasPorNivel[nivel] ?? [];
-        perguntaAtual = 0;
-      } else {
-        perguntaAtual++;
       }
 
-      respondeu = false;
-      respostaSelecionada = null;
-      alternativasOcultas = [];
-    });
+      Map<String, dynamic> elemento = listaDePontuacao.firstWhere(
+            (item) => item['acertos'] == acertos, orElse: () => {},
+      );
+      pontuacao = elemento['pontuacao'] ?? pontuacao;
+      valorAcertar = elemento['seAcertar'] ?? valorAcertar;
+      valorErrar = elemento['seErrar'] ?? valorErrar;
+      nivel = elemento['nivel'] ?? nivel;
+
+      setState(() {
+        if (nivel != nivelAnterior) {
+          perguntas = perguntasPorNivel[nivel] ?? [];
+          perguntaAtual = 0;
+        } else {
+          perguntaAtual++;
+        }
+
+        respondeu = false;
+        respostaSelecionada = null;
+        alternativasOcultas = [];
+      });
+    }
+    else {
+      setState(() {
+        respondeu = false;
+        respostaSelecionada = null;
+        perguntaAtual++;
+      });
+    }
 
     if(perguntaAtual < perguntas.length) {
        transformarTextoEmVoz(perguntas[perguntaAtual]['pergunta']);
@@ -220,7 +244,6 @@ class _PerguntaPageState extends State<PerguntaPage> {
   }
 
   String formatarValor(int valor) {
-
     if (widget.modoJogo == 'DESAFIO') {
       double resultado = valor / 1000000;
 
@@ -253,14 +276,40 @@ class _PerguntaPageState extends State<PerguntaPage> {
       );
     }
 
+    print(perguntas.isEmpty);
+    print(widget.modoJogo == 'REVISAO');
+
+    // CORRIGIDO: Lógica de fim de jogo reorganizada
+    // 1. Caso específico para Revisão sem perguntas
+    if (perguntas.isEmpty && widget.modoJogo == 'REVISAO') {
+      return Scaffold(
+        appBar: AppBar(title: Text("Revisão - ${widget.nomeJogador}")),
+        body: const Center(
+          child: Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text(
+              "As perguntas para esta disciplina ainda não foram disponibilizadas. Volte depois!",
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+            ),
+          ),
+        ),
+      );
+    }
+
+    // 2. Condição geral de fim de jogo para todos os modos
     if (perguntas.isEmpty || perguntaAtual >= perguntas.length) {
-       return Scaffold(
-        appBar: AppBar(title: Text("Quiz de ${widget.nomeJogador} ${widget.modoJogo}")),
+      return Scaffold(
+        appBar: AppBar(title: Text("Fim de Jogo - ${widget.nomeJogador}")),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text("Parabéns! Você respondeu todas as perguntas!", textAlign: TextAlign.center, style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+              const Text(
+                "Parabéns! Você respondeu todas as perguntas!",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+              ),
               const SizedBox(height: 20),
               buildActionButton(),
             ],
@@ -278,7 +327,7 @@ class _PerguntaPageState extends State<PerguntaPage> {
         child: Column(
           children: [
             const SizedBox(height: 10),
-            Text(pergunta["pergunta"], textAlign: TextAlign.center, style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+            Text("${pergunta['pergunta']}", textAlign: TextAlign.center, style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
             const SizedBox(height: 5),
             if (pergunta["imagem"] != null && pergunta["imagem"].isNotEmpty)
               SvgPicture.asset(pergunta["imagem"], height: 60),
@@ -322,7 +371,7 @@ class _PerguntaPageState extends State<PerguntaPage> {
               );
             }).toList(),
             const SizedBox(height: 20),
-            if (respondeu)
+            if (respondeu && widget.modoJogo != 'REVISAO')
               Text(
                 respostaSelecionada == pergunta["correta"] ? "🎉 Muito bem!" : "❌ Que Pena! A resposta é " + pergunta["correta"],
                 style: const TextStyle(fontSize: 22),
@@ -336,41 +385,58 @@ class _PerguntaPageState extends State<PerguntaPage> {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           FloatingActionButton(
+            heroTag: 'btn_audio',
             onPressed: () => transformarTextoEmVoz(pergunta['pergunta']),
             child: const Icon(Icons.volume_up),
           ),
-          const SizedBox(width: 16),
-          FloatingActionButton.extended(
-            onPressed: (respondeu || widget.modoJogo == 'DESAFIO') ? null : navegarParaAjuda,
-            icon: const Icon(Icons.help_outline),
-            label: const Text('Ajuda'),
-            backgroundColor: (respondeu || widget.modoJogo == 'DESAFIO') ? Colors.grey.shade300 : Theme.of(context).colorScheme.secondary,
-            foregroundColor: (respondeu || widget.modoJogo == 'DESAFIO') ? Colors.grey.shade700 : Colors.white,
-          ),
+          if (widget.modoJogo != 'REVISAO') ...[
+            const SizedBox(width: 16),
+            FloatingActionButton.extended(
+              heroTag: 'btn_ajuda',
+              onPressed: (respondeu || widget.modoJogo == 'DESAFIO') ? null : navegarParaAjuda,
+              icon: const Icon(Icons.help_outline),
+              label: const Text('Ajuda'),
+              backgroundColor: (respondeu || widget.modoJogo == 'DESAFIO') ? Colors.grey.shade300 : Theme.of(context).colorScheme.secondary,
+              foregroundColor: (respondeu || widget.modoJogo == 'DESAFIO') ? Colors.grey.shade700 : Colors.white,
+            ),
+          ],
         ],
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       bottomNavigationBar: BottomAppBar(
         color: Theme.of(context).primaryColor,
         child: Row(
-          children: [
-            if (pontuacao > 0) Expanded(child: buildScoreColumn('ERRAR', formatarValor(valorErrar), Colors.red.shade300)),
-            if (pontuacao > 0) Expanded(child: buildScoreColumn('PARAR', formatarValor(pontuacao), Colors.white)),
-            if (pontuacao == 0) const Spacer(),
-            Expanded(child: buildScoreColumn('ACERTAR', formatarValor(valorAcertar), Colors.green.shade300)),
-          ],
+          children: widget.modoJogo == 'REVISAO'
+              ? [
+                  Expanded(
+                    child: Center(
+                      child: Text(
+                        'Questão ${perguntaAtual + 1} de ${perguntas.length}',
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                ]
+              : [
+                  if (pontuacao > 0) Expanded(child: buildScoreColumn('ERRAR', formatarValor(valorErrar), Colors.red.shade300)),
+                  if (pontuacao > 0) Expanded(child: buildScoreColumn('PARAR', formatarValor(pontuacao), Colors.white)),
+                  if (pontuacao == 0) const Spacer(),
+                  Expanded(child: buildScoreColumn('ACERTAR', formatarValor(valorAcertar), Colors.green.shade300)),
+                ],
         ),
       ),
     );
   }
 
-  // CORRIGIDO: Lógica de fim de jogo e botões de ação
   Widget buildActionButton() {
     final bool isCorrect = respostaSelecionada != null && respostaSelecionada == perguntas[perguntaAtual]["correta"];
-    final bool isFinalLevel = (perguntas[perguntaAtual]["nivel"] ?? 1) >= 4;
+    final bool isFinalLevel = (perguntas.isNotEmpty && (perguntas[perguntaAtual]["nivel"] ?? 1) >= 4);
 
-    // Se a resposta está correta e NÃO é o nível final, continua o jogo
-    if (isCorrect && !isFinalLevel) {
+    if (isCorrect && !isFinalLevel && widget.modoJogo != 'REVISAO') {
       return ElevatedButton(
         onPressed: proximaPergunta,
         style: ElevatedButton.styleFrom(
@@ -380,7 +446,6 @@ class _PerguntaPageState extends State<PerguntaPage> {
         child: const Text("Próxima Pergunta"),
       );
     }
-    // Se errou (em qualquer nível) OU acertou a pergunta do nível final, o jogo acaba
     else {
       return Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -397,9 +462,10 @@ class _PerguntaPageState extends State<PerguntaPage> {
                 MaterialPageRoute(
                   builder: (context) => ResultadoPage(
                     pontuacao: pontuacao,
-                    totalPerguntas: listaDePontuacao.length,
+                    totalPerguntas: widget.modoJogo == 'REVISAO' ? perguntas.length : listaDePontuacao.length,
                     acertos: finalAcertos,
                     modoJogo: widget.modoJogo,
+                    gabarito: widget.modoJogo == 'REVISAO' ? _gabarito : null,
                   ),
                 ),
               );
@@ -420,5 +486,13 @@ class _PerguntaPageState extends State<PerguntaPage> {
         ],
       );
     }
+  }
+
+  void carregarPerguntasRevisao() {
+    final List<Map<String, dynamic>> perguntasFiltradasPorDisciplina = listaDePerguntasRevisao
+        .where((p) => p['nomeDisciplina'] == widget.nomeDisciplina)
+        .toList();
+
+    perguntas = perguntasFiltradasPorDisciplina;
   }
 }
