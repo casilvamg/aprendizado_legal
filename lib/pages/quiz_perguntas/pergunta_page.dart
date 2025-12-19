@@ -86,8 +86,10 @@ class _PerguntaPageState extends State<PerguntaPage> {
     }
   }
 
+  // CORRIGIDO: Lógica de carregamento agora popula o mapa de níveis corretamente
   Future<void> carregarDemaisPerguntas() async {
     final prefs = await SharedPreferences.getInstance();
+    final random = Random();
 
     final List<Map<String, dynamic>> perguntasFiltradas = listaDePerguntas
         .where((p) => p['nomeDoJogador'] == widget.nomeJogador)
@@ -97,9 +99,7 @@ class _PerguntaPageState extends State<PerguntaPage> {
       pergunta['qtd_uso'] = prefs.getInt(pergunta['pergunta']) ?? 0;
     }
 
-    final List<Map<String, dynamic>> listaCompleta = [];
     final Map<int, List<Map<String, dynamic>>> groupedByLevel = {};
-
     for (var pergunta in perguntasFiltradas) {
       final nivel = pergunta['nivel'] ?? 1;
       if (groupedByLevel[nivel] == null) {
@@ -108,16 +108,15 @@ class _PerguntaPageState extends State<PerguntaPage> {
       groupedByLevel[nivel]!.add(pergunta);
     }
 
-    final sortedLevels = groupedByLevel.keys.toList()..sort();
-    for (var nivel in sortedLevels) {
-      final List<Map<String, dynamic>> perguntasDoNivel = groupedByLevel[nivel]!;
-      perguntasDoNivel.sort((a, b) => (a['qtd_uso'] as int).compareTo(b['qtd_uso'] as int));
-      listaCompleta.addAll(perguntasDoNivel);
-    }
-
-    setState(() {
-      perguntas = listaCompleta;
+    groupedByLevel.forEach((key, value) {
+      value.sort((a, b) => (a['qtd_uso'] as int).compareTo(b['qtd_uso'] as int));
+      value.shuffle(random);
+      // Popula o mapa da classe, que será usado para a troca de níveis
+      perguntasPorNivel[key] = value;
     });
+
+    // Inicia o jogo com a lista de perguntas do nível 1
+    perguntas = perguntasPorNivel[1] ?? [];
   }
 
   Future<void> salvarProgressoDaPergunta() async {
@@ -276,11 +275,6 @@ class _PerguntaPageState extends State<PerguntaPage> {
       );
     }
 
-    print(perguntas.isEmpty);
-    print(widget.modoJogo == 'REVISAO');
-
-    // CORRIGIDO: Lógica de fim de jogo reorganizada
-    // 1. Caso específico para Revisão sem perguntas
     if (perguntas.isEmpty && widget.modoJogo == 'REVISAO') {
       return Scaffold(
         appBar: AppBar(title: Text("Revisão - ${widget.nomeJogador}")),
@@ -297,7 +291,6 @@ class _PerguntaPageState extends State<PerguntaPage> {
       );
     }
 
-    // 2. Condição geral de fim de jogo para todos os modos
     if (perguntas.isEmpty || perguntaAtual >= perguntas.length) {
       return Scaffold(
         appBar: AppBar(title: Text("Fim de Jogo - ${widget.nomeJogador}")),
@@ -490,7 +483,7 @@ class _PerguntaPageState extends State<PerguntaPage> {
 
   void carregarPerguntasRevisao() {
     final List<Map<String, dynamic>> perguntasFiltradasPorDisciplina = listaDePerguntasRevisao
-        .where((p) => p['nomeDisciplina'] == widget.nomeDisciplina)
+        .where((p) => p['disciplina'] == widget.nomeDisciplina)
         .toList();
 
     perguntas = perguntasFiltradasPorDisciplina;

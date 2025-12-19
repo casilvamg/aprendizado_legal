@@ -122,7 +122,7 @@ class _ModoJogoPageState extends State<ModoJogoPage> {
                         context,
                         MaterialPageRoute(
                           builder: (context) => EscolherDisciplinaPage(
-                            nomeJogador: "MATHEUS",
+                            nomeJogador: widget.nomeJogador,
                             modoJogo: modoJogo,
                           ),
                         ),
@@ -132,7 +132,7 @@ class _ModoJogoPageState extends State<ModoJogoPage> {
                         context,
                         MaterialPageRoute(
                           builder: (context) => PerguntaPage(
-                            nomeJogador: 'NORMAL',
+                            nomeJogador: widget.nomeJogador,
                             modoJogo: modoJogo,
                           ),
                         ),

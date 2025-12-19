@@ -2,14 +2,6 @@
 
 final List<Map<String, dynamic>> listaDePerguntas = [
   {
-    'pergunta': 'Qual desses animais é um felino?',
-    "imagem": "",
-    'alternativas': ['CACHORRO', 'GATO', 'VACA', 'BOI'],
-    'correta': 'GATO',
-    'nivel': 2,
-    'nomeDoJogador': 'THEO'
-  },
-  {
     "pergunta": "Qual desses animais já apareceu no Chaves sendo cuidado pela Chiquinha?",
     "imagem": "",
     "alternativas": ["GATO", "CACHORRO", "PEIXE", "GALO"],
@@ -18,19 +10,11 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual desses animais já apareceu como bichinho de estimação no seriado Chaves?",
+    "pergunta": "Animais como os Ratos que gostam de roer as coisas são conhecidos como?",
     "imagem": "",
-    "alternativas": ["CACHORRO", "LEÃO", "TUBARÃO", "URSO"],
-    "correta": "CACHORRO",
-    "nivel": 1,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Qual desses animais é conhecido por roer objetos?",
-    "imagem": "",
-    "alternativas": ["RATO", "CAVALO", "VACA", "GATO"],
-    "correta": "RATO",
-    "nivel": 1,
+    "alternativas": ["APAGADORES", "ROEDORES", "VOADORES", "FELINOS"],
+    "correta": "ROEDORES",
+    "nivel": 2,
     "nomeDoJogador": "THEO"
   },
   {
@@ -40,14 +24,6 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "correta": "TIGRE",
     "nivel": 3,
     "nomeDoJogador": "THEO"
-  },
-  {
-    'pergunta': 'Qual desses é um participante do programa Bom Dia e Companhia com Patati e Patatá?',
-    "imagem": "",
-    'alternativas': ['XAROPINHO', 'LOURO MANÉ', 'MANUTENÇÃO', 'TONI FERRUADA'],
-    'correta': 'MANUTENÇÃO',
-    'nivel': 1,
-    'nomeDoJogador': 'THEO'
   },
   {
     'pergunta': 'Qual desses não participa do programa Bom Dia e Companhia com Patati e Patatá?',
@@ -76,8 +52,8 @@ final List<Map<String, dynamic>> listaDePerguntas = [
   {
     'pergunta': 'Qual desses é um Pássaro?',
     "imagem": "",
-    'alternativas': ['BEIJA-FLOR', 'JOANINHA', 'RATO', 'JACARÉ'],
-    'correta': 'BEIJA-FLOR',
+    'alternativas': ['JOANINHA', 'POMBO', 'RATO', 'JACARÉ'],
+    'correta': 'POMBO',
     'nivel': 1,
     'nomeDoJogador': 'THEO'
   },
@@ -109,7 +85,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "pergunta": "Qual das opções abaixo representa uma sílaba?",
     "imagem": "",
     "correta": "DA",
-    "alternativas": ["A", "F", "DA", "ABACAXI"],
+    "alternativas": ["A", "F", "DA", "FEIO"],
     'nivel': 1,
     'nomeDoJogador': 'THEO'
   },
@@ -122,26 +98,10 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     'nomeDoJogador': 'THEO'
   },
   {
-    "pergunta": "Qual das opções abaixo representa uma letra?",
+    "pergunta": "Qual sílaba das alternativas abaixo é da família do BA?",
     "imagem": "",
-    "correta": "A",
-    "alternativas": ["A", "FA", "BA", "ABACAXI"],
-    'nivel': 1,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    "pergunta": "Qual das opções abaixo representa uma letra?",
-    "imagem": "",
-    "correta": "A",
-    "alternativas": ["A", "FA", "BA", "DA"],
-    'nivel': 1,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    "pergunta": "Qual das opções abaixo representa uma letra?",
-    "imagem": "",
-    "correta": "B",
-    "alternativas": ["B", "BO", "BA", "BOLA"],
+    "correta": "BO",
+    "alternativas": ["TA", "BO", "LA", "CA"],
     "nivel": 1,
     "nomeDoJogador": "THEO"
   },
@@ -154,19 +114,59 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual opção mostra somente uma letra do alfabeto?",
+    "pergunta": "Qual destas opções é uma vogal?",
     "imagem": "",
-    "correta": "D",
-    "alternativas": ["D", "DE", "DO", "DADO"],
+    "correta": "E",
+    "alternativas": ["B", "E", "F", "G"],
     "nivel": 1,
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual das alternativas é uma única letra?",
+    "pergunta": "Quantas vogais existem no alfabeto português?",
     "imagem": "",
-    "correta": "E",
-    "alternativas": ["ELEFANTE", "ELA", "E", "ERA"],
+    "correta": "5",
+    "alternativas": ["3", "5", "7", "10"],
     "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual destas opções não é uma vogal?",
+    "imagem": "",
+    "correta": "B",
+    "alternativas": ["A", "E", "I", "B"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual das alternativas só contém vogais?",
+    "imagem": "",
+    "correta": "A E I",
+    "alternativas": ["A E I", "B C D", "A B C", "E F G"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual opção mostra somente uma letra do alfabeto?",
+    "imagem": "",
+    "correta": "D",
+    "alternativas": ["D", "DE", "GOL", "FE"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual das alternativas só contém vogais?",
+    "imagem": "",
+    "correta": "A O U",
+    "alternativas": ["A O U", "B O U", "A C E", "D E I"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual das alternativas só contém consoantes?",
+    "imagem": "",
+    "correta": "B C D",
+    "alternativas": ["B C D", "A B C", "E F G", "I J K"],
+    "nivel": 2,
     "nomeDoJogador": "THEO"
   },
   {
@@ -174,7 +174,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "L",
     "alternativas": ["LA", "LE", "L", "LO"],
-    "nivel": 2,
+    "nivel": 1,
     "nomeDoJogador": "THEO"
   },
   {
@@ -234,11 +234,19 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual órgão ajuda a sentir sabores?",
+    "pergunta": "Qual parte do corpo ajuda a sentir sabores dos alimentos?",
     "imagem": "",
     "correta": "LÍNGUA",
     "alternativas": ["LÍNGUA", "OUVIDO", "NARIZ", "OLHOS"],
     "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual parte do corpo ajuda a sentir o cheiro?",
+    "imagem": "",
+    "correta": "NARIZ",
+    "alternativas": ["NARIZ", "OLHOS", "BOCA", "MÃOS"],
+    "nivel": 2,
     "nomeDoJogador": "THEO"
   },
   {
@@ -266,22 +274,6 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual destes é um transporte aquático que mergulha abaixo da água?",
-    "imagem": "",
-    "alternativas": ["SUBMARINO", "BARCO", "LANCHA", "NAVIO"],
-    "correta": "SUBMARINO",
-    "nivel": 1,
-    "nomeDoJogador": "MATHEUS"
-  },
-  {
-    "pergunta": "Qual das alternativas representa somente uma letra do alfabeto?",
-    "imagem": "",
-    "correta": "M",
-    "alternativas": ["MA", "AM", "ME", "M"],
-    "nivel": 2,
-    "nomeDoJogador": "THEO"
-  },
-  {
     "pergunta": "Qual opção mostra uma letra e não uma palavra?",
     "imagem": "",
     "correta": "N",
@@ -290,15 +282,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual destas alternativas é apenas uma letra isolada?",
-    "imagem": "",
-    "correta": "O",
-    "alternativas": ["OLA", "O", "OU", "OS"],
-    "nivel": 2,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Qual palavra começa com a mesma letra que *TAMBORETE*?",
+    "pergunta": "Qual palavra começa com a mesma letra que TAMBORETE?",
     "imagem": "",
     "correta": "TEXTO",
     "alternativas": ["PATO", "MALA", "TEXTO", "BOLA"],
@@ -306,15 +290,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual dessas palavras tem **3 sílabas**?",
-    "imagem": "",
-    "correta": "PIPETA",
-    "alternativas": ["SOL", "MESA", "PIPETA", "PÃO"],
-    "nivel": 4,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Qual dessas palavras tem **3 sílabas**?",
+    "pergunta": "Qual dessas palavras tem 3 sílabas?",
     "imagem": "",
     "alternativas": ["pa-to", "me-sa", "pi-pe-ta", "pei-xe"],
     "correta": "pi-pe-ta",
@@ -322,7 +298,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual dessas palavras tem **2 sílabas**?",
+    "pergunta": "Qual dessas palavras tem 2 sílabas?",
     "imagem": "",
     "alternativas": ["ca-sa", "a-ba-ca-te", "ja-ne-la", "pi-pe-ta"],
     "correta": "ca-sa",
@@ -330,7 +306,15 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual dessas palavras tem **1 sílaba**?",
+    "pergunta": "Como se soletra a palavra PEIXE?",
+    "imagem": "",
+    "correta": "P-E-I-X-E",
+    "alternativas": ["P-E-I-X-E", "P-I-E-X-E", "P-E-X-I-E", "P-I-X-E-E"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual dessas palavras tem 1 sílaba?",
     "imagem": "",
     "alternativas": ["sol", "me-sa", "ja-ne-la", "pi-pe-ta"],
     "correta": "sol",
@@ -386,9 +370,9 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual dessas palavras tem **3 sílabas**?",
+    "pergunta": "Qual dessas palavras tem 3 sílabas?",
     "imagem": "",
-    "alternativas": ["bo-li-nha", "sol", "me-sa", "pi-pe-ta"],
+    "alternativas": ["bo-li-nha", "sol", "me-sa", "pé"],
     "correta": "bo-li-nha",
     "nivel": 3,
     "nomeDoJogador": "THEO"
@@ -410,15 +394,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual palavra tem a **letra R** no meio?",
-    "imagem": "",
-    "correta": "CARO",
-    "alternativas": ["BOLA", "CARLOS", "MATA", "MEIA"],
-    "nivel": 1,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Qual dessas palavras termina com a mesma sílaba de **SAPATO**?",
+    "pergunta": "Qual dessas palavras termina com a mesma sílaba de SAPATO?",
     "imagem": "",
     "correta": "GATO",
     "alternativas": ["GATO", "TOMATE", "SAPO", "POTE"],
@@ -426,10 +402,10 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual palavra é formada por **apenas uma sílaba**?",
+    "pergunta": "Qual palavra é formada por apenas uma sílaba?",
     "imagem": "",
     "correta": "FLOR",
-    "alternativas": ["FLOR", "BONECA", "MELÃO", "BOLO"],
+    "alternativas": ["FLOR", "BO-NE-CA", "ME-LÃO", "BO-LO"],
     "nivel": 3,
     "nomeDoJogador": "THEO"
   },
@@ -486,11 +462,11 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "CADEIRA",
     "alternativas": ["CADEIRA", "PATO", "CASA", "VELA"],
-    "nivel": 2,
+    "nivel": 4,
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual palavra tem **4 letras**?",
+    "pergunta": "Qual palavra tem 4 letras?",
     "imagem": "",
     "correta": "FITA",
     "alternativas": ["CARRO", "FITA", "BICICLETA", "JACARÉ"],
@@ -498,23 +474,39 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual dessas palavras tem a sílaba **PA**?",
+    "pergunta": "Qual palavra tem 3 letras?",
+    "imagem": "",
+    "correta": "SOL",
+    "alternativas": ["SOL", "FITA", "BICICLETA", "JACARÉ"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual dessas palavras tem a sílaba PA?",
     "imagem": "",
     "correta": "PAPEL",
-    "alternativas": ["REDE", "PAPEL", "MORRO", "TETO"],
+    "alternativas": ["REDE", "PASTEL", "MORRO", "TETO"],
     "nivel": 1,
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual palavra possui mais sílabas**?",
+    "pergunta": "Qual dessas palavras não tem a sílaba PA?",
+    "imagem": "",
+    "correta": "CARRO",
+    "alternativas": ["PATO", "PASTEL", "CARRO", "PAULO"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra possui mais sílabas?",
     "imagem": "",
     "correta": "BORBOLETA",
-    "alternativas": ["SOL", "GATO", "BORBOLETA", "POTE"],
+    "alternativas": ["SOL", "GA-TO", "BOR-BO-LE-TA", "PO-TE"],
     "nivel": 3,
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual dessas palavras **não** tem a letra A?",
+    "pergunta": "Qual dessas palavras não tem a letra A?",
     "imagem": "",
     "correta": "DIEGO",
     "alternativas": ["MALA", "DIEGO", "PATO", "CASA"],
@@ -526,14 +518,6 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "P",
     "alternativas": ["PA", "AP", "P", "PO"],
-    "nivel": 2,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Qual das opções abaixo é só uma letra?",
-    "imagem": "",
-    "correta": "F",
-    "alternativas": ["FOCA", "FAROL", "FA", "F"],
     "nivel": 1,
     "nomeDoJogador": "THEO"
   },
@@ -546,7 +530,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     'nomeDoJogador': 'THEO'
   },
   {
-    "pergunta": "Quanto é 7 + 3 ?",
+    "pergunta": "Quanto é 3 + 3 + 3 + 1?",
     "imagem": "",
     "correta": "10",
     "alternativas": ["3", "10", "11", "27"],
@@ -565,7 +549,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "pergunta": "Seis laranjas divididas entre três pessoas dão quantas laranjas para cada uma?",
     "imagem": "",
     "alternativas": ["1", "2", "3", "6"],
-    "correta": "2",
+    "correta": "3",
     "nivel": 4,
     "nomeDoJogador": "THEO"
   },
@@ -612,8 +596,8 @@ final List<Map<String, dynamic>> listaDePerguntas = [
   {
     "pergunta": "Quanto é 7 - 4 ?",
     "imagem": "",
-    "correta": "3",
-    "alternativas": ["3", "9", "11", "27"],
+    "correta": "NENHUMA DAS OPÇÕES",
+    "alternativas": ["2", "4", "8", "NENHUMA DAS OPÇÕES"],
     'nivel': 1,
     'nomeDoJogador': 'THEO'
   },
@@ -653,21 +637,21 @@ final List<Map<String, dynamic>> listaDePerguntas = [
   {
     "pergunta": "Qual dos instrumentos musicais abaixo usa-se a boca pra produzir som?",
     "imagem": "",
-    "correta": "FLAUTA",
-    "alternativas": ["VIOLÃO", "FLAUTA", "BATERIA", "TECLADO"],
-    'nivel': 1,
+    "correta": "SAXOFONE",
+    "alternativas": ["VIOLÃO", "SAXOFONE", "BATERIA", "TECLADO"],
+    'nivel': 2,
     'nomeDoJogador': 'THEO'
   },
   {
-    "pergunta": "Qual a primeira letra da palavra Beatriz ?",
+    "pergunta": "Qual a primeira letra da palavra Paçoca ?",
     "imagem": "",
-    "correta": "B",
-    "alternativas": ["A", "B", "C", "D"],
+    "correta": "P",
+    "alternativas": ["A", "P", "C", "D"],
     'nivel': 1,
     'nomeDoJogador': 'THEO'
   },
   {
-    "pergunta": "Qual a primeira letra da palavra Abacate ?",
+    "pergunta": "Qual a primeira letra da palavra Alicate ?",
     "imagem": "",
     "correta": "A",
     "alternativas": ["A", "B", "C", "D"],
@@ -675,7 +659,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     'nomeDoJogador': 'THEO'
   },
   {
-    "pergunta": "Qual a última letra da palavra Abacate ?",
+    "pergunta": "Qual a última letra da palavra Alicate ?",
     "imagem": "",
     "correta": "E",
     "alternativas": ["A", "F", "C", "E"],
@@ -688,14 +672,6 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "correta": "E",
     "alternativas": ["A", "F", "C", "E"],
     'nivel': 1,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    'pergunta': 'Qual dos nomes abaixo de frente pra trás e de trás pra frente são iguais?',
-    "imagem": "",
-    'alternativas': ['RAUL', 'ANA', 'MATHEUS', 'GABRIEL'],
-    'correta': 'ANA',
-    'nivel': 2,
     'nomeDoJogador': 'THEO'
   },
   {
@@ -777,6 +753,22 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     'correta': '28',
     'nivel': 2,
     'nomeDoJogador': 'THEO'
+  },
+  {
+    "pergunta": "Qual desses números é **ímpar**?",
+    "imagem": "",
+    "alternativas": ["2", "3", "4", "6"],
+    "correta": "27",
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual desses números é **par**?",
+    "imagem": "",
+    "alternativas": ["3", "4", "5", "7"],
+    "correta": "4",
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
   },
   {
     'pergunta': 'Qual desses números não é menor ou igual a 30?',
@@ -1027,7 +1019,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Se Maria foi a primeira a chegar na escola, ela chegou em qual lugar?",
+    "pergunta": "Se Zuleide foi a primeira a chegar na escola, ela chegou em qual lugar?",
     "imagem": "",
     "alternativas": ["Primeiro", "Segundo", "Terceiro", "Quarto"],
     "correta": "Primeiro",
@@ -1035,7 +1027,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "João foi o terceiro a pegar o brinquedo. Qual lugar ele pegou?",
+    "pergunta": "Ramon foi o terceiro a pegar o brinquedo. Qual lugar ele pegou?",
     "imagem": "",
     "alternativas": ["Primeiro", "Segundo", "Terceiro", "Quarto"],
     "correta": "Terceiro",
@@ -1245,8 +1237,8 @@ final List<Map<String, dynamic>> listaDePerguntas = [
   {
     "pergunta": "Qual número vem depois do 9?",
     "imagem": "",
-    "correta": "10",
-    "alternativas": ["10", "8", "7", "6"],
+    "correta": "NENHUMA DAS OPÇÕES",
+    "alternativas": ["4", "8", "7", "NENHUMA DAS OPÇÕES"],
     'nivel': 1,
     'nomeDoJogador': 'THEO'
   },
@@ -1299,10 +1291,10 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     'nomeDoJogador': 'THEO'
   },
   {
-    "pergunta": "Para que serve um telefone?",
+    "pergunta": "Para que serve um termômetro?",
     "imagem": "",
-    "correta": "PARA SE COMUNICAR",
-    "alternativas": ["PARA VOAR", "PARA SE COMUNICAR", "PARA COZINHAR", "PARA ESCOVAR OS DENTES"],
+    "correta": "PARA MEDIR A TEMPERATURA",
+    "alternativas": ["PARA COZINHAR", "PARA MEDIR A TEMPERATURA", "PARA ESCREVER", "PARA CORTAR"],
     "nivel": 2,
     "nomeDoJogador": "THEO"
   },
@@ -1313,6 +1305,14 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "alternativas": ["TAMANDUÁ", "GIRAFA", "FORMIGA", "COELHO"],
     'nivel': 2,
     'nomeDoJogador': 'THEO'
+  },
+  {
+    "pergunta": "Qual desses animais é mais pesado?",
+    "imagem": "",
+    "correta": "ELEFANTE",
+    "alternativas": ["CACHORRO", "GATO", "ELEFANTE", "COELHO"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
   },
   {
     "pergunta": "Qual desses animais é roedor?",
@@ -1355,6 +1355,14 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
+    "pergunta": "Em qual mês comemoramos o Natal?",
+    "imagem": "",
+    "correta": "DEZEMBRO",
+    "alternativas": ["JULHO", "OUTUBRO", "DEZEMBRO", "NOVEMBRO"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
     "pergunta": "Quantos filmes da franquia 'Sing' já foram lançados até 2023?",
     "imagem": "",
     "alternativas": ["1", "2", "3", "4"],
@@ -1387,14 +1395,6 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual palavra está escrita corretamente?",
-    "imagem": "",
-    "correta": "ESCOLA",
-    "alternativas": ["ISCOLA", "ESCOLA", "ESCOla", "ESKOLA"],
-    "nivel": 3,
-    "nomeDoJogador": "THEO"
-  },
-  {
     "pergunta": "Qual palavra é uma cor?",
     "imagem": "",
     "correta": "VERDE",
@@ -1403,11 +1403,35 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual palavra é um objeto?",
+    "pergunta": "Qual palavra representa um objeto?",
     "imagem": "",
     "correta": "MESA",
     "alternativas": ["MESA", "CORRER", "TRISTE", "ALTO"],
     "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "A mãe do seu irmão é o que seu?",
+    "imagem": "",
+    "correta": "MÃE",
+    "alternativas": ["TIA", "MÃE", "PRIMA", "AVÓ"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "A mãe da sua mãe ou pai é o que seu?",
+    "imagem": "",
+    "correta": "AVÓ",
+    "alternativas": ["TIA", "AVÓ", "PRIMA", "IRMÃ"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra representa um sentimento?",
+    "imagem": "",
+    "correta": "ALEGRIA",
+    "alternativas": ["CADERNO", "ALEGRIA", "CANTAR", "CANETA"],
+    "nivel": 2,
     "nomeDoJogador": "THEO"
   },
   {
@@ -1421,16 +1445,16 @@ final List<Map<String, dynamic>> listaDePerguntas = [
   {
     "pergunta": "Qual desses grupos musicais canta músicas de rock?",
     "imagem": "",
-    "alternativas": ["Beatles", "Peppa Pig", "Ben 10", "Frozen"],
-    "correta": "Beatles",
+    "alternativas": ["Queen", "Bruno Mars", "Gustavo Lima", "Gilberto Gil"],
+    "correta": "Queen",
     "nivel": 3,
     "nomeDoJogador": "THEO"
   },
   {
     "pergunta": "Qual desses é um canal infantil famoso no YouTube?",
     "imagem": "",
-    "correta": "LUCCAS NETO",
-    "alternativas": ["LUCCAS NETO", "JORNAL NACIONAL", "CULINÁRIA MASTER", "CORTE & COSTURA"],
+    "correta": "MARIA CLARA E JP",
+    "alternativas": ["MARIA CLARA E JP", "JORNAL NACIONAL", "CULINÁRIA MASTER", "CORTE & COSTURA"],
     "nivel": 2,
     "nomeDoJogador": "THEO"
   },
@@ -1439,7 +1463,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "PEPPA PIG",
     "alternativas": ["PEPPA PIG", "BEN 10", "TOM E JERRY", "SCOOBY-DOO"],
-    "nivel": 2,
+    "nivel": 1,
     "nomeDoJogador": "THEO"
   },
   {
@@ -1451,10 +1475,10 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual desses é um desenho sobre cachorros heróis?",
+    "pergunta": "Qual desses desenhos é sobre crianças que se transformam em super-heróis à noite?",
     "imagem": "",
-    "correta": "PATRULHA CANINA",
-    "alternativas": ["PATRULHA CANINA", "TURMA DA MONICA", "POKÉMON", "DRAGON BALL"],
+    "correta": "PJ MASKS",
+    "alternativas": ["PJ MASKS", "PATRULHA CANINA", "TURMA DA MÔNICA", "POKÉMON"],
     "nivel": 2,
     "nomeDoJogador": "THEO"
   },
@@ -1519,7 +1543,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "BOB ESPONJA",
     "alternativas": ["BOB ESPONJA", "POCOYÓ", "GUMBALL", "TURMA DA MÔNICA"],
-    "nivel": 3,
+    "nivel": 1,
     "nomeDoJogador": "THEO"
   },
   {
@@ -1527,7 +1551,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "MUNDO BITA",
     "alternativas": ["MUNDO BITA", "BACKYARDIGANS", "PEPPA PIG", "GALINHA PINTADINHA"],
-    "nivel": 3,
+    "nivel": 2,
     "nomeDoJogador": "THEO"
   },
   {
@@ -1593,6 +1617,295 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "alternativas": ["GALINHA PINTADINHA", "CARTOONITO", "BARBIE LIFE", "BEBÊ TUBARÃO"],
     "nivel": 2,
     "nomeDoJogador": "THEO"
+  },
+  {
+    'pergunta': 'Qual nota musical natural vem depois do DÓ?',
+    "imagem": "",
+    'alternativas': ['RÉ', 'MI', 'FÁ', 'SOL'],
+    'correta': 'RÉ',
+    "nivel": 3,
+    'nomeDoJogador': 'THEO'
+  },
+  {
+    "pergunta": "Qual destas é a primeira nota da escala musical?",
+    "imagem": "",
+    "alternativas": ["DÓ", "LÁ", "FÁ", "SI"],
+    "correta": "DÓ",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual destas é a segunda nota da escala musical?",
+    "imagem": "",
+    "alternativas": ["DÓ", "LÁ", "RÉ", "SI"],
+    "correta": "RÉ",
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual programa infantil conta as aventuras de personagens como Emília, Narizinho e Visconde de Sabugosa?",
+    "imagem": "",
+    "correta": "SÍTIO DO PICAPAU AMARELO",
+    "alternativas": ["SÍTIO DO PICAPAU AMARELO", "GALINHA PINTADINHA", "TURMA DA MÔNICA", "PJ MASKS"],
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual personagem do Sítio do Picapau Amarelo é uma boneca de pano falante?",
+    "imagem": "",
+    "correta": "EMÍLIA",
+    "alternativas": ["EMÍLIA", "NARIZINHO", "VISCONDE DE SABUGOSA", "DONA BÁRTOLA"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual palavra está escondida dentro da palavra 'SETEMBRO'?",
+    "imagem": "",
+    "correta": "SETE",
+    "alternativas": ["SETE", "SOL", "ABRIR", "MAR"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual é o primeiro dia da semana?",
+    "imagem": "",
+    "alternativas": ["DOMINGO", "SEGUNDA", "SÁBADO", "QUARTA"],
+    "correta": "DOMINGO",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual dia vem depois da segunda-feira?",
+    "imagem": "",
+    "alternativas": ["TERÇA", "QUARTA", "SÁBADO", "DOMINGO"],
+    "correta": "TERÇA",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual dia é conhecido como meio da semana?",
+    "imagem": "",
+    "alternativas": ["QUARTA", "SEGUNDA", "SEXTA", "DOMINGO"],
+    "correta": "QUARTA",
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual dia vem antes do domingo?",
+    "imagem": "",
+    "alternativas": ["SÁBADO", "SEXTA", "SEGUNDA", "QUINTA"],
+    "correta": "SÁBADO",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual é o primeiro mês do ano?",
+    "imagem": "",
+    "alternativas": ["JANEIRO", "FEVEREIRO", "MARÇO", "ABRIL"],
+    "correta": "JANEIRO",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual mês vem depois de março?",
+    "imagem": "",
+    "alternativas": ["ABRIL", "MAIO", "FEVEREIRO", "JUNHO"],
+    "correta": "ABRIL",
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual é o último mês do ano?",
+    "imagem": "",
+    "alternativas": ["DEZEMBRO", "NOVEMBRO", "OUTUBRO", "JANEIRO"],
+    "correta": "DEZEMBRO",
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual mês vem antes de julho?",
+    "imagem": "",
+    "alternativas": ["JUNHO", "MAIO", "AGOSTO", "ABRIL"],
+    "correta": "JUNHO",
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual é o terceiro mês do ano?",
+    "imagem": "",
+    "alternativas": ["MARÇO", "FEVEREIRO", "ABRIL", "MAIO"],
+    "correta": "MARÇO",
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual é o último dia da semana?",
+    "imagem": "",
+    "alternativas": ["SÁBADO", "DOMINGO", "SEXTA", "QUINTA"],
+    "correta": "SÁBADO",
+    "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    'pergunta': 'O que a MÚSICA tem?',
+    "imagem": "",
+    'alternativas': ['Som', 'Pedra', 'Água', 'Areia'],
+    'correta': 'Som',
+    "nivel": 1,
+    'nomeDoJogador': 'THEO'
+  },
+  {
+    'pergunta': 'Qual animal canta e faz parte da música da natureza?',
+    "imagem": "",
+    'alternativas': ['CACHORRO', 'GALO', 'GATO', 'SAPA'],
+    'correta': 'GALO',
+    "nivel": 1,
+    'nomeDoJogador': 'THEO'
+  },
+  {
+    'pergunta': 'Para que serve a MÚSICA?',
+    "imagem": "",
+    'alternativas': ['Para brincar e se divertir', 'Para dormir sempre', 'Para fazer comida', 'Para estudar matemática'],
+    'correta': 'Para brincar e se divertir',
+    "nivel": 1,
+    'nomeDoJogador': 'THEO'
+  },
+  {
+    'pergunta': 'Se um músico quer tocar sorrindo, ele faz…',
+    "imagem": "",
+    'alternativas': ['Uma música alegre', 'Uma música triste', 'Silêncio', 'Um desenho'],
+    'correta': 'Uma música alegre',
+    "nivel": 1,
+    'nomeDoJogador': 'THEO'
+  },
+  {
+    'pergunta': 'Uma música bem tranquila faz a gente…',
+    "imagem": "",
+    'alternativas': ['Relaxar', 'Correr', 'Pular alto', 'Gritar'],
+    'correta': 'Relaxar',
+    "nivel": 1,
+    'nomeDoJogador': 'THEO'
+  },
+  {
+    'pergunta': 'Qual desses instrumentos faz parte de uma banda de rock?',
+    "imagem": "",
+    'alternativas': ['BAIXO', 'TRIÂNGULO', 'SAXOFONE', 'HARPA'],
+    'correta': 'BAIXO',
+    "nivel": 2,
+    'nomeDoJogador': 'THEO'
+  },
+  {
+    'pergunta': 'O que acontece quando batemos palmas rápido?',
+    "imagem": "",
+    'alternativas': ['O ritmo fica rápido', 'A cor muda', 'A música acaba', 'O som fica grave'],
+    'correta': 'O ritmo fica rápido',
+    "nivel": 2,
+    'nomeDoJogador': 'THEO'
+  },
+  {
+    'pergunta': 'O que usamos para ouvir música?',
+    "imagem": "",
+    'alternativas': ['Os ouvidos', 'Os pés', 'As mãos', 'A barriga'],
+    'correta': 'Os ouvidos',
+    "nivel": 1,
+    'nomeDoJogador': 'THEO'
+  },
+  {
+    'pergunta': 'Qual desses sons é bem baixinho?',
+    "imagem": "",
+    'alternativas': ['Sussurro', 'Grito', 'Trovão', 'Buzina'],
+    'correta': 'Sussurro',
+    "nivel": 2,
+    'nomeDoJogador': 'THEO'
+  },
+  {
+    'pergunta': 'Qual música faz a gente querer DANÇAR?',
+    "imagem": "",
+    'alternativas': ['Música animada', 'Música triste', 'Silêncio', 'Barulho de vento'],
+    'correta': 'Música animada',
+    "nivel": 2,
+    'nomeDoJogador': 'THEO'
+  },{
+    'pergunta': 'Qual desses faz parte do corpo e produz som?',
+    "imagem": "",
+    'alternativas': ['As palmas', 'Os joelhos', 'Os olhos', 'Os dentes'],
+    'correta': 'As palmas',
+    "nivel": 2,
+    'nomeDoJogador': 'THEO'
+  },
+  {
+    'pergunta': 'Qual desses instrumentos faz som quando a gente ASSOPRA?',
+    "imagem": "",
+    'alternativas': ['FLAUTA', 'TAMBOR', 'VIOLÃO', 'PIANO'],
+    'correta': 'FLAUTA',
+    "nivel": 1,
+    'nomeDoJogador': 'THEO'
+  },
+  {
+    'pergunta': 'Qual desses sons é bem forte?',
+    "imagem": "",
+    'alternativas': ['Trovão', 'Sussurro', 'Passarinho', 'Relógio'],
+    'correta': 'Trovão',
+    "nivel": 1,
+    'nomeDoJogador': 'THEO'
+  },
+  {
+    'pergunta': 'Qual instrumento faz “VRUUM VRUUM” igual carro?',
+    "imagem": "",
+    'alternativas': ['Nenhum instrumento', 'Gaita', 'Tambor', 'Violino'],
+    'correta': 'Nenhum instrumento',
+    "nivel": 3,
+    'nomeDoJogador': 'THEO'
+  },
+  {
+    'pergunta': 'Qual desses é um som da NATUREZA?',
+    "imagem": "",
+    'alternativas': ['Chuva', 'Guitarra', 'Bateria', 'Piano'],
+    'correta': 'Chuva',
+    "nivel": 2,
+    'nomeDoJogador': 'THEO'
+  },
+  {
+    'pergunta': 'Para fazer música, precisamos de…',
+    "imagem": "",
+    'alternativas': ['Som', 'Areia', 'Tesoura', 'Vassoura'],
+    'correta': 'Som',
+    "nivel": 2,
+    'nomeDoJogador': 'THEO'
+  },
+  {
+    "pergunta": "O que significa ESEBA?",
+    "imagem": "",
+    "alternativas": [
+      "Escola de Educação Básica da UFU",
+      "Um tipo de música",
+      "Um animal da floresta",
+      "Uma comida típica"
+    ],
+    "correta": "Escola de Educação Básica da UFU",
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    'pergunta': 'Qual desses sons deixa a gente com SONO?',
+    "imagem": "",
+    'alternativas': ['Canção de ninar', 'Rock pesado', 'Gritos', 'Apito'],
+    'correta': 'Canção de ninar',
+    "nivel": 2,
+    'nomeDoJogador': 'THEO'
+  },
+  {
+    'pergunta': 'O que a música pode fazer com a gente?',
+    "imagem": "",
+    'alternativas': [
+      'Deixar feliz',
+      'Transformar em super-herói',
+      'Virar um carro',
+      'Fazer voar'
+    ],
+    'correta': 'Deixar feliz',
+    "nivel": 2,
+    'nomeDoJogador': 'THEO'
   },
   {
     "pergunta": "Qual é o nome do conjunto de letras que formam uma palavra?",
@@ -1755,14 +2068,6 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual número representa a dezena em 14?",
-    "imagem": "",
-    "correta": "1",
-    "alternativas": ["1", "4", "14", "0"],
-    "nivel": 4,
-    "nomeDoJogador": "THEO"
-  },
-  {
     "pergunta": "Quanto é 4 + 4?",
     "imagem": "",
     "correta": "8",
@@ -1773,8 +2078,8 @@ final List<Map<String, dynamic>> listaDePerguntas = [
   {
     "pergunta": "Qual desses números é uma dezena inteira?",
     "imagem": "",
-    "correta": "20",
-    "alternativas": ["20", "12", "7", "15"],
+    "correta": "10",
+    "alternativas": ["10", "12", "7", "15"],
     "nivel": 4,
     "nomeDoJogador": "THEO"
   },
@@ -1926,7 +2231,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "pergunta": "Qual dessas palavras indica um LUGAR DA CASA?",
     "imagem": "",
     "correta": "COZINHA",
-    "alternativas": ["COZINHA", "COZINA", "COZINHÁ", "COZINNHA"],
+    "alternativas": ["COZINA", "COZINHA", "COZINHÁ", "COZINNHA"],
     "nivel": 4,
     "nomeDoJogador": "THEO"
   },
@@ -1934,7 +2239,23 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "pergunta": "Qual dessas cores é formada pela mistura de azul com amarelo?",
     "imagem": "",
     "correta": "VERDE",
-    "alternativas": ["VERDE", "ROXO", "LARANJA", "ROSA"],
+    "alternativas": ["ROXO", "VERDE", "LARANJA", "ROSA"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual dessas cores é formada pela mistura de vermelho com azul?",
+    "imagem": "",
+    "correta": "ROXO",
+    "alternativas": ["VERDE", "ROXO", "LARANJA", "AMARELO"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual dessas cores é formada pela mistura de vermelho com amarelo?",
+    "imagem": "",
+    "correta": "LARANJA",
+    "alternativas": ["VERDE", "ROXO", "LARANJA", "AZUL"],
     "nivel": 4,
     "nomeDoJogador": "THEO"
   },
@@ -2019,26 +2340,10 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual dessas cores é considerada uma cor quente?",
-    "imagem": "",
-    "correta": "VERMELHO",
-    "alternativas": ["VERMELHO", "AZUL", "VERDE", "ROXO"],
-    "nivel": 4,
-    "nomeDoJogador": "THEO"
-  },
-  {
     "pergunta": "Qual dessas cores é formada pela mistura de vermelho e azul?",
     "imagem": "",
     "correta": "ROXO",
     "alternativas": ["ROXO", "VERDE", "CINZA", "AMARELO"],
-    "nivel": 4,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Qual dessas cores é considerada uma cor fria?",
-    "imagem": "",
-    "correta": "AZUL",
-    "alternativas": ["AZUL", "LARANJA", "VERMELHO", "AMARELO"],
     "nivel": 4,
     "nomeDoJogador": "THEO"
   },
@@ -2299,11 +2604,59 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
+    "pergunta": "Qual órgão do corpo humano é responsável pela escuta (audição)?",
+    "imagem": "",
+    "correta": "OUVIDO",
+    "alternativas": ["Olho", "Nariz", "Ouvido", "Língua"],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
     "pergunta": "Qual é o oposto de rápido?",
     "imagem": "",
     "correta": "DEVAGAR",
-    "alternativas": ["LENTO", "DEVAGAR", "RÁPIDO", "FORTE"],
+    "alternativas": ["FRACO", "DEVAGAR", "RÁPIDO", "FORTE"],
     "nivel": 1,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual parte do corpo é responsável pelo sentido da visão?",
+    "imagem": "",
+    "correta": "Olhos",
+    "alternativas": ["Ouvido", "Nariz", "Olhos", "Língua"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual parte do corpo é responsável pelo sentido do olfato?",
+    "imagem": "",
+    "correta": "Nariz",
+    "alternativas": ["Pele", "Nariz", "Olhos", "Coração"],
+    "nivel": 4,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual parte do corpo está relacionado ao sentido do paladar?",
+    "imagem": "",
+    "correta": "Língua",
+    "alternativas": ["Ouvido", "Estômago", "Língua", "Rins"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual parte do corpo nos permite sentir textura e temperatura pelo tato?",
+    "imagem": "",
+    "correta": "Pele",
+    "alternativas": ["Pele", "Nariz", "Olhos", "Língua"],
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual parte do corpo é responsável pelo sentido da audição?",
+    "imagem": "",
+    "correta": "Ouvido",
+    "alternativas": ["Olhos", "Nariz", "Ouvido", "Mão"],
+    "nivel": 3,
     "nomeDoJogador": "THEO"
   },
   {
@@ -2383,7 +2736,15 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "60",
     "alternativas": ["30", "45", "60", "90"],
-    "nivel": 2,
+    "nivel": 3,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Quantos segundos há em um minuto?",
+    "imagem": "",
+    "correta": "60",
+    "alternativas": ["30", "45", "60", "90"],
+    "nivel": 3,
     "nomeDoJogador": "THEO"
   },
   {
@@ -2926,8 +3287,8 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "pergunta": "Qual palavra contém vogais seguidas?",
     "imagem": "",
     "correta": "REI",
-    "alternativas": ["REI", "RUA", "SOL", "PAZ"],
-    "nivel": 4,
+    "alternativas": ["REI", "UM", "SOL", "PAZ"],
+    "nivel": 3,
     "nomeDoJogador": "THEO"
   },
   {
@@ -2935,22 +3296,14 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "BOLO",
     "alternativas": ["BOLO", "BOLOTA", "BOLA", "BULE"],
-    "nivel": 4,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Qual personagem usa um chapéu vermelho e trabalha como encanador?",
-    "imagem": "",
-    "correta": "Mario",
-    "alternativas": ["Mario", "Luigi", "Bowser", "Yoshi"],
     "nivel": 2,
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Qual personagem é irmão do Mario e veste verde?",
+    "pergunta": "Qual personagem é irmão do personagem que usa chapéu vermelho e trabalha como encanador?",
     "imagem": "",
     "correta": "Luigi",
-    "alternativas": ["Luigi", "Toad", "Wario", "Yoshi"],
+    "alternativas": ["Mario", "Luigi", "Bowser", "Yoshi"],
     "nivel": 2,
     "nomeDoJogador": "THEO"
   },
@@ -3480,10 +3833,10 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "THEO"
   },
   {
-    "pergunta": "Quem fala a frase 'Estou com fome'?",
+    "pergunta": "Quem fala mais a frase 'Só mais uns minutinhos'?",
     "imagem": "",
     "correta": "MATHEUS HENRIQUE",
-    "alternativas": ["RAUL MAIA", "MATHEUS HENRIQUE", "RENNANZINHO", "THEO VALENTIM"],
+    "alternativas": ["RAUL MAIA", "MATHEUS HENRIQUE", "RENNANZINHO", "THEO PÉTRICK"],
     'nivel': 1,
     'nomeDoJogador': 'THEO'
   },
@@ -3494,22 +3847,6 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "alternativas": ["ESCRITOR", "MOTORISTA", "CANTOR", "ENGENHEIRO"],
     "nivel": 4,
     "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Quem é Bob Esponja?",
-    "imagem": "",
-    "correta": "PERSONAGEM DE DESENHO",
-    "alternativas": ["ATLETA", "PERSONAGEM DE DESENHO", "MÉDICO", "PADEIRO"],
-    "nivel": 2,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Quem é a professora da turma do Homem-Aranha da ESEBA?",
-    "imagem": "",
-    "correta": "TATI",
-    "alternativas": ["TEREZA", "TATI", "TIA COTINHA", "MARIA"],
-    'nivel': 1,
-    'nomeDoJogador': 'THEO'
   },
   {
     "pergunta": "Quem fala a frase 'Eu Aperto'",
@@ -5144,27 +5481,6 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
-    "pergunta": "O que caracteriza um programa de culinária?",
-    "imagem": "",
-    "correta": "Receitas são preparadas e mostradas ao público",
-    "alternativas": [
-      "Notícias são lidas",
-      "Receitas são preparadas e mostradas ao público",
-      "Somente jogos são mostrados",
-      "Histórias fictícias são atuadas"
-    ],
-    "nivel": 2,
-    "nomeDoJogador": "MATHEUS"
-  },
-  {
-    "pergunta": "De que cor é a banana madura?",
-    "imagem": "",
-    "correta": "AMARELA",
-    "alternativas": ["VERMELHA", "AZUL", "ROSA", "AMARELA"],
-    "nivel": 1,
-    "nomeDoJogador": "MATHEUS"
-  },
-  {
     'pergunta': 'A tonalidade de uma música normalmente indica:',
     "imagem": "",
     'alternativas': [
@@ -5174,7 +5490,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
       'A duração da música'
     ],
     'correta': 'Quais acordes aparecem nela',
-    "nivel": 3,
+    "nivel": 2,
     'nomeDoJogador': 'MATHEUS'
   },
   {
@@ -5187,7 +5503,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
       'Entre FÁ e SOL'
     ],
     'correta': 'Entre MI e FÁ',
-    "nivel": 4,
+    "nivel": 1,
     'nomeDoJogador': 'MATHEUS'
   },
   {
@@ -5215,288 +5531,12 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     'nomeDoJogador': 'MATHEUS'
   },
   {
-    'pergunta': 'Qual dessas notas é sustenida?',
+    'pergunta': 'Qual dessas notas é bemol?',
     "imagem": "",
-    'alternativas': ['FÁ#', 'SOL', 'MI', 'DÓ'],
-    'correta': 'FÁ#',
+    'alternativas': ['FÁb', 'SOL', 'MI', 'DÓ'],
+    'correta': 'FÁb',
     "nivel": 1,
     'nomeDoJogador': 'MATHEUS'
-  },
-  {
-    'pergunta': 'Qual nota musical naturam vem depois do DÓ?',
-    "imagem": "",
-    'alternativas': ['RÉ', 'MI', 'FÁ', 'SOL'],
-    'correta': 'RÉ',
-    "nivel": 3,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    'pergunta': 'Qual é a primeira nota da música?',
-    "imagem": "",
-    'alternativas': ['DÓ', 'LÁ', 'FÁ', 'SI'],
-    'correta': 'DÓ',
-    "nivel": 1,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    "pergunta": "Qual destas é a primeira nota da escala musical?",
-    "imagem": "",
-    "alternativas": ["DÓ", "LÁ", "FÁ", "SI"],
-    "correta": "DÓ",
-    "nivel": 1,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Qual destas é a segunda nota da escala musical?",
-    "imagem": "",
-    "alternativas": ["DÓ", "LÁ", "FÁ", "SI"],
-    "correta": "RÉ",
-    "nivel": 1,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Qual palavra está escondida dentro da palavra 'SETEMBRO'?",
-    "imagem": "",
-    "correta": "SETE",
-    "alternativas": ["SETE", "SOL", "ABRIR", "MAR"],
-    "nivel": 2,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Qual é o primeiro dia da semana?",
-    "imagem": "",
-    "alternativas": ["DOMINGO", "SEGUNDA", "SÁBADO", "QUARTA"],
-    "correta": "DOMINGO",
-    "nivel": 1,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Qual dia vem depois da segunda-feira?",
-    "imagem": "",
-    "alternativas": ["TERÇA", "QUARTA", "SÁBADO", "DOMINGO"],
-    "correta": "TERÇA",
-    "nivel": 1,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Qual dia é conhecido como meio da semana?",
-    "imagem": "",
-    "alternativas": ["QUARTA", "SEGUNDA", "SEXTA", "DOMINGO"],
-    "correta": "QUARTA",
-    "nivel": 3,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Qual dia vem antes do domingo?",
-    "imagem": "",
-    "alternativas": ["SÁBADO", "SEXTA", "SEGUNDA", "QUINTA"],
-    "correta": "SÁBADO",
-    "nivel": 1,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Qual é o primeiro mês do ano?",
-    "imagem": "",
-    "alternativas": ["JANEIRO", "FEVEREIRO", "MARÇO", "ABRIL"],
-    "correta": "JANEIRO",
-    "nivel": 1,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Qual mês vem depois de março?",
-    "imagem": "",
-    "alternativas": ["ABRIL", "MAIO", "FEVEREIRO", "JUNHO"],
-    "correta": "ABRIL",
-    "nivel": 4,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Qual é o último mês do ano?",
-    "imagem": "",
-    "alternativas": ["DEZEMBRO", "NOVEMBRO", "OUTUBRO", "JANEIRO"],
-    "correta": "DEZEMBRO",
-    "nivel": 2,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Qual mês vem antes de julho?",
-    "imagem": "",
-    "alternativas": ["JUNHO", "MAIO", "AGOSTO", "ABRIL"],
-    "correta": "JUNHO",
-    "nivel": 4,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Qual é o terceiro mês do ano?",
-    "imagem": "",
-    "alternativas": ["MARÇO", "FEVEREIRO", "ABRIL", "MAIO"],
-    "correta": "MARÇO",
-    "nivel": 4,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    "pergunta": "Qual é o último dia da semana?",
-    "imagem": "",
-    "alternativas": ["SÁBADO", "DOMINGO", "SEXTA", "QUINTA"],
-    "correta": "SÁBADO",
-    "nivel": 1,
-    "nomeDoJogador": "THEO"
-  },
-  {
-    'pergunta': 'O que a MÚSICA tem?',
-    "imagem": "",
-    'alternativas': ['Som', 'Pedra', 'Água', 'Areia'],
-    'correta': 'Som',
-    "nivel": 1,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    'pergunta': 'Qual animal canta e faz parte da música da natureza?',
-    "imagem": "",
-    'alternativas': ['CACHORRO', 'GALO', 'GATO', 'SAPA'],
-    'correta': 'GALO',
-    "nivel": 1,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    'pergunta': 'Para que serve a MÚSICA?',
-    "imagem": "",
-    'alternativas': ['Para brincar e se divertir', 'Para dormir sempre', 'Para fazer comida', 'Para estudar matemática'],
-    'correta': 'Para brincar e se divertir',
-    "nivel": 1,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    'pergunta': 'Qual instrumento faz “TUM TUM TUM”?',
-    "imagem": "",
-    'alternativas': ['TAMBOR', 'FLAUTA', 'VIOLINO', 'SINO'],
-    'correta': 'TAMBOR',
-    "nivel": 1,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    'pergunta': 'Se um músico quer tocar sorrindo, ele faz…',
-    "imagem": "",
-    'alternativas': ['Uma música alegre', 'Uma música triste', 'Silêncio', 'Um desenho'],
-    'correta': 'Uma música alegre',
-    "nivel": 1,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    'pergunta': 'Uma música bem tranquila faz a gente…',
-    "imagem": "",
-    'alternativas': ['Relaxar', 'Correr', 'Pular alto', 'Gritar'],
-    'correta': 'Relaxar',
-    "nivel": 1,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    'pergunta': 'Qual desses instrumentos faz parte de uma banda de rock?',
-    "imagem": "",
-    'alternativas': ['GUITARRA', 'TRIÂNGULO', 'SAXOFONE', 'HARPA'],
-    'correta': 'GUITARRA',
-    "nivel": 2,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    'pergunta': 'O que acontece quando batemos palmas rápido?',
-    "imagem": "",
-    'alternativas': ['O ritmo fica rápido', 'A cor muda', 'A música acaba', 'O som fica grave'],
-    'correta': 'O ritmo fica rápido',
-    "nivel": 2,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    'pergunta': 'O que usamos para ouvir música?',
-    "imagem": "",
-    'alternativas': ['Os ouvidos', 'Os pés', 'As mãos', 'A barriga'],
-    'correta': 'Os ouvidos',
-    "nivel": 1,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    'pergunta': 'Qual desses sons é bem baixinho?',
-    "imagem": "",
-    'alternativas': ['Sussurro', 'Grito', 'Trovão', 'Buzina'],
-    'correta': 'Sussurro',
-    "nivel": 2,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    'pergunta': 'Qual música faz a gente querer DANÇAR?',
-    "imagem": "",
-    'alternativas': ['Música animada', 'Música triste', 'Silêncio', 'Barulho de vento'],
-    'correta': 'Música animada',
-    "nivel": 2,
-    'nomeDoJogador': 'THEO'
-  },{
-    'pergunta': 'Qual desses faz parte do corpo e produz som?',
-    "imagem": "",
-    'alternativas': ['As palmas', 'Os joelhos', 'Os olhos', 'Os dentes'],
-    'correta': 'As palmas',
-    "nivel": 2,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    'pergunta': 'Qual desses instrumentos faz som quando a gente ASSOPRA?',
-    "imagem": "",
-    'alternativas': ['FLAUTA', 'TAMBOR', 'VIOLÃO', 'PIANO'],
-    'correta': 'FLAUTA',
-    "nivel": 1,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    'pergunta': 'Qual desses sons é bem forte?',
-    "imagem": "",
-    'alternativas': ['Trovão', 'Sussurro', 'Passarinho', 'Relógio'],
-    'correta': 'Trovão',
-    "nivel": 1,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    'pergunta': 'Qual instrumento faz “VRUUM VRUUM” igual carro?',
-    "imagem": "",
-    'alternativas': ['Nenhum instrumento', 'Gaita', 'Tambor', 'Violino'],
-    'correta': 'Nenhum instrumento',
-    "nivel": 3,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    'pergunta': 'Qual desses é um som da NATUREZA?',
-    "imagem": "",
-    'alternativas': ['Chuva', 'Guitarra', 'Bateria', 'Piano'],
-    'correta': 'Chuva',
-    "nivel": 2,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    'pergunta': 'Para fazer música, precisamos de…',
-    "imagem": "",
-    'alternativas': ['Som', 'Areia', 'Tesoura', 'Vassoura'],
-    'correta': 'Som',
-    "nivel": 2,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    'pergunta': 'Qual desses sons deixa a gente com SONO?',
-    "imagem": "",
-    'alternativas': ['Canção de ninar', 'Rock pesado', 'Gritos', 'Apito'],
-    'correta': 'Canção de ninar',
-    "nivel": 2,
-    'nomeDoJogador': 'THEO'
-  },
-  {
-    'pergunta': 'O que a música pode fazer com a gente?',
-    "imagem": "",
-    'alternativas': [
-      'Deixar feliz',
-      'Transformar em super-herói',
-      'Virar um carro',
-      'Fazer voar'
-    ],
-    'correta': 'Deixar feliz',
-    "nivel": 2,
-    'nomeDoJogador': 'THEO'
   },
   {
     "pergunta": "Qual transporte aquático é pequeno e usado em rios ou lagos por uma pessoa?",
@@ -5544,22 +5584,6 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "correta": "FALANDO MUITO SEM DIZER NADA",
     "alternativas": ["COZINHANDO LINGUIÇA", "FALANDO MUITO SEM DIZER NADA", "FALANDO A VERDADE", "BRINCANDO"],
     "nivel": 2,
-    "nomeDoJogador": "MATHEUS"
-  },
-  {
-    "pergunta": "Quando alguém 'Quebra o galho' de outra pessoa, ela está:",
-    "imagem": "",
-    "correta": "AJUDANDO",
-    "alternativas": ["BRIGANDO", "DESCANSANDO", "AJUDANDO", "QUEBRANDO ALGUMA COISA"],
-    "nivel": 1,
-    "nomeDoJogador": "MATHEUS"
-  },
-  {
-    "pergunta": "A expressão 'Pisar na bola' quer dizer que alguém:",
-    "imagem": "",
-    "correta": "ERROU FEIO",
-    "alternativas": ["JOGOU FUTEBOL", "FICOU COM MEDO", "ERROU FEIO", "FEZ ALGO INCRÍVEL"],
-    "nivel": 1,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -5706,7 +5730,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
       "Costas",
       "Peito"
     ],
-    "nivel": 3,
+    "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -5778,22 +5802,6 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     'nomeDoJogador': 'MATHEUS'
   },
   {
-    "pergunta": "A mudança do estado sólido para o líquido recebe qual nome?",
-    "imagem": "",
-    "correta": "FUSÃO",
-    "alternativas": ["EVAPORAÇÃO", "CONDENSAÇÃO", "FUSÃO", "SUBLIMAÇÃO"],
-    "nivel": 1,
-    "nomeDoJogador": "MATHEUS"
-  },
-  {
-    "pergunta": "Quando um sólido passa direto para o estado gasoso, sem virar líquido, isso é chamado de:",
-    "imagem": "",
-    "correta": "SUBLIMAÇÃO",
-    "alternativas": ["EVAPORAÇÃO", "DERRETIMENTO", "FUSÃO", "SUBLIMAÇÃO"],
-    "nivel": 1,
-    "nomeDoJogador": "MATHEUS"
-  },
-  {
     "pergunta": "A cera de uma vela se transforma em líquido porque sofreu:",
     "imagem": "",
     "correta": "AQUECIMENTO",
@@ -5806,14 +5814,6 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "PODE SE TRANSFORMAR EM LÍQUIDO",
     "alternativas": ["VIRA FUMAÇA DIRETO", "SE TORNA AR", "PODE SE TRANSFORMAR EM LÍQUIDO", "NADA ACONTECE"],
-    "nivel": 1,
-    "nomeDoJogador": "MATHEUS"
-  },
-  {
-    "pergunta": "Qual dos materiais abaixo derrete mais facilmente quando aquecido?",
-    "imagem": "",
-    "correta": "CHOCOLATE",
-    "alternativas": ["PEDRA", "MADEIRA", "CHOCOLATE", "FERRO"],
     "nivel": 1,
     "nomeDoJogador": "MATHEUS"
   },
@@ -5838,6 +5838,14 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "EBULIÇÃO",
     "alternativas": ["EBULIÇÃO", "CONDENSAÇÃO", "SOLIDIFICAÇÃO", "FUSÃO"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quantos reinos dos seres vivos são tradicionalmente estudados?",
+    "imagem": "",
+    "correta": "CINCO",
+    "alternativas": ["DOIS", "TRÊS", "CINCO", "SETE"],
     "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
@@ -5890,27 +5898,11 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
-    "pergunta": "Se você colocar uma tampa fria sobre uma panela com água fervendo, gotas se formam rapidamente. Isso acontece devido à:",
-    "imagem": "",
-    "correta": "CONDENSAÇÃO",
-    "alternativas": ["EVAPORAÇÃO", "SUBLIMAÇÃO", "CONDENSAÇÃO", "SOLIDIFICAÇÃO"],
-    "nivel": 2,
-    "nomeDoJogador": "MATHEUS"
-  },
-  {
     "pergunta": "Quando você respira em um dia frio e sua respiração vira uma 'fumacinha', está acontecendo principalmente:",
     "imagem": "",
     "correta": "CONDENSAÇÃO DO VAPOR",
     "alternativas": ["EVAPORAÇÃO DA SALIVA", "CONDENSAÇÃO DO VAPOR", "SOLIDIFICAÇÃO DO AR", "SUBLIMAÇÃO DO FRIO"],
     "nivel": 3,
-    "nomeDoJogador": "MATHEUS"
-  },
-  {
-    "pergunta": "A formação de nuvens no céu envolve principalmente qual mudança de estado da água?",
-    "imagem": "",
-    "correta": "CONDENSAÇÃO",
-    "alternativas": ["EVAPORAÇÃO", "FUSÃO", "SUBLIMAÇÃO", "CONDENSAÇÃO"],
-    "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -5920,22 +5912,6 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     'correta': 'FÁ',
     "nivel": 3,
     'nomeDoJogador': 'MATHEUS'
-  },
-  {
-    "pergunta": "As plantas precisam de luz do sol para fazer qual processo importante?",
-    "imagem": "",
-    "correta": "FOTOSSÍNTESE",
-    "alternativas": ["RESPIRAÇÃO", "FOTOSSÍNTESE", "SONO", "ALERGIAS"],
-    "nivel": 1,
-    "nomeDoJogador": "MATHEUS"
-  },
-  {
-    "pergunta": "De onde vem a água que bebemos?",
-    "imagem": "",
-    "correta": "DA NATUREZA",
-    "alternativas": ["DA NATUREZA", "DA TV", "DO CARRO", "DO SOFÁ"],
-    "nivel": 1,
-    "nomeDoJogador": "MATHEUS"
   },
   {
     "pergunta": "O que as plantas precisam para crescer?",
@@ -6006,14 +5982,14 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "FARMACÊUTICO",
     "alternativas": ["FARMACÊUTICO", "CARPINTEIRO", "PEDREIRO", "MECÂNICO"],
-    "nivel": 2,
+    "nivel": 1,
     "nomeDoJogador": "MATHEUS"
   },
   {
-    "pergunta": "Qual desses profissionais trabalha cuidando de animais doentes?",
+    "pergunta": "Qual desses profissionais trabalha fabricando móveis de madeira?",
     "imagem": "",
-    "correta": "VETERINÁRIO",
-    "alternativas": ["VENDEDOR", "VETERINÁRIO", "ENGENHEIRO", "LUTADOR"],
+    "correta": "MARCENEIRO",
+    "alternativas": ["PEDREIRO", "MARCENEIRO", "MECÂNICO", "COZINHEIRO"],
     "nivel": 1,
     "nomeDoJogador": "MATHEUS"
   },
@@ -6022,6 +5998,14 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "GARIS",
     "alternativas": ["GARIS", "ADVOGADO", "ATOR", "CANTOR"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses profissionais trabalha fabricando e consertando objetos de metal?",
+    "imagem": "",
+    "correta": "SERRALHEIRO",
+    "alternativas": ["MARCENEIRO", "SERRALHEIRO", "ELETRICISTA", "PINTOR"],
     "nivel": 1,
     "nomeDoJogador": "MATHEUS"
   },
@@ -6182,13 +6166,13 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "EVAPORAÇÃO",
     "alternativas": ["PRECIPITAÇÃO", "EVAPORAÇÃO", "INFILTRAÇÃO", "CONDENSAÇÃO"],
-    "nivel": 2,
+    "nivel": 1,
     "nomeDoJogador": "MATHEUS"
   },
   {
     "pergunta": "O que significa a sigla OVNI?",
     "imagem": "",
-    "alternativas": ["OBJETO VOADOR NÃO IDENTIFICADO", "OBJETO VELHO NACIONAL INFERIOR", "OBSERVAÇÃO VOLTADA NA INOVAÇÃO", "OBJETO VIRTUAL NAVEGANTE INTERNACIONAL"],
+    "alternativas": ["OBJETO VALENTIM NÃO IDENTIFICADO", "OBJETO VOADOR NÃO IDENTIFICADO", "OBSERVAÇÃO VOLTADA NA INOVAÇÃO", "OBJETO VIRTUAL NAVEGANTE INTERNACIONAL"],
     "correta": "OBJETO VOADOR NÃO IDENTIFICADO",
     "nivel": 2,
     "nomeDoJogador": "MATHEUS"
@@ -6206,7 +6190,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "alternativas": ["Estudam e investigam o objeto antes de tirar conclusões", "Ignoram imediatamente", "Dizem que é alienígena sem provas", "Tentam caçar o objeto"],
     "correta": "Estudam e investigam o objeto antes de tirar conclusões",
-    "nivel": 3,
+    "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -6230,7 +6214,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "alternativas": ["1996", "1985", "2000", "1990"],
     "correta": "1996",
-    "nivel": 2,
+    "nivel": 3,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -6238,7 +6222,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "alternativas": ["Exército Brasileiro", "NASA", "ONU", "Polícia Federal dos EUA"],
     "correta": "Exército Brasileiro",
-    "nivel": 2,
+    "nivel": 3,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -6294,7 +6278,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "GASES DOS CARROS E FÁBRICAS",
     "alternativas": ["VAPOR DOS LAGOS", "AR DAS FLORESTAS", "GASES DOS CARROS E FÁBRICAS", "RESPIRAÇÃO DOS ANIMAIS"],
-    "nivel": 3,
+    "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -6302,7 +6286,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "DEVOLVER NUTRIENTES AO SOLO",
     "alternativas": ["GERAR ELETRICIDADE", "CRIAR ROCHAS", "PERFUMAR O AMBIENTE", "DEVOLVER NUTRIENTES AO SOLO"],
-    "nivel": 3,
+    "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -6310,7 +6294,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "GASES DO EFEITO ESTUFA",
     "alternativas": ["ÁGUA NOS RIOS", "VENTO FRIO", "GASES DO EFEITO ESTUFA", "LUZ DO SOL"],
-    "nivel": 3,
+    "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -6350,7 +6334,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "PROTEGER PLANTAS E ANIMAIS",
     "alternativas": ["CRIAR FÁBRICAS", "AUMENTAR O TRÂNSITO", "PROTEGER PLANTAS E ANIMAIS", "CONSTRUIR MAIS CIDADES"],
-    "nivel": 3,
+    "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -6669,7 +6653,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "pergunta": "Qual palavra possui um ditongo?",
     "imagem": "",
     "correta": "BOI",
-    "alternativas": ["BOI", "GATO", "SOL", "MESA"],
+    "alternativas": ["GATO", "BOI", "CAMISA", "MESA"],
     "nivel": 1,
     "nomeDoJogador": "MATHEUS"
   },
@@ -6807,7 +6791,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
-    "pergunta": "Qual palavra **não** possui um ditongo?",
+    "pergunta": "Qual palavra não possui um ditongo?",
     "imagem": "",
     "correta": "GATO",
     "alternativas": ["BOI", "PAI", "MÃO", "GATO"],
@@ -6815,7 +6799,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
-    "pergunta": "Qual palavra **não** possui um ditongo?",
+    "pergunta": "Qual palavra não possui um ditongo?",
     "imagem": "",
     "correta": "SOL",
     "alternativas": ["MAIS", "PÉU", "BOI", "SOL"],
@@ -6823,7 +6807,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
-    "pergunta": "Qual palavra **não** possui um ditongo?",
+    "pergunta": "Qual palavra não possui um ditongo?",
     "imagem": "",
     "correta": "LATA",
     "alternativas": ["CÉU", "PAI", "BOI", "LATA"],
@@ -6831,7 +6815,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
-    "pergunta": "Qual palavra **não** possui um ditongo?",
+    "pergunta": "Qual palavra não possui um ditongo?",
     "imagem": "",
     "correta": "MESA",
     "alternativas": ["MAIS", "BOI", "MÃO", "MESA"],
@@ -6839,7 +6823,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
-    "pergunta": "Qual palavra **não** possui um ditongo?",
+    "pergunta": "Qual palavra não possui um ditongo?",
     "imagem": "",
     "correta": "PÉ",
     "alternativas": ["BOI", "PAI", "MÃO", "PÉ"],
@@ -6847,7 +6831,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
-    "pergunta": "Qual palavra **não** possui um tritongo?",
+    "pergunta": "Qual palavra não possui um tritongo?",
     "imagem": "",
     "correta": "CAVALO",
     "alternativas": ["ENXAGUEI", "URUGUAI", "QUAIS", "CAVALO"],
@@ -6855,7 +6839,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
-    "pergunta": "Qual palavra **não** possui um tritongo?",
+    "pergunta": "Qual palavra não possui um tritongo?",
     "imagem": "",
     "correta": "SOL",
     "alternativas": ["PARAÍSO", "URUGUAI", "ENXAGUEI", "SOL"],
@@ -6863,7 +6847,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
-    "pergunta": "Qual palavra **não** possui um tritongo?",
+    "pergunta": "Qual palavra não possui um tritongo?",
     "imagem": "",
     "correta": "LATA",
     "alternativas": ["PAIÚRA", "ENXAGUEI", "URUGUAI", "LATA"],
@@ -6871,7 +6855,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
-    "pergunta": "Qual palavra **não** possui um tritongo?",
+    "pergunta": "Qual palavra não possui um tritongo?",
     "imagem": "",
     "correta": "MESA",
     "alternativas": ["PARAÍSO", "ENXAGUEI", "QUAIS", "MESA"],
@@ -6879,7 +6863,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
-    "pergunta": "Qual palavra **não** possui um tritongo?",
+    "pergunta": "Qual palavra não possui um tritongo?",
     "imagem": "",
     "correta": "PÉ",
     "alternativas": ["URUGUAI", "ENXAGUEI", "PAIÚRA", "PÉ"],
@@ -7002,7 +6986,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "pergunta": "Qual palavra deve ser acentuada corretamente?",
     "imagem": "",
     "correta": "PORÉM",
-    "alternativas": ["POREM", "PORÉM", "POREIM", "PÓREM"],
+    "alternativas": ["POREM", "PORÉM", "PORÊM", "PÓREM"],
     "nivel": 1,
     "nomeDoJogador": "MATHEUS"
   },
@@ -7875,6 +7859,58 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
+    "pergunta": "Qual frase apresenta sentido figurado?",
+    "imagem": "",
+    "alternativas": [
+      "O livro está sobre a mesa.",
+      "Ela tem um coração de pedra.",
+      "O sol nasceu cedo hoje.",
+      "A água está fria."
+    ],
+    "correta": "Ela tem um coração de pedra.",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Em qual alternativa a expressão está em sentido figurado?",
+    "imagem": "",
+    "alternativas": [
+      "O menino quebrou o copo.",
+      "A professora escreveu no quadro.",
+      "Ele explodiu de felicidade.",
+      "A janela está fechada."
+    ],
+    "correta": "Ele explodiu de felicidade.",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual frase apresenta sentido literal?",
+    "imagem": "",
+    "alternativas": [
+      "Ele tem um coração de ouro.",
+      "A menina está com a cabeça nas nuvens.",
+      "O gato dorme em cima do sofá.",
+      "Ela explodiu de raiva."
+    ],
+    "correta": "O gato dorme em cima do sofá.",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Em qual alternativa a frase está em sentido literal?",
+    "imagem": "",
+    "alternativas": [
+      "O tempo voa.",
+      "Ele está com a faca e o queijo na mão.",
+      "A chuva molhou a rua.",
+      "Ela tem nervos de aço."
+    ],
+    "correta": "A chuva molhou a rua.",
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
     'pergunta': 'O campo harmônico é:',
     "imagem": "",
     'alternativas': [
@@ -7898,7 +7934,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
   {
     "pergunta": "Qual destas palavras é um pronome demonstrativo?",
     "imagem": "",
-    "alternativas": ["Esse", "Nós", "Teu", "Alguns"],
+    "alternativas": ["Nós", "Esse", "Teu", "Alguns"],
     "correta": "Esse",
     "nivel": 2,
     "nomeDoJogador": "MATHEUS"
@@ -8217,7 +8253,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "alternativas": ["caderno, mesa, amizade", "alegria, flor, carro", "fé, livro, tristeza", "paciência, porta, força"],
     "correta": "caderno, mesa, amizade",
-    "nivel": 3,
+    "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -8225,14 +8261,6 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     'alternativas': ['Dm', 'F#m', 'G#m', 'A#'],
     'correta': 'Dm',
-    "nivel": 4,
-    'nomeDoJogador': 'MATHEUS'
-  },
-  {
-    'pergunta': 'Qual destes acordes é MAIOR?',
-    "imagem": "",
-    'alternativas': ['Em', 'Am', 'G', 'Dm'],
-    'correta': 'G',
     "nivel": 2,
     'nomeDoJogador': 'MATHEUS'
   },
@@ -8241,15 +8269,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "alternativas": ["C", "Em", "Am", "Dm"],
     "correta": "C",
-    "nivel": 2,
-    "nomeDoJogador": "MATHEUS"
-  },
-  {
-    "pergunta": "Qual destes acordes é menor?",
-    "imagem": "",
-    "alternativas": ["G", "D", "E", "Am"],
-    "correta": "Am",
-    "nivel": 2,
+    "nivel": 1,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -8281,7 +8301,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "alternativas": ["Am", "Dm", "E", "Em"],
     "correta": "E",
-    "nivel": 3,
+    "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -8289,7 +8309,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "alternativas": ["A", "Cm", "Em", "Bm"],
     "correta": "A",
-    "nivel": 3,
+    "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -8297,7 +8317,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "alternativas": ["F", "G", "Am", "A"],
     "correta": "Am",
-    "nivel": 3,
+    "nivel": 1,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -8305,7 +8325,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "alternativas": ["D", "C", "Em", "G"],
     "correta": "Em",
-    "nivel": 3,
+    "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -8841,14 +8861,6 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "10 cm²",
     "alternativas": ["7 cm²", "10 cm²", "12 cm²", "15 cm²"],
-    "nivel": 3,
-    "nomeDoJogador": "MATHEUS"
-  },
-  {
-    "pergunta": "A capital do estado de Minas Gerais é:",
-    "imagem": "",
-    "correta": "BELO HORIZONTE",
-    "alternativas": ["UBERLÂNDIA", "BELO HORIZONTE", "MONTES CLAROS", "JUIZ DE FORA"],
     "nivel": 3,
     "nomeDoJogador": "MATHEUS"
   },
@@ -9962,7 +9974,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "ROTAÇÃO",
     "alternativas": ["ROTAÇÃO", "TRANSLAÇÃO", "REVOLUÇÃO", "CIRCUITAÇÃO"],
-    "nivel": 3,
+    "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -10046,19 +10058,11 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
-    "pergunta": "Qual é o maior órgão do corpo humano?",
-    "imagem": "",
-    "correta": "PELE",
-    "alternativas": ["PULMÃO", "FÍGADO", "PELE", "CORAÇÃO"],
-    "nivel": 3,
-    "nomeDoJogador": "MATHEUS"
-  },
-  {
     "pergunta": "O que as abelhas produzem a partir do néctar das flores?",
     "imagem": "",
     "correta": "MEL",
     "alternativas": ["ÓLEO", "MEL", "AÇÚCAR", "ÁGUA"],
-    "nivel": 3,
+    "nivel": 1,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -10066,7 +10070,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "FRANÇA",
     "alternativas": ["ITÁLIA", "FRANÇA", "ESPANHA", "ALEMANHA"],
-    "nivel": 3,
+    "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -10107,14 +10111,6 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "A DIREÇÃO NORTE",
     "alternativas": ["A DIREÇÃO OESTE", "A DIREÇÃO NORTE", "A DIREÇÃO SUL", "A DIREÇÃO LESTE"],
-    "nivel": 3,
-    "nomeDoJogador": "MATHEUS"
-  },
-  {
-    "pergunta": "Qual é a capital do Brasil?",
-    "imagem": "",
-    "correta": "BRASÍLIA",
-    "alternativas": ["SÃO PAULO", "BRASÍLIA", "RIO DE JANEIRO", "SALVADOR"],
     "nivel": 3,
     "nomeDoJogador": "MATHEUS"
   },
@@ -10171,7 +10167,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "MEL",
     "alternativas": ["ÓLEO", "MEL", "AÇÚCAR", "ÁGUA"],
-    "nivel": 2,
+    "nivel": 1,
     "nomeDoJogador": "THEO"
   },
   {
@@ -10551,6 +10547,54 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
+    "pergunta": "Qual é o nome do jovem que aprende karatê com o Senhor Miyagi?",
+    "imagem": "",
+    "correta": "DANIEL LARUSSO",
+    "alternativas": ["JOHN KREBS", "DANIEL LARUSSO", "RICKY BURNS", "JOEY SMITH"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual técnica famosa o Senhor Miyagi ensina a Daniel com exercícios como 'encerar o carro' e 'pintar a cerca'?",
+    "imagem": "",
+    "correta": "BLOQUEIO DEFENSIVO",
+    "alternativas": ["CHUTE FRONTAL", "BLOQUEIO DEFENSIVO", "SOCOS MÚLTIPLOS", "KICK LATERAL"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Em qual cidade se passa a história do filme Karate Kid original?",
+    "imagem": "",
+    "correta": "LOS ANGELES",
+    "alternativas": ["NEW YORK", "LOS ANGELES", "CHICAGO", "MIAMI"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quem é o garoto que costuma liderar as travessuras do grupo no filme os Batutinhas?",
+    "imagem": "",
+    "correta": "ALFALFA",
+    "alternativas": ["BUCKWHEAT", "ALFALFA", "DARBEE", "SPANKY"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é o principal interesse romântico de Alfalfa no filme os Batutinhas?",
+    "imagem": "",
+    "correta": "DARLA",
+    "alternativas": ["DARLA", "PETEY", "SPANKY", "BUCKWHEAT"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é o tema central do filme 'Os Batutinhas'?",
+    "imagem": "",
+    "correta": "AMIZADE E AVENTURAS INFANTIS",
+    "alternativas": ["AMIZADE E AVENTURAS INFANTIS", "ESPORTES PROFISSIONAIS", "VIAGENS AO ESPAÇO", "MISTÉRIOS POLICIAIS"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
     "pergunta": "Qual atleta é conhecido como o homem mais rápido do mundo?",
     "imagem": "",
     "correta": "USÁIN BOLT",
@@ -10599,18 +10643,34 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
-    "pergunta": "Qual destes esportes utiliza um arco e flecha?",
-    "imagem": "",
-    "correta": "TIRO COM ARCO",
-    "alternativas": ["ESGRIMA", "TIRO COM ARCO", "CURLING", "BADMINTON"],
-    "nivel": 2,
-    "nomeDoJogador": "MATHEUS"
-  },
-  {
     "pergunta": "Qual país é famoso por desenvolver artes marciais como o caratê?",
     "imagem": "",
     "correta": "JAPÃO",
     "alternativas": ["CHINA", "COREIA DO SUL", "JAPÃO", "TAILÂNDIA"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual adversário Rocky enfrenta no primeiro filme, se tornando campeão mundial?",
+    "imagem": "",
+    "correta": "APOLLO CREED",
+    "alternativas": ["CLUBBER LANG", "APOLLO CREED", "IVAN DRAGO", "TOMMY GUN"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é o nome da esposa de Rocky nos primeiros filmes?",
+    "imagem": "",
+    "correta": "ADRIAN PENNINO",
+    "alternativas": ["TONYA CARRERO", "MARY ANN", "PAULIE BALBOA", "ADRIAN PENNINO"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual cidade é cenário principal da história de Rocky?",
+    "imagem": "",
+    "correta": "FILADÉLFIA",
+    "alternativas": ["NOVA YORK", "FILADÉLFIA", "CHICAGO", "LOS ANGELES"],
     "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
@@ -10832,7 +10892,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "alternativas": ["Organizar os livros, ajudar alunos a encontrar informações", "Lavar a quadra", "Dar aulas de educação física", "Servir a merenda"],
     "correta": "Organizar os livros, ajudar alunos a encontrar informações",
-    "nivel": 2,
+    "nivel": 1,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -10869,7 +10929,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
       "Somente desenhos animados aparecem",
       "Apenas entrevistas acontecem"
     ],
-    "nivel": 2,
+    "nivel": 1,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -10925,7 +10985,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "ÁSIA",
     "alternativas": ["ÁSIA", "ÁFRICA", "AMÉRICA DO NORTE", "AMÉRICA DO SUL"],
-    "nivel": 3,
+    "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -10933,7 +10993,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "AS RELAÇÕES ENTRE OS SERES VIVOS E O AMBIENTE",
     "alternativas": ["A COMIDA DOS ANIMAIS", "A CLIMAÇÃO DO PLANETA", "AS RELAÇÕES ENTRE OS SERES VIVOS E O AMBIENTE", "O MOVIMENTO DAS ESTRELAS"],
-    "nivel": 3,
+    "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -11021,7 +11081,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "imagem": "",
     "correta": "BERLIM",
     "alternativas": ["MUNIQUE", "FRANKFURT", "BERLIM", "HAMBURGO"],
-    "nivel": 3,
+    "nivel": 2,
     "nomeDoJogador": "MATHEUS"
   },
   {
@@ -11065,7 +11125,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
-    "pergunta": "Qual palavra está **acentuada corretamente**?",
+    "pergunta": "Qual palavra está acentuada corretamente?",
     "imagem": "",
     "correta": "tênis",
     "alternativas": ["tenis", "tênis", "tenís", "teniss"],
@@ -11081,7 +11141,7 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
-    "pergunta": "Assinale a frase **correta** quanto ao uso do plural:",
+    "pergunta": "Assinale a frase correta quanto ao uso do plural:",
     "imagem": "",
     "correta": "Os livros e cadernos foram entregues aos alunos.",
     "alternativas": [
@@ -11182,11 +11242,349 @@ final List<Map<String, dynamic>> listaDePerguntas = [
     "nomeDoJogador": "MATHEUS"
   },
   {
+    "pergunta": "Um aluno tirou as notas 5, 7, 9 e 10 em quatro provas. Qual é a média dessas notas?",
+    "imagem": "",
+    "correta": "7,75",
+    "alternativas": ["7,5", "7,75", "8", "8,25"],
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "As notas de um aluno em cinco provas foram: 6, 8, 7, 9 e 10. Qual é a média?",
+    "imagem": "",
+    "correta": "8",
+    "alternativas": ["7,5", "8", "8,5", "9"],
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
     "pergunta": "Qual é a área de um quadrado cujo lado mede 6 cm?",
     "imagem": "",
     "correta": "36 cm²",
     "alternativas": ["12 cm²", "36 cm²", "24 cm²", "18 cm²"],
     "nivel": 3,
     "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Em qual século está o ano 1789?",
+    "imagem": "",
+    "alternativas": ["SÉCULO XVI", "SÉCULO XVII", "SÉCULO XVIII", "SÉCULO XIX"],
+    "correta": "SÉCULO XVIII",
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Em qual século está o ano 1914?",
+    "imagem": "",
+    "alternativas": ["SÉCULO XVIII", "SÉCULO XIX", "SÉCULO XX", "SÉCULO XXI"],
+    "correta": "SÉCULO XX",
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é o número 27 em algarismos romanos?",
+    "imagem": "",
+    "alternativas": ["XXVII", "XXV", "XXIX", "XXVI"],
+    "correta": "XXVII",
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é o número 144 em algarismos romanos?",
+    "imagem": "",
+    "alternativas": ["CXLIV", "CXIV", "CLIV", "CXXIV"],
+    "correta": "CXLIV",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é o número 399 em algarismos romanos?",
+    "imagem": "",
+    "alternativas": ["CCCXCIX", "CCXCIX", "CCCXCIV", "CCCXCVI"],
+    "correta": "CCCXCIX",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "O ano 1500 pertence a qual século?",
+    "imagem": "",
+    "alternativas": ["SÉCULO XIV", "SÉCULO XV", "SÉCULO XVI", "SÉCULO XVII"],
+    "correta": "SÉCULO XV",
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "O ano 2023 faz parte de qual século?",
+    "imagem": "",
+    "alternativas": ["SÉCULO XX", "SÉCULO XXI", "SÉCULO XIX", "SÉCULO XXII"],
+    "correta": "SÉCULO XXI",
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Em que ano Cristóvão Colombo chegou à América?",
+    "imagem": "",
+    "alternativas": ["1492", "1500", "1488", "1519"],
+    "correta": "1492",
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é a capital da Polônia?",
+    "imagem": "",
+    "correta": "VARSÓVIA",
+    "alternativas": ["VARSÓVIA", "CRACÓVIA", "BERLIM", "PRAGA"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é a capital do Canadá?",
+    "imagem": "",
+    "correta": "OTTAWA",
+    "alternativas": ["OTTAWA", "TORONTO", "VANCOUVER", "MONTREAL"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é a capital da Austrália?",
+    "imagem": "",
+    "correta": "CANBERRA",
+    "alternativas": ["SYDNEY", "MELBOURNE", "CANBERRA", "BRISBANE"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é a capital da África do Sul?",
+    "imagem": "",
+    "correta": "PRETÓRIA",
+    "alternativas": ["JOANESBURGO", "CIDADE DO CABO", "PRETÓRIA", "DURBAN"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é a capital da Turquia?",
+    "imagem": "",
+    "correta": "ANCARA",
+    "alternativas": ["ISTAMBUL", "ANCARA", "ESMIRNA", "ANTÁLIA"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é a capital da Suíça?",
+    "imagem": "",
+    "correta": "BERNA",
+    "alternativas": ["ZURIQUE", "GENEBRA", "BERNA", "BASILEIA"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é a capital dos Estados Unidos?",
+    "imagem": "",
+    "correta": "WASHINGTON",
+    "alternativas": ["WASHINGTON", "NOVA YORK", "LOS ANGELES", "CHICAGO"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é a capital da Costa do Marfim?",
+    "imagem": "",
+    "correta": "YAMOUSSOUKRO",
+    "alternativas": ["YAMOUSSOUKRO", "ABIDJAN", "MONROVIA", "ACCRA"],
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Quais foram as duas principais potências envolvidas na Guerra Fria?",
+    "imagem": "",
+    "correta": "Estados Unidos e União Soviética",
+    "alternativas": [
+      "Estados Unidos e União Soviética",
+      "Reino Unido e Alemanha",
+      "França e Japão",
+      "China e Brasil"
+    ],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual foi o Estado que se tornou o principal sucessor legal da União Soviética após sua dissolução em 1991?",
+    "imagem": "",
+    "correta": "Rússia",
+    "alternativas": ["Rússia", "Ucrânia", "Bielorrússia", "Polônia"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é a capital do estado de Rondônia?",
+    "imagem": "",
+    "correta": "PORTO VELHO",
+    "alternativas": ["RIO BRANCO", "PORTO VELHO", "MACEIÓ", "VITÓRIA"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é a capital do estado de Roraima?",
+    "imagem": "",
+    "correta": "BOA VISTA",
+    "alternativas": ["BELÉM", "BOA VISTA", "FORTALEZA", "JOÃO PESSOA"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é a capital do estado do Amapá?",
+    "imagem": "",
+    "correta": "MACAPÁ",
+    "alternativas": ["MACAPÁ", "MANAUS", "TERESINA", "RECIFE"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é a capital do estado de Tocantins?",
+    "imagem": "",
+    "correta": "PALMAS",
+    "alternativas": ["PALMAS", "PORTO ALEGRE", "CUIABÁ", "GOIÂNIA"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é a capital de Cuba?",
+    "imagem": "",
+    "correta": "HAVANA",
+    "alternativas": ["HAVANA", "SANTIAGO DE CUBA", "VARADERO", "TRINIDAD"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual é a capital do estado do Maranhão?",
+    "imagem": "",
+    "correta": "SÃO LUÍS",
+    "alternativas": ["SÃO LUÍS", "SALVADOR", "CURITIBA", "BELÉM"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destas palavras é uma proparoxítona e, portanto, sempre acentuada?",
+    "imagem": "",
+    "correta": "MÚSICA",
+    "alternativas": ["MUSICA", "CASA", "AMIGO", "CEU"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual das palavras abaixo não leva acento segundo as regras atuais?",
+    "imagem": "",
+    "correta": "IDEIA",
+    "alternativas": ["IDEIA", "IRMÃ", "SÓIS", "PARABÉNS"],
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destas palavras é acentuada por ser *xítona terminada em -em?",
+    "imagem": "",
+    "correta": "PARABÉNS",
+    "alternativas": ["PARABÉNS", "PAPEL", "AMIGO", "CORACAO"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destas palavras tem acento para indicar símbolo de crase?",
+    "imagem": "",
+    "correta": "ÀS",
+    "alternativas": ["AS", "AS", "OS", "PRA"],
+    "nivel": 4,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destas palavras é acentuada por ser uma proparoxítona?",
+    "imagem": "",
+    "correta": "ÓTIMO",
+    "alternativas": ["OTIMO", "JANELA", "PARA", "FELIZ"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "O que é o Reino Unido?",
+    "imagem": "",
+    "correta": "Uma união política de quatro países (Inglaterra, Escócia, País de Gales e Irlanda do Norte)",
+    "alternativas": [
+      "Uma única ilha no sul da Europa",
+      "Uma união política de quatro países (Inglaterra, Escócia, País de Gales e Irlanda do Norte)",
+      "Um estado dos Estados Unidos",
+      "Uma cidade‑estado na África"
+    ],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Em qual time Ousmane Dembélé joga atualmente?",
+    "imagem": "",
+    "correta": "PARIS SAINT‑GERMAIN",
+    "alternativas": [
+      "PARIS SAINT‑GERMAIN",
+      "FC BARCELONA",
+      "BORUSSIA DORTMUND",
+      "MANCHESTER UNITED"
+    ],
+    "nivel": 2,
+    "nomeDoJogador": "THEO"
+  },
+  {
+    "pergunta": "Qual é a linha imaginária que divide a Terra em hemisfério norte e sul?",
+    "imagem": "",
+    "correta": "EQUADOR",
+    "alternativas": ["TRÓPICO DE CAPRICÓRNIO", "MERIDIANO DE GREENWICH", "EQUADOR", "CÍRCULO POLAR ÁRTICO"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Em qual time joga atualmente Kylian Mbappé?",
+    "imagem": "",
+    "correta": "REAL MADRID",
+    "alternativas": ["PARIS SAINT‑GERMAIN", "REAL MADRID", "MANCHESTER CITY", "BAYERN MUNIQUE"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Em qual time Cristiano Ronaldo joga atualmente?",
+    "imagem": "",
+    "correta": "AL‑NASSR",
+    "alternativas": ["MANCHESTER UNITED", "AL‑NASSR", "REAL MADRID", "INTER MIAMI"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses jogadores atualmente joga no Bayern de Munique?",
+    "imagem": "",
+    "correta": "LIONEL MESSI",
+    "alternativas": ["LIONEL MESSI", "ERLING HAALAND", "HARRY KANE", "MOHAMED SALAH"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual desses jogadores retornou ao Santos FC em 2025?",
+    "imagem": "",
+    "correta": "NEYMAR JR.",
+    "alternativas": ["NEYMAR JR.", "LUIS SUÁREZ", "VINÍCIUS JR.", "BRUNO FERNANDES"],
+    "nivel": 1,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Em qual clube europeu joga atualmente Erling Haaland?",
+    "imagem": "",
+    "correta": "MANCHESTER CITY",
+    "alternativas": ["MANCHESTER UNITED", "MANCHESTER CITY", "CHELSEA", "PSG"],
+    "nivel": 2,
+    "nomeDoJogador": "MATHEUS"
+  },
+  {
+    "pergunta": "Qual destes jogadores é **o mais velho em atividade** no futebol brasileiro atualmente?",
+    "imagem": "",
+    "correta": "FÁBIO",
+    "alternativas": ["FÁBIO", "NENÊ", "THIAGO SILVA", "CALLERI"],
+    "nivel": 3,
+    "nomeDoJogador": "MATHEUS"
   }
+
+
+
 ];
